@@ -26,5 +26,9 @@
     "test": "./scripts/test",
     "test:watch": "./scripts/test-watch"
   },
-  "version": "0.0.1"
+  "version": "0.0.1",
+  "dependencies": {
+    "golgoth": "^0.3.4",
+    "hex-rgb": "^4.1.0"
+  }
 }
