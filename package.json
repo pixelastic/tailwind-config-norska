@@ -1,0 +1,9 @@
+{
+  "name": "tailwind-config-norska",
+  "version": "0.0.1",
+  "description": "Custom Tailwind configuration used by norska",
+  "main": "index.js",
+  "repository": "git@github.com:pixelastic/tailwind-config-norska.git",
+  "author": "Pixelastic <tim@pixelastic.com>",
+  "license": "MIT"
+}
