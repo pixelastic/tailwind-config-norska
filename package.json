@@ -2,7 +2,9 @@
   "author": "Pixelastic <tim@pixelastic.com>",
   "description": "Custom Tailwind configuration used by norska",
   "devDependencies": {
-    "aberlaas": "^0.4.10"
+    "aberlaas": "^0.4.10",
+    "esm": "^3.2.25",
+    "firost": "^0.13.1"
   },
   "files": [
     "build/"
@@ -12,6 +14,7 @@
   "name": "tailwind-config-norska",
   "repository": "git@github.com:pixelastic/tailwind-config-norska.git",
   "scripts": {
+    "update-readme": "node -r esm ./scripts/updateReadme.js",
     "build": "./scripts/build",
     "build:watch": "./scripts/build-watch",
     "lint": "./scripts/lint",
