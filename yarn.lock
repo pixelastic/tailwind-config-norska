@@ -1080,7 +1080,7 @@ abbrev@1:
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"
   integrity sha512-nne9/IiQ/hzIhY6pdDnbBtz7DjPTKrY00P/zvPSm5pOFkl6xuGrGnXn/VtTNNfNtAfZ9/1RtehkszU9qcTii0Q==
 
-aberlaas@^0.4.10:
+aberlaas@0.4.10:
   version "0.4.10"
   resolved "https://registry.yarnpkg.com/aberlaas/-/aberlaas-0.4.10.tgz#15830d304b210c7c11ea89ddce3917c6d5a9504d"
   integrity sha512-JUto+xIRArS0MhKIEaaYDtVzn/i4KwXbRPMGc0GowsPgjDeRzUx8niipAUHb0o1Mxnh9/6ngoEHCWuIDYeAcgA==
@@ -2474,7 +2474,7 @@ eslint@^6.3.0:
     text-table "^0.2.0"
     v8-compile-cache "^2.0.3"
 
-esm@^3.2.25:
+esm@3.2.25, esm@^3.2.25:
   version "3.2.25"
   resolved "https://registry.yarnpkg.com/esm/-/esm-3.2.25.tgz#342c18c29d56157688ba5ce31f8431fbb795cc10"
   integrity sha512-U1suiZ2oDVWv4zPO56S0NcR5QriEahGtdN2OR6FiOG4WJvcjBVFB0qI4+eKoWFH483PKGuLuu6V8Z4T5g63UVA==
@@ -2788,7 +2788,7 @@ find-up@^3.0.0:
   dependencies:
     locate-path "^3.0.0"
 
-firost@^0.13.1:
+firost@0.13.1, firost@^0.13.1:
   version "0.13.1"
   resolved "https://registry.yarnpkg.com/firost/-/firost-0.13.1.tgz#25ec3c67dc7492ed97117ce09b5b3e2d8d8a1f8b"
   integrity sha512-BVR1FNa8xPeOWqF2m00xHC5AVSt2CH48vJFOCmp423M9OF0BtWxSJIPvZYtF1FYsfynzbACXyzSfFuN8j89BLA==
