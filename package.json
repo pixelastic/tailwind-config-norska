@@ -2,7 +2,7 @@
   "author": "Pixelastic <tim@pixelastic.com>",
   "description": "Custom Tailwind configuration used by norska",
   "devDependencies": {
-    "aberlaas": "0.6.0",
+    "aberlaas": "0.6.4",
     "esm": "3.2.25",
     "firost": "0.13.1"
   },
