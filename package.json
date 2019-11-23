@@ -1,7 +1,7 @@
 {
   "author": "Pixelastic <tim@pixelastic.com>",
   "dependencies": {
-    "golgoth": "^0.5.0",
+    "golgoth": "^0.6.0",
     "hex-rgb": "^4.1.0"
   },
   "description": "Custom Tailwind configuration used by norska",
