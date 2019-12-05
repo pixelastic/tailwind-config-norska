@@ -1,0 +1,18 @@
+version: 2
+
+jobs:
+  build:
+    docker:
+      # To know the correct sha, trigger a dummy build with
+      # circleci/node:latest, and check the logs for the full sha
+      - image: circleci/node@sha256:ec36681b4ad809d668bb6117e135db9cc44f0af87c9d9d65adafd75cace78477
+    steps:
+      - checkout
+      - restore_cache:
+          key: yarn-cache-{{ checksum "yarn.lock" }}
+      - run: 'yarn install'
+      - save_cache:
+          key: yarn-cache-{{ checksum "yarn.lock" }}
+          paths:
+            - ~/.cache/yarn
+      - run: 'yarn run ci'
