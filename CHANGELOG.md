@@ -1,3 +1,10 @@
+## [0.0.5](https://github.com/pixelastic/tailwind-config-norska/compare/0.0.4...0.0.5) (2019-12-10)
+
+
+### Features
+
+* **text-shadow:** Adding text-shadows ([1b3495a](https://github.com/pixelastic/tailwind-config-norska/commit/1b3495accbbf6cdd769fd634559d777713793a7c))
+
 ## [0.0.4](https://github.com/pixelastic/tailwind-config-norska/compare/0.0.3...0.0.4) (2019-12-02)
 
 
