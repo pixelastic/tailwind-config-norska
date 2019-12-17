@@ -1,3 +1,10 @@
+## [0.0.6](https://github.com/pixelastic/tailwind-config-norska/compare/0.0.5...0.0.6) (2019-12-17)
+
+
+### Features
+
+* **classes:** Adding Transition and Text-Shadow ([b19e32d](https://github.com/pixelastic/tailwind-config-norska/commit/b19e32d38810b537bca84aef79524ddbfe06eda3))
+
 ## [0.0.5](https://github.com/pixelastic/tailwind-config-norska/compare/0.0.4...0.0.5) (2019-12-10)
 
 
