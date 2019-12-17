@@ -1,3 +1,10 @@
+## [0.0.7](https://github.com/pixelastic/tailwind-config-norska/compare/0.0.6...0.0.7) (2019-12-17)
+
+
+### Features
+
+* **transition:** Add opacity transition ([f45c5fe](https://github.com/pixelastic/tailwind-config-norska/commit/f45c5feb77105ea2044587455c4c2dd17aa70fa8))
+
 ## [0.0.6](https://github.com/pixelastic/tailwind-config-norska/compare/0.0.5...0.0.6) (2019-12-17)
 
 
