@@ -6,7 +6,7 @@
   },
   "description": "Custom Tailwind configuration used by norska",
   "devDependencies": {
-    "aberlaas": "0.10.2",
+    "aberlaas": "0.10.5",
     "esm": "3.2.25",
     "firost": "0.16.0"
   },
