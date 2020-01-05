@@ -1,3 +1,10 @@
+## [0.0.8](https://github.com/pixelastic/tailwind-config-norska/compare/0.0.7...0.0.8) (2020-01-05)
+
+
+### Features
+
+* **switch:** Add .switch-X classes ([999f05b](https://github.com/pixelastic/tailwind-config-norska/commit/999f05b4a560b1ac135852e844aff4718e8bae99))
+
 ## [0.0.7](https://github.com/pixelastic/tailwind-config-norska/compare/0.0.6...0.0.7) (2019-12-17)
 
 
