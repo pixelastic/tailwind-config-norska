@@ -154,3 +154,28 @@ I chose to do it that way because it drastically cut on the number of classes to
 generate, and had a direct impact on the time required to compile the final CSS.
 
 Same logic is also applied to text and border colors.
+
+### Switches
+
+The `.switch-X` classes allow using the `label` and `checkbox` trick to
+show/hide elements on the page with Tailwind. This works by changing the display
+property of an element based on the value (checked or not) of a checkbox placed
+right before this element. The checkbox itself have a unique `id`, that is
+referenced in the `for` attribute of a `label` you can place wherever you want
+on the page. Combining all those techniques, you can effectively have a `label`
+wherever you want on the page that will contextually change a property on
+another element when clicked.
+
+By default, the `.switch-X` can only change the `display` property. Three
+variants (`.switch-1`, `.switch-2` and `.switch-3`) are provided in case you
+need more than one switch.
+
+Example markup:
+
+```html
+<input type="checkbox" class="switch-1" id="whatever"/>
+<div class="hidden switch-1_block">
+  Hello!
+</div>
+<label id="whatever">Click me to toggle the display of the content</label>
+```

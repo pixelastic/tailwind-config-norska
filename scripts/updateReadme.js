@@ -7,7 +7,7 @@ import { _ } from 'golgoth';
 
   const themeLines = [];
   _.each(config.theme, (themeValues, themeName) => {
-    themeLines.push(`### ${themeName}`);
+    themeLines.push(`### \`${themeName}\``);
     themeLines.push('');
     themeLines.push('| Key | Value |');
     themeLines.push('| --- | ----- |');

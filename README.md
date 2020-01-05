@@ -46,7 +46,7 @@ The default values of many parts have been updated. The following tables expose
 all the updates values. If a specific table is not referenced, it means that the
 module is using Tailwind default configuration for it.
 
-### backgroundColor
+### `backgroundColor`
 
 | Key | Value |
 | --- | ----- |
@@ -154,7 +154,7 @@ module is using Tailwind default configuration for it.
 | pink-8 | rgba(151, 38, 109, var(--background-opacity, 1)) |
 | pink-9 | rgba(112, 36, 89, var(--background-opacity, 1)) |
 
-### borderColor
+### `borderColor`
 
 | Key | Value |
 | --- | ----- |
@@ -262,7 +262,7 @@ module is using Tailwind default configuration for it.
 | pink-8 | rgba(151, 38, 109, var(--border-opacity, 1)) |
 | pink-9 | rgba(112, 36, 89, var(--border-opacity, 1)) |
 
-### borderRadius
+### `borderRadius`
 
 | Key | Value |
 | --- | ----- |
@@ -274,7 +274,7 @@ module is using Tailwind default configuration for it.
 | default | .25rem |
 | full | 9999px |
 
-### borderWidth
+### `borderWidth`
 
 | Key | Value |
 | --- | ----- |
@@ -324,7 +324,7 @@ module is using Tailwind default configuration for it.
 | 100vw | 100vw |
 | 100vh | 100vh |
 
-### boxShadow
+### `boxShadow`
 
 | Key | Value |
 | --- | ----- |
@@ -336,7 +336,7 @@ module is using Tailwind default configuration for it.
 | default | 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06) |
 | inner | inset 0 2px 4px 0 rgba(0,0,0,0.06) |
 
-### colors
+### `colors`
 
 | Key | Value |
 | --- | ----- |
@@ -444,7 +444,7 @@ module is using Tailwind default configuration for it.
 | pink-8 | #97266d |
 | pink-9 | #702459 |
 
-### fontSize
+### `fontSize`
 
 | Key | Value |
 | --- | ----- |
@@ -464,7 +464,7 @@ module is using Tailwind default configuration for it.
 | 08 | 0.75rem |
 | 09 | 0.875rem |
 
-### height
+### `height`
 
 | Key | Value |
 | --- | ----- |
@@ -514,7 +514,7 @@ module is using Tailwind default configuration for it.
 | 100vw | 100vw |
 | 100vh | 100vh |
 
-### inset
+### `inset`
 
 | Key | Value |
 | --- | ----- |
@@ -609,7 +609,7 @@ module is using Tailwind default configuration for it.
 | -100vw | -100vw |
 | -100vh | -100vh |
 
-### lineHeight
+### `lineHeight`
 
 | Key | Value |
 | --- | ----- |
@@ -624,7 +624,7 @@ module is using Tailwind default configuration for it.
 | normal | 1.5 |
 | loose | 2 |
 
-### maxHeight
+### `maxHeight`
 
 | Key | Value |
 | --- | ----- |
@@ -674,7 +674,7 @@ module is using Tailwind default configuration for it.
 | 100vw | 100vw |
 | 100vh | 100vh |
 
-### maxWidth
+### `maxWidth`
 
 | Key | Value |
 | --- | ----- |
@@ -724,7 +724,7 @@ module is using Tailwind default configuration for it.
 | 100vw | 100vw |
 | 100vh | 100vh |
 
-### minHeight
+### `minHeight`
 
 | Key | Value |
 | --- | ----- |
@@ -774,7 +774,7 @@ module is using Tailwind default configuration for it.
 | 100vw | 100vw |
 | 100vh | 100vh |
 
-### minWidth
+### `minWidth`
 
 | Key | Value |
 | --- | ----- |
@@ -824,7 +824,7 @@ module is using Tailwind default configuration for it.
 | 100vw | 100vw |
 | 100vh | 100vh |
 
-### opacity
+### `opacity`
 
 | Key | Value |
 | --- | ----- |
@@ -841,7 +841,7 @@ module is using Tailwind default configuration for it.
 | 90p | .9 |
 | 100p | 1 |
 
-### spacing
+### `spacing`
 
 | Key | Value |
 | --- | ----- |
@@ -891,7 +891,7 @@ module is using Tailwind default configuration for it.
 | 100vw | 100vw |
 | 100vh | 100vh |
 
-### textColor
+### `textColor`
 
 | Key | Value |
 | --- | ----- |
@@ -999,7 +999,7 @@ module is using Tailwind default configuration for it.
 | pink-8 | rgba(151, 38, 109, var(--text-opacity, 1)) |
 | pink-9 | rgba(112, 36, 89, var(--text-opacity, 1)) |
 
-### width
+### `width`
 
 | Key | Value |
 | --- | ----- |
@@ -1049,7 +1049,7 @@ module is using Tailwind default configuration for it.
 | 100vw | 100vw |
 | 100vh | 100vh |
 
-### zIndex
+### `zIndex`
 
 | Key | Value |
 | --- | ----- |
@@ -1177,3 +1177,28 @@ I chose to do it that way because it drastically cut on the number of classes to
 generate, and had a direct impact on the time required to compile the final CSS.
 
 Same logic is also applied to text and border colors.
+
+### Switches
+
+The `.switch-X` classes allow using the `label` and `checkbox` trick to
+show/hide elements on the page with Tailwind. This works by changing the display
+property of an element based on the value (checked or not) of a checkbox placed
+right before this element. The checkbox itself have a unique `id`, that is
+referenced in the `for` attribute of a `label` you can place wherever you want
+on the page. Combining all those techniques, you can effectively have a `label`
+wherever you want on the page that will contextually change a property on
+another element when clicked.
+
+By default, the `.switch-X` can only change the `display` property. Three
+variants (`.switch-1`, `.switch-2` and `.switch-3`) are provided in case you
+need more than one switch.
+
+Example markup:
+
+```html
+<input type="checkbox" class="switch-1" id="whatever"/>
+<div class="hidden switch-1_block">
+  Hello!
+</div>
+<label id="whatever">Click me to toggle the display of the content</label>
+```
