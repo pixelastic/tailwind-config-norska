@@ -308,6 +308,7 @@ module is using Tailwind default configuration for it.
 | 02 | 0.5rem |
 | 03 | 0.75rem |
 | 04 | 0.875rem |
+| 10p | 10% |
 | 20p | 20% |
 | 25p | 25% |
 | 30p | 30% |
@@ -316,8 +317,10 @@ module is using Tailwind default configuration for it.
 | 50p | 50% |
 | 60p | 60% |
 | 66p | calc(100% / 1.5) |
+| 70p | 70% |
 | 75p | 75% |
 | 80p | 80% |
+| 90p | 90% |
 | 100p | 100% |
 | 50vw | 50vw |
 | 50vh | 50vh |
@@ -498,6 +501,7 @@ module is using Tailwind default configuration for it.
 | 02 | 0.5rem |
 | 03 | 0.75rem |
 | 04 | 0.875rem |
+| 10p | 10% |
 | 20p | 20% |
 | 25p | 25% |
 | 30p | 30% |
@@ -506,8 +510,10 @@ module is using Tailwind default configuration for it.
 | 50p | 50% |
 | 60p | 60% |
 | 66p | calc(100% / 1.5) |
+| 70p | 70% |
 | 75p | 75% |
 | 80p | 80% |
+| 90p | 90% |
 | 100p | 100% |
 | 50vw | 50vw |
 | 50vh | 50vh |
@@ -548,6 +554,7 @@ module is using Tailwind default configuration for it.
 | 02 | 0.5rem |
 | 03 | 0.75rem |
 | 04 | 0.875rem |
+| 10p | 10% |
 | 20p | 20% |
 | 25p | 25% |
 | 30p | 30% |
@@ -556,8 +563,10 @@ module is using Tailwind default configuration for it.
 | 50p | 50% |
 | 60p | 60% |
 | 66p | calc(100% / 1.5) |
+| 70p | 70% |
 | 75p | 75% |
 | 80p | 80% |
+| 90p | 90% |
 | 100p | 100% |
 | 50vw | 50vw |
 | 50vh | 50vh |
@@ -593,6 +602,7 @@ module is using Tailwind default configuration for it.
 | -02 | -0.5rem |
 | -03 | -0.75rem |
 | -04 | -0.875rem |
+| -10p | -10% |
 | -20p | -20% |
 | -25p | -25% |
 | -30p | -30% |
@@ -601,8 +611,10 @@ module is using Tailwind default configuration for it.
 | -50p | -50% |
 | -60p | -60% |
 | -66p | -calc(100% / 1.5) |
+| -70p | -70% |
 | -75p | -75% |
 | -80p | -80% |
+| -90p | -90% |
 | -100p | -100% |
 | -50vw | -50vw |
 | -50vh | -50vh |
@@ -658,6 +670,7 @@ module is using Tailwind default configuration for it.
 | 02 | 0.5rem |
 | 03 | 0.75rem |
 | 04 | 0.875rem |
+| 10p | 10% |
 | 20p | 20% |
 | 25p | 25% |
 | 30p | 30% |
@@ -666,8 +679,10 @@ module is using Tailwind default configuration for it.
 | 50p | 50% |
 | 60p | 60% |
 | 66p | calc(100% / 1.5) |
+| 70p | 70% |
 | 75p | 75% |
 | 80p | 80% |
+| 90p | 90% |
 | 100p | 100% |
 | 50vw | 50vw |
 | 50vh | 50vh |
@@ -708,6 +723,7 @@ module is using Tailwind default configuration for it.
 | 02 | 0.5rem |
 | 03 | 0.75rem |
 | 04 | 0.875rem |
+| 10p | 10% |
 | 20p | 20% |
 | 25p | 25% |
 | 30p | 30% |
@@ -716,8 +732,10 @@ module is using Tailwind default configuration for it.
 | 50p | 50% |
 | 60p | 60% |
 | 66p | calc(100% / 1.5) |
+| 70p | 70% |
 | 75p | 75% |
 | 80p | 80% |
+| 90p | 90% |
 | 100p | 100% |
 | 50vw | 50vw |
 | 50vh | 50vh |
@@ -758,6 +776,7 @@ module is using Tailwind default configuration for it.
 | 02 | 0.5rem |
 | 03 | 0.75rem |
 | 04 | 0.875rem |
+| 10p | 10% |
 | 20p | 20% |
 | 25p | 25% |
 | 30p | 30% |
@@ -766,8 +785,10 @@ module is using Tailwind default configuration for it.
 | 50p | 50% |
 | 60p | 60% |
 | 66p | calc(100% / 1.5) |
+| 70p | 70% |
 | 75p | 75% |
 | 80p | 80% |
+| 90p | 90% |
 | 100p | 100% |
 | 50vw | 50vw |
 | 50vh | 50vh |
@@ -808,6 +829,7 @@ module is using Tailwind default configuration for it.
 | 02 | 0.5rem |
 | 03 | 0.75rem |
 | 04 | 0.875rem |
+| 10p | 10% |
 | 20p | 20% |
 | 25p | 25% |
 | 30p | 30% |
@@ -816,8 +838,10 @@ module is using Tailwind default configuration for it.
 | 50p | 50% |
 | 60p | 60% |
 | 66p | calc(100% / 1.5) |
+| 70p | 70% |
 | 75p | 75% |
 | 80p | 80% |
+| 90p | 90% |
 | 100p | 100% |
 | 50vw | 50vw |
 | 50vh | 50vh |
@@ -875,6 +899,7 @@ module is using Tailwind default configuration for it.
 | 02 | 0.5rem |
 | 03 | 0.75rem |
 | 04 | 0.875rem |
+| 10p | 10% |
 | 20p | 20% |
 | 25p | 25% |
 | 30p | 30% |
@@ -883,8 +908,10 @@ module is using Tailwind default configuration for it.
 | 50p | 50% |
 | 60p | 60% |
 | 66p | calc(100% / 1.5) |
+| 70p | 70% |
 | 75p | 75% |
 | 80p | 80% |
+| 90p | 90% |
 | 100p | 100% |
 | 50vw | 50vw |
 | 50vh | 50vh |
@@ -1033,6 +1060,7 @@ module is using Tailwind default configuration for it.
 | 02 | 0.5rem |
 | 03 | 0.75rem |
 | 04 | 0.875rem |
+| 10p | 10% |
 | 20p | 20% |
 | 25p | 25% |
 | 30p | 30% |
@@ -1041,8 +1069,10 @@ module is using Tailwind default configuration for it.
 | 50p | 50% |
 | 60p | 60% |
 | 66p | calc(100% / 1.5) |
+| 70p | 70% |
 | 75p | 75% |
 | 80p | 80% |
+| 90p | 90% |
 | 100p | 100% |
 | 50vw | 50vw |
 | 50vh | 50vh |
@@ -1177,6 +1207,14 @@ I chose to do it that way because it drastically cut on the number of classes to
 generate, and had a direct impact on the time required to compile the final CSS.
 
 Same logic is also applied to text and border colors.
+
+### Scaling
+
+In addition to the classical dimension helpers, a set of `.scale-XXX` classes
+are also added to scaling up or down some elements. `.scale-50p` will display
+and element at half its size while `.scale-200p` will double its dimensions.
+
+The scale goes from `10p` to `200p` with increments of 10. 
 
 ### Switches
 
