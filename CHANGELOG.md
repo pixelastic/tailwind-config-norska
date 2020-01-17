@@ -1,3 +1,11 @@
+## [0.0.9](https://github.com/pixelastic/tailwind-config-norska/compare/0.0.8...0.0.9) (2020-01-17)
+
+
+### Features
+
+* **scale:** Add .scale-XXX classes ([1bc67b6](https://github.com/pixelastic/tailwind-config-norska/commit/1bc67b694d88fe963285cc2145d1edeb6be1c2e4))
+* **spacing:** Add missing spacing steps ([a4ec613](https://github.com/pixelastic/tailwind-config-norska/commit/a4ec61333dea7e6a132b04b7461f9a14db286a6f))
+
 ## [0.0.8](https://github.com/pixelastic/tailwind-config-norska/compare/0.0.7...0.0.8) (2020-01-05)
 
 
