@@ -1,3 +1,10 @@
+## [0.0.10](https://github.com/pixelastic/tailwind-config-norska/compare/0.0.9...0.0.10) (2020-01-28)
+
+
+### Features
+
+* **animate:** Add animation classes ([4dbdf2a](https://github.com/pixelastic/tailwind-config-norska/commit/4dbdf2a8585a97397b1a0b92e4abcbb432e53c88))
+
 ## [0.0.9](https://github.com/pixelastic/tailwind-config-norska/compare/0.0.8...0.0.9) (2020-01-17)
 
 
