@@ -27,7 +27,6 @@ Width, Height, Margin, Padding, Positioning and Borders all use the same scale.
 Some values might not make sense in a specific context, but I found that sharing
 the same scale would give more flexibility in how I could place things.
 
-
 ### Simpler classes
 
 The `line-height` classes are available through `.lh-XXX` in addition to the
@@ -77,7 +76,7 @@ module is using Tailwind default configuration for it.
 | orange-1 | rgba(255, 250, 240, var(--background-opacity, 1)) |
 | orange-2 | rgba(254, 235, 200, var(--background-opacity, 1)) |
 | orange-3 | rgba(251, 211, 141, var(--background-opacity, 1)) |
-| orange-4 | rgba(246, 173, 85, var(--background-opacity, 1)) |
+| orange-4 | rgba(255, 175, 0, var(--background-opacity, 1)) |
 | orange-5 | rgba(237, 137, 54, var(--background-opacity, 1)) |
 | orange-6 | rgba(221, 107, 32, var(--background-opacity, 1)) |
 | orange-7 | rgba(192, 86, 33, var(--background-opacity, 1)) |
@@ -185,7 +184,7 @@ module is using Tailwind default configuration for it.
 | orange-1 | rgba(255, 250, 240, var(--border-opacity, 1)) |
 | orange-2 | rgba(254, 235, 200, var(--border-opacity, 1)) |
 | orange-3 | rgba(251, 211, 141, var(--border-opacity, 1)) |
-| orange-4 | rgba(246, 173, 85, var(--border-opacity, 1)) |
+| orange-4 | rgba(255, 175, 0, var(--border-opacity, 1)) |
 | orange-5 | rgba(237, 137, 54, var(--border-opacity, 1)) |
 | orange-6 | rgba(221, 107, 32, var(--border-opacity, 1)) |
 | orange-7 | rgba(192, 86, 33, var(--border-opacity, 1)) |
@@ -370,7 +369,7 @@ module is using Tailwind default configuration for it.
 | orange-1 | #fffaf0 |
 | orange-2 | #feebc8 |
 | orange-3 | #fbd38d |
-| orange-4 | #f6ad55 |
+| orange-4 | #ffaf00 |
 | orange-5 | #ed8936 |
 | orange-6 | #dd6b20 |
 | orange-7 | #c05621 |
@@ -949,7 +948,7 @@ module is using Tailwind default configuration for it.
 | orange-1 | rgba(255, 250, 240, var(--text-opacity, 1)) |
 | orange-2 | rgba(254, 235, 200, var(--text-opacity, 1)) |
 | orange-3 | rgba(251, 211, 141, var(--text-opacity, 1)) |
-| orange-4 | rgba(246, 173, 85, var(--text-opacity, 1)) |
+| orange-4 | rgba(255, 175, 0, var(--text-opacity, 1)) |
 | orange-5 | rgba(237, 137, 54, var(--text-opacity, 1)) |
 | orange-6 | rgba(221, 107, 32, var(--text-opacity, 1)) |
 | orange-7 | rgba(192, 86, 33, var(--text-opacity, 1)) |
@@ -1208,13 +1207,50 @@ generate, and had a direct impact on the time required to compile the final CSS.
 
 Same logic is also applied to text and border colors.
 
+### Transitions
+
+`width`, `height` and `opacity` can be animated through simple transitions.
+
+Start by adding a `.transition` on the element.
+
+`.transition-height`, `.transition-width` and `.transition-opacity` allow you to
+define which property to animate (only one can be animated that way).
+
+Adding `.transition-linear` will define a linear transition of the specified
+value. Check the `timingFunctions` entry on the table at the top of this
+document to see the other available functions.
+
+Both delay and duration of the transition can be expressed through
+`.transition-1` (for duration) and `.transition-delay-1` (for delay). Check the
+`timingScale` entry in the tables at the top of the document for more details on
+the available values.
+
+### Animations
+
+For custom animations more complex than simple transitions, various parameters
+can be updated through the `.animation-XXX` classes.
+
+Start by adding a `.animation` on the element. You're also expected to change
+the `--animation-name` custom property to match the name of your animation.
+
+Similar to transitions above, you can change the timing function, duration and
+delay using for example `.animation-ease-in`, `animation-2`,
+`.animation-delay-1`.
+
+`.animate-loop` and `.animate-once` allow you to change the number of time the
+animation should run. `.animate-forward` and `.animate-backward` allow you to
+change the direction of the animation.
+
+`.animate-paused` and `.animate-running` are also available with the `.hover_`
+prefix, allowing you to stop an animation when hovering it.
+
 ### Scaling
 
 In addition to the classical dimension helpers, a set of `.scale-XXX` classes
 are also added to scaling up or down some elements. `.scale-50p` will display
 and element at half its size while `.scale-200p` will double its dimensions.
 
-The scale goes from `10p` to `200p` with increments of 10. 
+The scale goes from `10p` to `200p` with increments of 10.
 
 ### Switches
 
@@ -1234,7 +1270,7 @@ need more than one switch.
 Example markup:
 
 ```html
-<input type="checkbox" class="switch-1" id="whatever"/>
+<input type="checkbox" class="switch-1" id="whatever" />
 <div class="hidden switch-1_block">
   Hello!
 </div>
