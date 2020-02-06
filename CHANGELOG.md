@@ -1,3 +1,10 @@
+## [0.0.11](https://github.com/pixelastic/tailwind-config-norska/compare/0.0.10...0.0.11) (2020-02-06)
+
+
+### Features
+
+* **transform:** Allow multiple transform together ([0e221dc](https://github.com/pixelastic/tailwind-config-norska/commit/0e221dcb3a6847076f73dc46c604b20c9ef53d8e))
+
 ## [0.0.10](https://github.com/pixelastic/tailwind-config-norska/compare/0.0.9...0.0.10) (2020-01-28)
 
 
