@@ -1252,6 +1252,19 @@ and element at half its size while `.scale-200p` will double its dimensions.
 
 The scale goes from `10p` to `200p` with increments of 10.
 
+### Rotating
+
+You can rotate an element by any angle form 0° to 360° by increments of 5°.
+
+So `.rotate-45` will rotate the element by 45°.
+
+### Translating
+
+You can move elements along the X and Y axis using the `.translate-x-*` and
+`.translate-y-*` classes. They both use the spacing scale defined earlier.
+
+You can also use `.translate-*` to move them along both axes.
+
 ### Switches
 
 The `.switch-X` classes allow using the `label` and `checkbox` trick to
