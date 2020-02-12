@@ -1,3 +1,5 @@
+## [0.0.12](https://github.com/pixelastic/tailwind-config-norska/compare/0.0.11...0.0.12) (2020-02-12)
+
 ## [0.0.11](https://github.com/pixelastic/tailwind-config-norska/compare/0.0.10...0.0.11) (2020-02-06)
 
 
