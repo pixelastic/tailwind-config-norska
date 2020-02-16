@@ -29,5 +29,5 @@
     "test:watch": "./scripts/test-watch",
     "docs:readme": "node -r esm ./scripts/docs-readme.js"
   },
-  "version": "0.0.12"
+  "version": "0.0.13"
 }

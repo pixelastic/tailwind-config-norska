@@ -1,3 +1,10 @@
+## [0.0.13](https://github.com/pixelastic/tailwind-config-norska/compare/0.0.12...0.0.13) (2020-02-16)
+
+
+### Features
+
+* **fonts:** Add classes for most common fonts ([edbaf33](https://github.com/pixelastic/tailwind-config-norska/commit/edbaf332041c18242f3cd9222da86d2738ce6c23))
+
 ## [0.0.12](https://github.com/pixelastic/tailwind-config-norska/compare/0.0.11...0.0.12) (2020-02-12)
 
 ## [0.0.11](https://github.com/pixelastic/tailwind-config-norska/compare/0.0.10...0.0.11) (2020-02-06)
