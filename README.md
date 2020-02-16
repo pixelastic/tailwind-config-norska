@@ -1182,6 +1182,11 @@ should be applied on a parent or children.
 | `.fla`   | Flex auto                       | Element takes all available space                        | Children |
 | `.fln`   | Flex none                       | Element only takes as much place as needed               | Children |
 
+### Fonts
+
+Short aliases for the most common font stacks are available: `.arial`,
+`.verdana`, `.helvetica`.
+
 ### Grayscale
 
 The `.grayscale` class force and element to be displayed only in shades of black
