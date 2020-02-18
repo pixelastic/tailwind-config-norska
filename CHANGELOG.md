@@ -1,3 +1,10 @@
+## [0.0.14](https://github.com/pixelastic/tailwind-config-norska/compare/0.0.13...0.0.14) (2020-02-18)
+
+
+### Features
+
+* **shadows:** Add extensible shadows ([17883ba](https://github.com/pixelastic/tailwind-config-norska/commit/17883ba9a0ebf91ddb32cbb414f11c3ecfa46547))
+
 ## [0.0.13](https://github.com/pixelastic/tailwind-config-norska/compare/0.0.12...0.0.13) (2020-02-16)
 
 
