@@ -326,18 +326,6 @@ module is using Tailwind default configuration for it.
 | 100vw | 100vw |
 | 100vh | 100vh |
 
-### `boxShadow`
-
-| Key | Value |
-| --- | ----- |
-| 0 | none |
-| 1 |  0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -1px rgba(0, 0, 0, .06) |
-| 2 |  0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -2px rgba(0, 0, 0, .05) |
-| 3 |  0 20px 25px -5px rgba(0, 0, 0, .1), 0 10px 10px -5px rgba(0, 0, 0, .04) |
-| 4 | 0 25px 50px -12px rgba(0, 0, 0, .25) |
-| default | 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06) |
-| inner | inset 0 2px 4px 0 rgba(0,0,0,0.06) |
-
 ### `colors`
 
 | Key | Value |
@@ -1212,6 +1200,23 @@ generate, and had a direct impact on the time required to compile the final CSS.
 
 Same logic is also applied to text and border colors.
 
+### Text Shadows
+
+Shadows can be added to text using the `.text-shadow` class. Shadow color and
+opacity can be modified with any color and opacity defined (for example,
+`.text-shadow-blue .text-shadow-50p` will set the shadow to blue with an opacity
+of 50%).
+
+### Box Shadows
+
+Shadows can be added to any block element using the `.shadow-X` classes. `X` is
+a size, ranging from 1 to 5. Sizes `.shadow-01` and `.shadow-001` are also
+availale for very subtle shadows and `.shadow-0` to remove all shadow
+altogether.
+
+Shadow color can be updated using `.shadow-Y` classes, where `Y` is any color
+defined earlier.
+
 ### Transitions
 
 `width`, `height` and `opacity` can be animated through simple transitions.
@@ -1269,6 +1274,7 @@ You can move elements along the X and Y axis using the `.translate-x-*` and
 `.translate-y-*` classes. They both use the spacing scale defined earlier.
 
 You can also use `.translate-*` to move them along both axes.
+
 
 ### Switches
 

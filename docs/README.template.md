@@ -159,6 +159,23 @@ generate, and had a direct impact on the time required to compile the final CSS.
 
 Same logic is also applied to text and border colors.
 
+### Text Shadows
+
+Shadows can be added to text using the `.text-shadow` class. Shadow color and
+opacity can be modified with any color and opacity defined (for example,
+`.text-shadow-blue .text-shadow-50p` will set the shadow to blue with an opacity
+of 50%).
+
+### Box Shadows
+
+Shadows can be added to any block element using the `.shadow-X` classes. `X` is
+a size, ranging from 1 to 5. Sizes `.shadow-01` and `.shadow-001` are also
+availale for very subtle shadows and `.shadow-0` to remove all shadow
+altogether.
+
+Shadow color can be updated using `.shadow-Y` classes, where `Y` is any color
+defined earlier.
+
 ### Transitions
 
 `width`, `height` and `opacity` can be animated through simple transitions.
@@ -216,6 +233,7 @@ You can move elements along the X and Y axis using the `.translate-x-*` and
 `.translate-y-*` classes. They both use the spacing scale defined earlier.
 
 You can also use `.translate-*` to move them along both axes.
+
 
 ### Switches
 
