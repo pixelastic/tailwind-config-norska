@@ -1,14 +1,14 @@
 {
   "author": "Pixelastic <tim@pixelastic.com>",
   "dependencies": {
-    "golgoth": "0.6.4",
+    "golgoth": "1.1.1",
     "hex-rgb": "4.1.0"
   },
   "description": "Custom Tailwind configuration used by norska",
   "devDependencies": {
-    "aberlaas": "0.11.3",
+    "aberlaas": "1.1.1",
     "esm": "3.2.25",
-    "firost": "0.21.0"
+    "firost": "1.2.1"
   },
   "files": [
     "build/"
