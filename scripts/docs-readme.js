@@ -1,6 +1,6 @@
-import path from 'path';
-import firost from 'firost';
-import { _ } from 'golgoth';
+const path = require('path');
+const firost = require('firost');
+const _ = require('golgoth/lib/lodash');
 
 (async function() {
   const config = await firost.require(path.resolve('./lib/index.js'));
