@@ -1,0 +1,13 @@
+extends /_includes/_layouts/core
+
+block config
+  - pageTitle = "Border Width"
+
+block content
+  .flcnw
+    each value, key in data.tailwind.theme.borderWidth
+      - className = `border-t-${key}`;
+      - screenshotId = `border-${key}`;
+      .fln.p-1.flcnw.w-25p.flcch
+        .h-1.w-10(class=className data-screenshot-id=screenshotId)
+        code.code=`.${screenshotId}`

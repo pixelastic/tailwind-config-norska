@@ -1,0 +1,12 @@
+extends /_includes/_layouts/core
+
+block config
+  - pageTitle = "Backgrounds"
+
+block content
+  .flrw
+    each value, key in data.tailwind.theme.colors
+      - className = `bg-${key}`;
+      .fln.p-1.flcnw.w-25p.flcch
+        .h-10.w-10(class=className data-screenshot-id=className)
+        code.code=`.${className}`
