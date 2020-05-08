@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+set -e
+
+# TODO:
+# - Need to fire the server if not fired
+# - Need to watch changes in lib/* and touch tailwind.config.js to update the css
+# - Neet to also touch the _data/tailwind.js so the list if updated
+# - Need to order classes in real alphabetical order, so the 000 are efore the
+# others
+
+yarn run backstop test --config=./backstop.js

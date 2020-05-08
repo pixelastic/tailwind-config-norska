@@ -2,11 +2,11 @@ extends /_includes/_layouts/core
 
 block config
   - pageTitle = "Backgrounds"
+  - pageClasses = data.tailwind.getClasses('colors', 'bg');
 
 block content
-  .flrw
-    each value, key in data.tailwind.theme.colors
-      - className = `bg-${key}`;
-      .fln.p-1.flcnw.w-25p.flcch
-        .h-10.w-10(class=className data-screenshot-id=className)
-        code.code=`.${className}`
+  .flcw.screenshot
+    each className in pageClasses
+      .fln.flrnw
+        code.w-12.fln.code=`.${className}`
+        .fla.h-3(class=className)

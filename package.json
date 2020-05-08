@@ -7,6 +7,7 @@
   "description": "Custom Tailwind configuration used by norska",
   "devDependencies": {
     "aberlaas": "1.4.2",
+    "backstopjs": "5.0.1",
     "firost": "1.5.0",
     "norska": "0.9.9"
   },
@@ -31,7 +32,9 @@
     "lint:fix": "./scripts/lint-fix",
     "release": "./scripts/release",
     "test": "./scripts/test",
-    "test:watch": "./scripts/test-watch"
+    "test:watch": "./scripts/test-watch",
+    "test:visual": "./scripts/test-visual",
+    "test:visual:approve": "./scripts/test-visual-approve"
   },
   "version": "0.2.1"
 }
