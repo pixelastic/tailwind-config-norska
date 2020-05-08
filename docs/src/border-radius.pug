@@ -2,11 +2,10 @@ extends /_includes/_layouts/core
 
 block config
   - pageTitle = "Border Radius"
+  - pageClasses = data.tailwind.getClasses('borderRadius', 'rounded');
 
 block content
-  .flrw
-    each value, key in data.tailwind.theme.borderRadius
-      - className = `rounded-${key}`;
-      .fln.p-1.flcnw.w-25p.flcch
-        .h-10.w-10.border-1(class=className data-screenshot-id=className)
+  .flrw.screenshot
+    each className in pageClasses
+      .fln.flrnw.flc.w-14.h-14.border-01.border-gray.m-1(class=className)
         code.code=`.${className}`

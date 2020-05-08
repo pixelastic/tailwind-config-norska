@@ -1,12 +1,12 @@
 extends /_includes/_layouts/core
 
 block config
-  - pageTitle = "Border Colors"
+  - pageTitle = "Border colors"
+  - pageClasses = data.tailwind.getClasses('colors', 'border');
 
 block content
-  .flrw
-    each value, key in data.tailwind.theme.colors
-      - className = `border-${key}`;
-      .fln.p-1.flcnw.w-25p.flcch
-        .h-10.w-10.border-1(class=className data-screenshot-id=className)
-        code.code=`.${className}`
+  .flcw.screenshot
+    each className in pageClasses
+      .fln.flrnw.border-01(class=className)
+        code.fla.code=`.${className}`
+

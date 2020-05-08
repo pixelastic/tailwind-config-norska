@@ -1,4 +1,4 @@
 #!/usr/bin/env sh
 set -e
 
-norska serve --from=./docs/src --to=./docs/dist "$@"
+norska serve --root=./docs "$@"
