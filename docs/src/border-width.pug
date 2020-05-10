@@ -7,6 +7,7 @@ block config
 block content
   .flcw.screenshot
     each className in pageClasses
+      - const displayClassName = _.replace(className, '-t', '')
       .fln.flrnw.border-gray.mb-6(class=className)
-        code.fla.code=`.${className}`
+        code.fla.code=`.${displayClassName}`
 
