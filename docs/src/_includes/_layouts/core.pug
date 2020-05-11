@@ -43,6 +43,9 @@ html(lang='en')
             a.fln.blue.hover_underline(href="/dimensions-width") Width
             a.fln.blue.hover_underline(href="/dimensions-height") Height
 
+            h2.text-3.bold.mt-1 Effects
+            a.fln.blue.hover_underline(href="/opacity") Opacity
+
             h2.text-3.bold.mt-1 Fonts
             a.fln.blue.hover_underline(href="/font-sizes") Font sizes
 
@@ -52,6 +55,7 @@ html(lang='en')
 
             h2.text-3.bold.mt-1 Positioning
             a.fln.blue.hover_underline(href="/positions-absolute") Absolute
+            a.fln.blue.hover_underline(href="/positions-z-index") Z-index
         .fla.p-3
           block content
       each jsFile in runtime.jsFiles
