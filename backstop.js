@@ -34,6 +34,7 @@ const pagesToTest = [
   'border-colors',
   'border-width',
   'border-radius',
+  'font-sizes',
 ];
 const scenarios = _.map(pagesToTest, basename => {
   const url = `http://127.0.0.1:8083/${basename}/`;
