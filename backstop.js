@@ -1,4 +1,6 @@
 const _ = require('golgoth/lib/lodash');
+const fs = require('fs');
+const path = require('path');
 
 const defaultConfig = {
   id: 'tailwind-config-norska',
@@ -29,13 +31,20 @@ const defaultConfig = {
   debugWindow: false,
 };
 
-const pagesToTest = [
-  'backgrounds',
-  'border-colors',
-  'border-width',
-  'border-radius',
-  'font-sizes',
-];
+// Discover all files to test in docs/src
+const filesInSrc = fs.readdirSync('docs/src');
+const blocklistPugFiles = ['404', 'index'];
+const pagesToTest = _.chain(filesInSrc)
+  .reject(basename => {
+    const extname = path.extname(basename);
+    return extname !== '.pug';
+  })
+  .map(filename => {
+    return path.basename(filename, '.pug');
+  })
+  .difference(blocklistPugFiles)
+  .value();
+
 const scenarios = _.map(pagesToTest, basename => {
   const url = `http://127.0.0.1:8083/${basename}/`;
   const label = _.startCase(basename);
