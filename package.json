@@ -26,7 +26,7 @@
     "docs:readme": "node ./scripts/docs-readme.js",
     "docs:build": "./scripts/docs-build",
     "docs:build:prod": "./scripts/docs-build-prod",
-    "docs:serve": "./scripts/docs-serve",
+    "docs:serve": "node ./scripts/docs-serve.js",
     "husky:precommit": "./scripts/husky-precommit",
     "lint": "./scripts/lint",
     "lint:fix": "./scripts/lint-fix",
