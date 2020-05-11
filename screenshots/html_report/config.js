@@ -4,7 +4,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/tailwind-config-norska_Background_Colors_0_screenshot_0_desktop.png",
-        "test": "../bitmaps_test/20200511-155258/tailwind-config-norska_Background_Colors_0_screenshot_0_desktop.png",
+        "test": "../bitmaps_test/20200511-194530/tailwind-config-norska_Background_Colors_0_screenshot_0_desktop.png",
         "selector": ".screenshot",
         "fileName": "tailwind-config-norska_Background_Colors_0_screenshot_0_desktop.png",
         "label": "Background Colors",
@@ -26,7 +26,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/tailwind-config-norska_Border_Colors_0_screenshot_0_desktop.png",
-        "test": "../bitmaps_test/20200511-155258/tailwind-config-norska_Border_Colors_0_screenshot_0_desktop.png",
+        "test": "../bitmaps_test/20200511-194530/tailwind-config-norska_Border_Colors_0_screenshot_0_desktop.png",
         "selector": ".screenshot",
         "fileName": "tailwind-config-norska_Border_Colors_0_screenshot_0_desktop.png",
         "label": "Border Colors",
@@ -48,7 +48,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/tailwind-config-norska_Border_Radius_0_screenshot_0_desktop.png",
-        "test": "../bitmaps_test/20200511-155258/tailwind-config-norska_Border_Radius_0_screenshot_0_desktop.png",
+        "test": "../bitmaps_test/20200511-194530/tailwind-config-norska_Border_Radius_0_screenshot_0_desktop.png",
         "selector": ".screenshot",
         "fileName": "tailwind-config-norska_Border_Radius_0_screenshot_0_desktop.png",
         "label": "Border Radius",
@@ -70,7 +70,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/tailwind-config-norska_Border_Width_0_screenshot_0_desktop.png",
-        "test": "../bitmaps_test/20200511-155258/tailwind-config-norska_Border_Width_0_screenshot_0_desktop.png",
+        "test": "../bitmaps_test/20200511-194530/tailwind-config-norska_Border_Width_0_screenshot_0_desktop.png",
         "selector": ".screenshot",
         "fileName": "tailwind-config-norska_Border_Width_0_screenshot_0_desktop.png",
         "label": "Border Width",
@@ -92,7 +92,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/tailwind-config-norska_Dimensions_Height_0_screenshot_0_desktop.png",
-        "test": "../bitmaps_test/20200511-155258/tailwind-config-norska_Dimensions_Height_0_screenshot_0_desktop.png",
+        "test": "../bitmaps_test/20200511-194530/tailwind-config-norska_Dimensions_Height_0_screenshot_0_desktop.png",
         "selector": ".screenshot",
         "fileName": "tailwind-config-norska_Dimensions_Height_0_screenshot_0_desktop.png",
         "label": "Dimensions Height",
@@ -114,7 +114,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/tailwind-config-norska_Dimensions_Width_0_screenshot_0_desktop.png",
-        "test": "../bitmaps_test/20200511-155258/tailwind-config-norska_Dimensions_Width_0_screenshot_0_desktop.png",
+        "test": "../bitmaps_test/20200511-194530/tailwind-config-norska_Dimensions_Width_0_screenshot_0_desktop.png",
         "selector": ".screenshot",
         "fileName": "tailwind-config-norska_Dimensions_Width_0_screenshot_0_desktop.png",
         "label": "Dimensions Width",
@@ -136,7 +136,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/tailwind-config-norska_Font_Sizes_0_screenshot_0_desktop.png",
-        "test": "../bitmaps_test/20200511-155258/tailwind-config-norska_Font_Sizes_0_screenshot_0_desktop.png",
+        "test": "../bitmaps_test/20200511-194530/tailwind-config-norska_Font_Sizes_0_screenshot_0_desktop.png",
         "selector": ".screenshot",
         "fileName": "tailwind-config-norska_Font_Sizes_0_screenshot_0_desktop.png",
         "label": "Font Sizes",
@@ -158,7 +158,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/tailwind-config-norska_Line_Heights_Custom_0_screenshot_0_desktop.png",
-        "test": "../bitmaps_test/20200511-155258/tailwind-config-norska_Line_Heights_Custom_0_screenshot_0_desktop.png",
+        "test": "../bitmaps_test/20200511-194530/tailwind-config-norska_Line_Heights_Custom_0_screenshot_0_desktop.png",
         "selector": ".screenshot",
         "fileName": "tailwind-config-norska_Line_Heights_Custom_0_screenshot_0_desktop.png",
         "label": "Line Heights Custom",
@@ -166,14 +166,21 @@ report({
         "url": "http://127.0.0.1:8083/line-heights-custom/",
         "expect": 0,
         "viewportLabel": "desktop",
-        "error": "Reference file not found /home/tim/local/www/projects/tailwind-config-norska/screenshots/bitmaps_reference/tailwind-config-norska_Line_Heights_Custom_0_screenshot_0_desktop.png"
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
       },
-      "status": "fail"
+      "status": "pass"
     },
     {
       "pair": {
         "reference": "../bitmaps_reference/tailwind-config-norska_Line_Heights_Default_0_screenshot_0_desktop.png",
-        "test": "../bitmaps_test/20200511-155258/tailwind-config-norska_Line_Heights_Default_0_screenshot_0_desktop.png",
+        "test": "../bitmaps_test/20200511-194530/tailwind-config-norska_Line_Heights_Default_0_screenshot_0_desktop.png",
         "selector": ".screenshot",
         "fileName": "tailwind-config-norska_Line_Heights_Default_0_screenshot_0_desktop.png",
         "label": "Line Heights Default",
@@ -181,7 +188,29 @@ report({
         "url": "http://127.0.0.1:8083/line-heights-default/",
         "expect": 0,
         "viewportLabel": "desktop",
-        "error": "Reference file not found /home/tim/local/www/projects/tailwind-config-norska/screenshots/bitmaps_reference/tailwind-config-norska_Line_Heights_Default_0_screenshot_0_desktop.png"
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/tailwind-config-norska_Positions_Absolute_0_screenshot_0_desktop.png",
+        "test": "../bitmaps_test/20200511-194530/tailwind-config-norska_Positions_Absolute_0_screenshot_0_desktop.png",
+        "selector": ".screenshot",
+        "fileName": "tailwind-config-norska_Positions_Absolute_0_screenshot_0_desktop.png",
+        "label": "Positions Absolute",
+        "misMatchThreshold": 0.1,
+        "url": "http://127.0.0.1:8083/positions-absolute/",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "error": "Reference file not found /home/tim/local/www/projects/tailwind-config-norska/screenshots/bitmaps_reference/tailwind-config-norska_Positions_Absolute_0_screenshot_0_desktop.png"
       },
       "status": "fail"
     }
