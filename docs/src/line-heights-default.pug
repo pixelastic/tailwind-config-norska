@@ -1,0 +1,15 @@
+extends /_includes/_layouts/core
+
+block config
+  - pageTitle = "Default Line height"
+  - pageClasses = data.tailwind.getClasses('lineHeight', 'leading');
+
+block content
+  .flcw.screenshot.border-t-001.border-gray
+    each className in pageClasses
+      .fln.flrnw.flrcv.border-b-001.border-gray.py-01
+        code.w-12.fln.code=`.${className}`
+        .fla.flrnw.flrcv.bg-gray-4.h-6
+          .fla.bg-green(class=className) You can cut our wings but we will always remember what it was like to fly
+
+
