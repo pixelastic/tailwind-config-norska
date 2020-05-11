@@ -5,7 +5,9 @@ block config
   - pageClasses = data.tailwind.getClasses('borderRadius', 'rounded');
 
 block content
-  .flrw.screenshot
+  .flcw.screenshot.border-t-001.border-gray
     each className in pageClasses
-      .fln.flrnw.flc.w-14.h-14.border-01.border-gray.m-1(class=className)
-        code.code=`.${className}`
+      .fln.flrnw.flrcv.border-b-001.border-gray
+        code.w-12.fln.code=`.${className}`
+        .fla.flcnw.p-1
+          .fln.w-5.h-5.border-01.border-green(class=className)
