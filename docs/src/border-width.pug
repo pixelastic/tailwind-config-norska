@@ -5,9 +5,16 @@ block config
   - pageClasses = data.tailwind.getClasses('borderWidth', 'border-t');
 
 block content
-  .flcw.screenshot
+  .flrw.screenshot
     each className in pageClasses
       - const displayClassName = _.replace(className, '-t', '')
-      .fln.flrnw.border-gray.mb-6(class=className)
-        code.fla.code=`.${displayClassName}`
+      .fln.flcnw.w-12.mb-01.mr-1
+        code.w-12.fln.code=`.${displayClassName}`
+        .fla.flcnw.bg-gray-3.h-20
+          .fln.border-green(class=className)
+  //- .flcw.screenshot
+  //-   each className in pageClasses
+  //-     - const displayClassName = _.replace(className, '-t', '')
+  //-     .fln.flrnw.border-gray.mb-6(class=className)
+  //-       code.fla.code=`.${displayClassName}`
 

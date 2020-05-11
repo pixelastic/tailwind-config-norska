@@ -1,0 +1,14 @@
+extends /_includes/_layouts/core
+
+block config
+  - pageTitle = "Width"
+  - pageClasses = data.tailwind.getClasses('width', 'w');
+
+block content
+  .flcw.screenshot
+    each className in pageClasses
+      .fln.flrnw.mb-01.w-100p
+        code.w-12.fln.code=`.${className}`
+        .fla.flrnw.bg-gray-3
+          .fln.bg-green(class=className)
+
