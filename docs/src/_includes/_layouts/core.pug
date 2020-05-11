@@ -33,15 +33,22 @@ html(lang='en')
           .flcnw
             h2.text-3.bold Backgrounds
             a.fln.blue.hover_underline(href="/backgrounds-colors") Backgrounds colors
-            h2.text-3.bold Borders
+
+            h2.text-3.bold.mt-1 Borders
             a.fln.blue.hover_underline(href="/border-colors") Borders colors
             a.fln.blue.hover_underline(href="/border-radius") Borders radius
             a.fln.blue.hover_underline(href="/border-width") Borders width
-            h2.text-3.bold Dimensions
+
+            h2.text-3.bold.mt-1 Dimensions
             a.fln.blue.hover_underline(href="/dimensions-width") Width
             a.fln.blue.hover_underline(href="/dimensions-height") Height
-            h2.text-3.bold Fonts
+
+            h2.text-3.bold.mt-1 Fonts
             a.fln.blue.hover_underline(href="/font-sizes") Font sizes
+
+            h2.text-3.bold.mt-1 Line Height
+            a.fln.blue.hover_underline(href="/line-heights-default") Default
+            a.fln.blue.hover_underline(href="/line-heights-custom") Custom
         .fla.p-3
           block content
       each jsFile in runtime.jsFiles
