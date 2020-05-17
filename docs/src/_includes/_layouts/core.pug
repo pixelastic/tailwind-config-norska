@@ -7,6 +7,7 @@ block config
 - pageTwitter = pageTwitter || data.site.defaultTwitter
 - pageUrl = pageUrl || data.site.defaultUrl
 - pageImage = pageImage || screenshot()
+- testString = "You can cut our wings but we will always remember what it was like to fly"
 
 doctype html
 html(lang='en')
@@ -32,7 +33,7 @@ html(lang='en')
         .fln.w-14.border-r-001.bg-gray-3.border-gray-8.p-2
           .flcnw
             h2.text-3.bold Backgrounds
-            a.fln.blue.hover_underline(href="/backgrounds-colors") Backgrounds colors
+            a.fln.blue.hover_underline(href="/background-colors") Background colors
 
             h2.text-3.bold.mt-1 Borders
             a.fln.blue.hover_underline(href="/border-colors") Borders colors
@@ -42,12 +43,14 @@ html(lang='en')
             h2.text-3.bold.mt-1 Dimensions
             a.fln.blue.hover_underline(href="/dimensions-width") Width
             a.fln.blue.hover_underline(href="/dimensions-height") Height
+            a.fln.blue.hover_underline(href="/dimensions-hover") Hover
 
             h2.text-3.bold.mt-1 Effects
             a.fln.blue.hover_underline(href="/opacity") Opacity
 
             h2.text-3.bold.mt-1 Fonts
             a.fln.blue.hover_underline(href="/font-sizes") Font sizes
+            a.fln.blue.hover_underline(href="/font-colors") Font colors
 
             h2.text-3.bold.mt-1 Line Height
             a.fln.blue.hover_underline(href="/line-heights-default") Default
