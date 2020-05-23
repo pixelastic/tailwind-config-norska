@@ -12,6 +12,9 @@
     "cheerio": "1.0.0-rc.3",
     "norska": "0.9.9"
   },
+  "peerDependencies": {
+    "tailwindcss": "1.4"
+  },
   "files": [
     "lib/*.js",
     "lib/helpers/*.js",

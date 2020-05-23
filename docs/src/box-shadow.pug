@@ -1,0 +1,14 @@
+extends /_includes/_layouts/core
+
+block config
+  - pageTitle = "Box shadows"
+  - pageClasses = data.tailwind.getClasses('boxShadow', 'shadow');
+
+block content
+  .flcw.screenshot
+    each rawClassName in pageClasses
+      - const className = rawClassName.replace('-default', '');
+      .fln.flrnw.border-b-001.border-gray
+        code.w-12.fln.code.py-1=`.${className}`
+        .fln.bg-gray-1.w-14.h-10.flrnw.flc
+          .w-10.h-7.bg-white.rounded(class=className)
