@@ -45,222 +45,6 @@ The default values of many parts have been updated. The following tables expose
 all the updates values. If a specific table is not referenced, it means that the
 module is using Tailwind default configuration for it.
 
-### `backgroundColor`
-
-| Key | Value |
-| --- | ----- |
-| transparent | transparent |
-| black | rgba(0, 0, 0, var(--background-opacity, 1)) |
-| white | rgba(255, 255, 255, var(--background-opacity, 1)) |
-| gray | rgba(113, 128, 150, var(--background-opacity, 1)) |
-| gray-1 | rgba(247, 250, 252, var(--background-opacity, 1)) |
-| gray-2 | rgba(237, 242, 247, var(--background-opacity, 1)) |
-| gray-3 | rgba(226, 232, 240, var(--background-opacity, 1)) |
-| gray-4 | rgba(203, 213, 224, var(--background-opacity, 1)) |
-| gray-5 | rgba(160, 174, 192, var(--background-opacity, 1)) |
-| gray-6 | rgba(113, 128, 150, var(--background-opacity, 1)) |
-| gray-7 | rgba(74, 85, 104, var(--background-opacity, 1)) |
-| gray-8 | rgba(45, 55, 72, var(--background-opacity, 1)) |
-| gray-9 | rgba(26, 32, 44, var(--background-opacity, 1)) |
-| red | rgba(229, 62, 62, var(--background-opacity, 1)) |
-| red-1 | rgba(255, 245, 245, var(--background-opacity, 1)) |
-| red-2 | rgba(254, 215, 215, var(--background-opacity, 1)) |
-| red-3 | rgba(254, 178, 178, var(--background-opacity, 1)) |
-| red-4 | rgba(252, 129, 129, var(--background-opacity, 1)) |
-| red-5 | rgba(245, 101, 101, var(--background-opacity, 1)) |
-| red-6 | rgba(229, 62, 62, var(--background-opacity, 1)) |
-| red-7 | rgba(197, 48, 48, var(--background-opacity, 1)) |
-| red-8 | rgba(155, 44, 44, var(--background-opacity, 1)) |
-| red-9 | rgba(116, 42, 42, var(--background-opacity, 1)) |
-| orange | rgba(221, 107, 32, var(--background-opacity, 1)) |
-| orange-1 | rgba(255, 250, 240, var(--background-opacity, 1)) |
-| orange-2 | rgba(254, 235, 200, var(--background-opacity, 1)) |
-| orange-3 | rgba(251, 211, 141, var(--background-opacity, 1)) |
-| orange-4 | rgba(255, 175, 0, var(--background-opacity, 1)) |
-| orange-5 | rgba(237, 137, 54, var(--background-opacity, 1)) |
-| orange-6 | rgba(221, 107, 32, var(--background-opacity, 1)) |
-| orange-7 | rgba(192, 86, 33, var(--background-opacity, 1)) |
-| orange-8 | rgba(156, 66, 33, var(--background-opacity, 1)) |
-| orange-9 | rgba(123, 52, 30, var(--background-opacity, 1)) |
-| yellow | rgba(214, 158, 46, var(--background-opacity, 1)) |
-| yellow-1 | rgba(255, 255, 240, var(--background-opacity, 1)) |
-| yellow-2 | rgba(254, 252, 191, var(--background-opacity, 1)) |
-| yellow-3 | rgba(250, 240, 137, var(--background-opacity, 1)) |
-| yellow-4 | rgba(246, 224, 94, var(--background-opacity, 1)) |
-| yellow-5 | rgba(236, 201, 75, var(--background-opacity, 1)) |
-| yellow-6 | rgba(214, 158, 46, var(--background-opacity, 1)) |
-| yellow-7 | rgba(183, 121, 31, var(--background-opacity, 1)) |
-| yellow-8 | rgba(151, 90, 22, var(--background-opacity, 1)) |
-| yellow-9 | rgba(116, 66, 16, var(--background-opacity, 1)) |
-| green | rgba(56, 161, 105, var(--background-opacity, 1)) |
-| green-1 | rgba(240, 255, 244, var(--background-opacity, 1)) |
-| green-2 | rgba(198, 246, 213, var(--background-opacity, 1)) |
-| green-3 | rgba(154, 230, 180, var(--background-opacity, 1)) |
-| green-4 | rgba(104, 211, 145, var(--background-opacity, 1)) |
-| green-5 | rgba(72, 187, 120, var(--background-opacity, 1)) |
-| green-6 | rgba(56, 161, 105, var(--background-opacity, 1)) |
-| green-7 | rgba(47, 133, 90, var(--background-opacity, 1)) |
-| green-8 | rgba(39, 103, 73, var(--background-opacity, 1)) |
-| green-9 | rgba(34, 84, 61, var(--background-opacity, 1)) |
-| teal | rgba(49, 151, 149, var(--background-opacity, 1)) |
-| teal-1 | rgba(230, 255, 250, var(--background-opacity, 1)) |
-| teal-2 | rgba(178, 245, 234, var(--background-opacity, 1)) |
-| teal-3 | rgba(129, 230, 217, var(--background-opacity, 1)) |
-| teal-4 | rgba(79, 209, 197, var(--background-opacity, 1)) |
-| teal-5 | rgba(56, 178, 172, var(--background-opacity, 1)) |
-| teal-6 | rgba(49, 151, 149, var(--background-opacity, 1)) |
-| teal-7 | rgba(44, 122, 123, var(--background-opacity, 1)) |
-| teal-8 | rgba(40, 94, 97, var(--background-opacity, 1)) |
-| teal-9 | rgba(35, 78, 82, var(--background-opacity, 1)) |
-| blue | rgba(49, 130, 206, var(--background-opacity, 1)) |
-| blue-1 | rgba(235, 248, 255, var(--background-opacity, 1)) |
-| blue-2 | rgba(190, 227, 248, var(--background-opacity, 1)) |
-| blue-3 | rgba(144, 205, 244, var(--background-opacity, 1)) |
-| blue-4 | rgba(99, 179, 237, var(--background-opacity, 1)) |
-| blue-5 | rgba(66, 153, 225, var(--background-opacity, 1)) |
-| blue-6 | rgba(49, 130, 206, var(--background-opacity, 1)) |
-| blue-7 | rgba(43, 108, 176, var(--background-opacity, 1)) |
-| blue-8 | rgba(44, 82, 130, var(--background-opacity, 1)) |
-| blue-9 | rgba(42, 67, 101, var(--background-opacity, 1)) |
-| indigo | rgba(90, 103, 216, var(--background-opacity, 1)) |
-| indigo-1 | rgba(235, 244, 255, var(--background-opacity, 1)) |
-| indigo-2 | rgba(195, 218, 254, var(--background-opacity, 1)) |
-| indigo-3 | rgba(163, 191, 250, var(--background-opacity, 1)) |
-| indigo-4 | rgba(127, 156, 245, var(--background-opacity, 1)) |
-| indigo-5 | rgba(102, 126, 234, var(--background-opacity, 1)) |
-| indigo-6 | rgba(90, 103, 216, var(--background-opacity, 1)) |
-| indigo-7 | rgba(76, 81, 191, var(--background-opacity, 1)) |
-| indigo-8 | rgba(67, 65, 144, var(--background-opacity, 1)) |
-| indigo-9 | rgba(60, 54, 107, var(--background-opacity, 1)) |
-| purple | rgba(128, 90, 213, var(--background-opacity, 1)) |
-| purple-1 | rgba(250, 245, 255, var(--background-opacity, 1)) |
-| purple-2 | rgba(233, 216, 253, var(--background-opacity, 1)) |
-| purple-3 | rgba(214, 188, 250, var(--background-opacity, 1)) |
-| purple-4 | rgba(183, 148, 244, var(--background-opacity, 1)) |
-| purple-5 | rgba(159, 122, 234, var(--background-opacity, 1)) |
-| purple-6 | rgba(128, 90, 213, var(--background-opacity, 1)) |
-| purple-7 | rgba(107, 70, 193, var(--background-opacity, 1)) |
-| purple-8 | rgba(85, 60, 154, var(--background-opacity, 1)) |
-| purple-9 | rgba(68, 51, 122, var(--background-opacity, 1)) |
-| pink | rgba(213, 63, 140, var(--background-opacity, 1)) |
-| pink-1 | rgba(255, 245, 247, var(--background-opacity, 1)) |
-| pink-2 | rgba(254, 215, 226, var(--background-opacity, 1)) |
-| pink-3 | rgba(251, 182, 206, var(--background-opacity, 1)) |
-| pink-4 | rgba(246, 135, 179, var(--background-opacity, 1)) |
-| pink-5 | rgba(237, 100, 166, var(--background-opacity, 1)) |
-| pink-6 | rgba(213, 63, 140, var(--background-opacity, 1)) |
-| pink-7 | rgba(184, 50, 128, var(--background-opacity, 1)) |
-| pink-8 | rgba(151, 38, 109, var(--background-opacity, 1)) |
-| pink-9 | rgba(112, 36, 89, var(--background-opacity, 1)) |
-
-### `borderColor`
-
-| Key | Value |
-| --- | ----- |
-| transparent | transparent |
-| black | rgba(0, 0, 0, var(--border-opacity, 1)) |
-| white | rgba(255, 255, 255, var(--border-opacity, 1)) |
-| gray | rgba(113, 128, 150, var(--border-opacity, 1)) |
-| gray-1 | rgba(247, 250, 252, var(--border-opacity, 1)) |
-| gray-2 | rgba(237, 242, 247, var(--border-opacity, 1)) |
-| gray-3 | rgba(226, 232, 240, var(--border-opacity, 1)) |
-| gray-4 | rgba(203, 213, 224, var(--border-opacity, 1)) |
-| gray-5 | rgba(160, 174, 192, var(--border-opacity, 1)) |
-| gray-6 | rgba(113, 128, 150, var(--border-opacity, 1)) |
-| gray-7 | rgba(74, 85, 104, var(--border-opacity, 1)) |
-| gray-8 | rgba(45, 55, 72, var(--border-opacity, 1)) |
-| gray-9 | rgba(26, 32, 44, var(--border-opacity, 1)) |
-| red | rgba(229, 62, 62, var(--border-opacity, 1)) |
-| red-1 | rgba(255, 245, 245, var(--border-opacity, 1)) |
-| red-2 | rgba(254, 215, 215, var(--border-opacity, 1)) |
-| red-3 | rgba(254, 178, 178, var(--border-opacity, 1)) |
-| red-4 | rgba(252, 129, 129, var(--border-opacity, 1)) |
-| red-5 | rgba(245, 101, 101, var(--border-opacity, 1)) |
-| red-6 | rgba(229, 62, 62, var(--border-opacity, 1)) |
-| red-7 | rgba(197, 48, 48, var(--border-opacity, 1)) |
-| red-8 | rgba(155, 44, 44, var(--border-opacity, 1)) |
-| red-9 | rgba(116, 42, 42, var(--border-opacity, 1)) |
-| orange | rgba(221, 107, 32, var(--border-opacity, 1)) |
-| orange-1 | rgba(255, 250, 240, var(--border-opacity, 1)) |
-| orange-2 | rgba(254, 235, 200, var(--border-opacity, 1)) |
-| orange-3 | rgba(251, 211, 141, var(--border-opacity, 1)) |
-| orange-4 | rgba(255, 175, 0, var(--border-opacity, 1)) |
-| orange-5 | rgba(237, 137, 54, var(--border-opacity, 1)) |
-| orange-6 | rgba(221, 107, 32, var(--border-opacity, 1)) |
-| orange-7 | rgba(192, 86, 33, var(--border-opacity, 1)) |
-| orange-8 | rgba(156, 66, 33, var(--border-opacity, 1)) |
-| orange-9 | rgba(123, 52, 30, var(--border-opacity, 1)) |
-| yellow | rgba(214, 158, 46, var(--border-opacity, 1)) |
-| yellow-1 | rgba(255, 255, 240, var(--border-opacity, 1)) |
-| yellow-2 | rgba(254, 252, 191, var(--border-opacity, 1)) |
-| yellow-3 | rgba(250, 240, 137, var(--border-opacity, 1)) |
-| yellow-4 | rgba(246, 224, 94, var(--border-opacity, 1)) |
-| yellow-5 | rgba(236, 201, 75, var(--border-opacity, 1)) |
-| yellow-6 | rgba(214, 158, 46, var(--border-opacity, 1)) |
-| yellow-7 | rgba(183, 121, 31, var(--border-opacity, 1)) |
-| yellow-8 | rgba(151, 90, 22, var(--border-opacity, 1)) |
-| yellow-9 | rgba(116, 66, 16, var(--border-opacity, 1)) |
-| green | rgba(56, 161, 105, var(--border-opacity, 1)) |
-| green-1 | rgba(240, 255, 244, var(--border-opacity, 1)) |
-| green-2 | rgba(198, 246, 213, var(--border-opacity, 1)) |
-| green-3 | rgba(154, 230, 180, var(--border-opacity, 1)) |
-| green-4 | rgba(104, 211, 145, var(--border-opacity, 1)) |
-| green-5 | rgba(72, 187, 120, var(--border-opacity, 1)) |
-| green-6 | rgba(56, 161, 105, var(--border-opacity, 1)) |
-| green-7 | rgba(47, 133, 90, var(--border-opacity, 1)) |
-| green-8 | rgba(39, 103, 73, var(--border-opacity, 1)) |
-| green-9 | rgba(34, 84, 61, var(--border-opacity, 1)) |
-| teal | rgba(49, 151, 149, var(--border-opacity, 1)) |
-| teal-1 | rgba(230, 255, 250, var(--border-opacity, 1)) |
-| teal-2 | rgba(178, 245, 234, var(--border-opacity, 1)) |
-| teal-3 | rgba(129, 230, 217, var(--border-opacity, 1)) |
-| teal-4 | rgba(79, 209, 197, var(--border-opacity, 1)) |
-| teal-5 | rgba(56, 178, 172, var(--border-opacity, 1)) |
-| teal-6 | rgba(49, 151, 149, var(--border-opacity, 1)) |
-| teal-7 | rgba(44, 122, 123, var(--border-opacity, 1)) |
-| teal-8 | rgba(40, 94, 97, var(--border-opacity, 1)) |
-| teal-9 | rgba(35, 78, 82, var(--border-opacity, 1)) |
-| blue | rgba(49, 130, 206, var(--border-opacity, 1)) |
-| blue-1 | rgba(235, 248, 255, var(--border-opacity, 1)) |
-| blue-2 | rgba(190, 227, 248, var(--border-opacity, 1)) |
-| blue-3 | rgba(144, 205, 244, var(--border-opacity, 1)) |
-| blue-4 | rgba(99, 179, 237, var(--border-opacity, 1)) |
-| blue-5 | rgba(66, 153, 225, var(--border-opacity, 1)) |
-| blue-6 | rgba(49, 130, 206, var(--border-opacity, 1)) |
-| blue-7 | rgba(43, 108, 176, var(--border-opacity, 1)) |
-| blue-8 | rgba(44, 82, 130, var(--border-opacity, 1)) |
-| blue-9 | rgba(42, 67, 101, var(--border-opacity, 1)) |
-| indigo | rgba(90, 103, 216, var(--border-opacity, 1)) |
-| indigo-1 | rgba(235, 244, 255, var(--border-opacity, 1)) |
-| indigo-2 | rgba(195, 218, 254, var(--border-opacity, 1)) |
-| indigo-3 | rgba(163, 191, 250, var(--border-opacity, 1)) |
-| indigo-4 | rgba(127, 156, 245, var(--border-opacity, 1)) |
-| indigo-5 | rgba(102, 126, 234, var(--border-opacity, 1)) |
-| indigo-6 | rgba(90, 103, 216, var(--border-opacity, 1)) |
-| indigo-7 | rgba(76, 81, 191, var(--border-opacity, 1)) |
-| indigo-8 | rgba(67, 65, 144, var(--border-opacity, 1)) |
-| indigo-9 | rgba(60, 54, 107, var(--border-opacity, 1)) |
-| purple | rgba(128, 90, 213, var(--border-opacity, 1)) |
-| purple-1 | rgba(250, 245, 255, var(--border-opacity, 1)) |
-| purple-2 | rgba(233, 216, 253, var(--border-opacity, 1)) |
-| purple-3 | rgba(214, 188, 250, var(--border-opacity, 1)) |
-| purple-4 | rgba(183, 148, 244, var(--border-opacity, 1)) |
-| purple-5 | rgba(159, 122, 234, var(--border-opacity, 1)) |
-| purple-6 | rgba(128, 90, 213, var(--border-opacity, 1)) |
-| purple-7 | rgba(107, 70, 193, var(--border-opacity, 1)) |
-| purple-8 | rgba(85, 60, 154, var(--border-opacity, 1)) |
-| purple-9 | rgba(68, 51, 122, var(--border-opacity, 1)) |
-| pink | rgba(213, 63, 140, var(--border-opacity, 1)) |
-| pink-1 | rgba(255, 245, 247, var(--border-opacity, 1)) |
-| pink-2 | rgba(254, 215, 226, var(--border-opacity, 1)) |
-| pink-3 | rgba(251, 182, 206, var(--border-opacity, 1)) |
-| pink-4 | rgba(246, 135, 179, var(--border-opacity, 1)) |
-| pink-5 | rgba(237, 100, 166, var(--border-opacity, 1)) |
-| pink-6 | rgba(213, 63, 140, var(--border-opacity, 1)) |
-| pink-7 | rgba(184, 50, 128, var(--border-opacity, 1)) |
-| pink-8 | rgba(151, 38, 109, var(--border-opacity, 1)) |
-| pink-9 | rgba(112, 36, 89, var(--border-opacity, 1)) |
-
 ### `borderRadius`
 
 | Key | Value |
@@ -298,33 +82,28 @@ module is using Tailwind default configuration for it.
 | 18 | 24rem |
 | 19 | 26rem |
 | 20 | 28rem |
-| auto | auto |
-| 001 | 1px |
-| 002 | 2px |
-| 003 | 4px |
-| 004 | 8px |
+| 001 | 0.0625rem |
+| 002 | 0.125rem |
 | 01 | 0.25rem |
 | 02 | 0.5rem |
 | 03 | 0.75rem |
 | 04 | 0.875rem |
-| 10p | 10% |
-| 20p | 20% |
-| 25p | 25% |
-| 30p | 30% |
-| 33p | calc(100% / 3) |
-| 40p | 40% |
-| 50p | 50% |
-| 60p | 60% |
-| 66p | calc(100% / 1.5) |
-| 70p | 70% |
-| 75p | 75% |
-| 80p | 80% |
-| 90p | 90% |
-| 100p | 100% |
-| 50vw | 50vw |
-| 50vh | 50vh |
-| 100vw | 100vw |
-| 100vh | 100vh |
+
+### `boxShadow`
+
+| Key | Value |
+| --- | ----- |
+| 0 | none |
+| 1 | 0 1px 3px 0 rgba(var(--box-shadow-rgb, 0, 0, 0), 0.1), 0 1px 2px 0 rgba(var(--box-shadow-rgb, 0, 0, 0), 0.06) |
+| 2 | 0 4px 6px -1px rgba(var(--box-shadow-rgb, 0, 0, 0), 0.1), 0 2px 4px -1px rgba(var(--box-shadow-rgb, 0, 0, 0), 0.06) |
+| 3 | 0 10px 15px -3px rgba(var(--box-shadow-rgb, 0, 0, 0), 0.1), 0 4px 6px -2px rgba(var(--box-shadow-rgb, 0, 0, 0), 0.05) |
+| 4 | 0 20px 25px -5px rgba(var(--box-shadow-rgb, 0, 0, 0), 0.1), 0 10px 10px -5px rgba(var(--box-shadow-rgb, 0, 0, 0), 0.04) |
+| 5 | 0 25px 50px -12px rgba(var(--box-shadow-rgb, 0, 0, 0), 0.25) |
+| 001 | 0 0 0 1px rgba(var(--box-shadow-rgb, 0, 0, 0), 0.05) |
+| 01 | 0 1px 2px 0 rgba(var(--box-shadow-rgb, 0, 0, 0), 0.05) |
+| inner | inset 0 2px 4px 0 rgba(var(--box-shadow-rgb, 0, 0, 0), 0.06) |
+| outline | 0 0 0 3px rgba(66, 153, 225, 0.5) |
+| default | 0 1px 3px 0 rgba(var(--box-shadow-rgb, 0, 0, 0), 0.1), 0 1px 2px 0 rgba(var(--box-shadow-rgb, 0, 0, 0), 0.06) |
 
 ### `colors`
 
@@ -449,10 +228,10 @@ module is using Tailwind default configuration for it.
 | 8 | 4rem |
 | 9 | 8rem |
 | 10 | 12rem |
-| 06 | 0.25rem |
-| 07 | 0.5rem |
-| 08 | 0.75rem |
-| 09 | 0.875rem |
+| 00001 | 0.25rem |
+| 0001 | 0.5rem |
+| 001 | 0.75rem |
+| 01 | 0.875rem |
 
 ### `height`
 
@@ -480,10 +259,8 @@ module is using Tailwind default configuration for it.
 | 19 | 26rem |
 | 20 | 28rem |
 | auto | auto |
-| 001 | 1px |
-| 002 | 2px |
-| 003 | 4px |
-| 004 | 8px |
+| 001 | 0.0625rem |
+| 002 | 0.125rem |
 | 01 | 0.25rem |
 | 02 | 0.5rem |
 | 03 | 0.75rem |
@@ -533,10 +310,8 @@ module is using Tailwind default configuration for it.
 | 19 | 26rem |
 | 20 | 28rem |
 | auto | auto |
-| 001 | 1px |
-| 002 | 2px |
-| 003 | 4px |
-| 004 | 8px |
+| 001 | 0.0625rem |
+| 002 | 0.125rem |
 | 01 | 0.25rem |
 | 02 | 0.5rem |
 | 03 | 0.75rem |
@@ -581,10 +356,8 @@ module is using Tailwind default configuration for it.
 | -19 | -26rem |
 | -20 | -28rem |
 | -auto | -auto |
-| -001 | -1px |
-| -002 | -2px |
-| -003 | -4px |
-| -004 | -8px |
+| -001 | -0.0625rem |
+| -002 | -0.125rem |
 | -01 | -0.25rem |
 | -02 | -0.5rem |
 | -03 | -0.75rem |
@@ -649,10 +422,8 @@ module is using Tailwind default configuration for it.
 | 19 | 26rem |
 | 20 | 28rem |
 | auto | auto |
-| 001 | 1px |
-| 002 | 2px |
-| 003 | 4px |
-| 004 | 8px |
+| 001 | 0.0625rem |
+| 002 | 0.125rem |
 | 01 | 0.25rem |
 | 02 | 0.5rem |
 | 03 | 0.75rem |
@@ -702,10 +473,8 @@ module is using Tailwind default configuration for it.
 | 19 | 26rem |
 | 20 | 28rem |
 | auto | auto |
-| 001 | 1px |
-| 002 | 2px |
-| 003 | 4px |
-| 004 | 8px |
+| 001 | 0.0625rem |
+| 002 | 0.125rem |
 | 01 | 0.25rem |
 | 02 | 0.5rem |
 | 03 | 0.75rem |
@@ -755,10 +524,8 @@ module is using Tailwind default configuration for it.
 | 19 | 26rem |
 | 20 | 28rem |
 | auto | auto |
-| 001 | 1px |
-| 002 | 2px |
-| 003 | 4px |
-| 004 | 8px |
+| 001 | 0.0625rem |
+| 002 | 0.125rem |
 | 01 | 0.25rem |
 | 02 | 0.5rem |
 | 03 | 0.75rem |
@@ -808,10 +575,8 @@ module is using Tailwind default configuration for it.
 | 19 | 26rem |
 | 20 | 28rem |
 | auto | auto |
-| 001 | 1px |
-| 002 | 2px |
-| 003 | 4px |
-| 004 | 8px |
+| 001 | 0.0625rem |
+| 002 | 0.125rem |
 | 01 | 0.25rem |
 | 02 | 0.5rem |
 | 03 | 0.75rem |
@@ -840,11 +605,6 @@ module is using Tailwind default configuration for it.
 | Key | Value |
 | --- | ----- |
 | 0 | 0 |
-| 1 | .9 |
-| 2 | .75 |
-| 3 | .5 |
-| 4 | .25 |
-| 5 | .1 |
 | 10p | .1 |
 | 25p | .25 |
 | 50p | .5 |
@@ -878,10 +638,8 @@ module is using Tailwind default configuration for it.
 | 19 | 26rem |
 | 20 | 28rem |
 | auto | auto |
-| 001 | 1px |
-| 002 | 2px |
-| 003 | 4px |
-| 004 | 8px |
+| 001 | 0.0625rem |
+| 002 | 0.125rem |
 | 01 | 0.25rem |
 | 02 | 0.5rem |
 | 03 | 0.75rem |
@@ -904,114 +662,6 @@ module is using Tailwind default configuration for it.
 | 50vh | 50vh |
 | 100vw | 100vw |
 | 100vh | 100vh |
-
-### `textColor`
-
-| Key | Value |
-| --- | ----- |
-| transparent | transparent |
-| black | rgba(0, 0, 0, var(--text-opacity, 1)) |
-| white | rgba(255, 255, 255, var(--text-opacity, 1)) |
-| gray | rgba(113, 128, 150, var(--text-opacity, 1)) |
-| gray-1 | rgba(247, 250, 252, var(--text-opacity, 1)) |
-| gray-2 | rgba(237, 242, 247, var(--text-opacity, 1)) |
-| gray-3 | rgba(226, 232, 240, var(--text-opacity, 1)) |
-| gray-4 | rgba(203, 213, 224, var(--text-opacity, 1)) |
-| gray-5 | rgba(160, 174, 192, var(--text-opacity, 1)) |
-| gray-6 | rgba(113, 128, 150, var(--text-opacity, 1)) |
-| gray-7 | rgba(74, 85, 104, var(--text-opacity, 1)) |
-| gray-8 | rgba(45, 55, 72, var(--text-opacity, 1)) |
-| gray-9 | rgba(26, 32, 44, var(--text-opacity, 1)) |
-| red | rgba(229, 62, 62, var(--text-opacity, 1)) |
-| red-1 | rgba(255, 245, 245, var(--text-opacity, 1)) |
-| red-2 | rgba(254, 215, 215, var(--text-opacity, 1)) |
-| red-3 | rgba(254, 178, 178, var(--text-opacity, 1)) |
-| red-4 | rgba(252, 129, 129, var(--text-opacity, 1)) |
-| red-5 | rgba(245, 101, 101, var(--text-opacity, 1)) |
-| red-6 | rgba(229, 62, 62, var(--text-opacity, 1)) |
-| red-7 | rgba(197, 48, 48, var(--text-opacity, 1)) |
-| red-8 | rgba(155, 44, 44, var(--text-opacity, 1)) |
-| red-9 | rgba(116, 42, 42, var(--text-opacity, 1)) |
-| orange | rgba(221, 107, 32, var(--text-opacity, 1)) |
-| orange-1 | rgba(255, 250, 240, var(--text-opacity, 1)) |
-| orange-2 | rgba(254, 235, 200, var(--text-opacity, 1)) |
-| orange-3 | rgba(251, 211, 141, var(--text-opacity, 1)) |
-| orange-4 | rgba(255, 175, 0, var(--text-opacity, 1)) |
-| orange-5 | rgba(237, 137, 54, var(--text-opacity, 1)) |
-| orange-6 | rgba(221, 107, 32, var(--text-opacity, 1)) |
-| orange-7 | rgba(192, 86, 33, var(--text-opacity, 1)) |
-| orange-8 | rgba(156, 66, 33, var(--text-opacity, 1)) |
-| orange-9 | rgba(123, 52, 30, var(--text-opacity, 1)) |
-| yellow | rgba(214, 158, 46, var(--text-opacity, 1)) |
-| yellow-1 | rgba(255, 255, 240, var(--text-opacity, 1)) |
-| yellow-2 | rgba(254, 252, 191, var(--text-opacity, 1)) |
-| yellow-3 | rgba(250, 240, 137, var(--text-opacity, 1)) |
-| yellow-4 | rgba(246, 224, 94, var(--text-opacity, 1)) |
-| yellow-5 | rgba(236, 201, 75, var(--text-opacity, 1)) |
-| yellow-6 | rgba(214, 158, 46, var(--text-opacity, 1)) |
-| yellow-7 | rgba(183, 121, 31, var(--text-opacity, 1)) |
-| yellow-8 | rgba(151, 90, 22, var(--text-opacity, 1)) |
-| yellow-9 | rgba(116, 66, 16, var(--text-opacity, 1)) |
-| green | rgba(56, 161, 105, var(--text-opacity, 1)) |
-| green-1 | rgba(240, 255, 244, var(--text-opacity, 1)) |
-| green-2 | rgba(198, 246, 213, var(--text-opacity, 1)) |
-| green-3 | rgba(154, 230, 180, var(--text-opacity, 1)) |
-| green-4 | rgba(104, 211, 145, var(--text-opacity, 1)) |
-| green-5 | rgba(72, 187, 120, var(--text-opacity, 1)) |
-| green-6 | rgba(56, 161, 105, var(--text-opacity, 1)) |
-| green-7 | rgba(47, 133, 90, var(--text-opacity, 1)) |
-| green-8 | rgba(39, 103, 73, var(--text-opacity, 1)) |
-| green-9 | rgba(34, 84, 61, var(--text-opacity, 1)) |
-| teal | rgba(49, 151, 149, var(--text-opacity, 1)) |
-| teal-1 | rgba(230, 255, 250, var(--text-opacity, 1)) |
-| teal-2 | rgba(178, 245, 234, var(--text-opacity, 1)) |
-| teal-3 | rgba(129, 230, 217, var(--text-opacity, 1)) |
-| teal-4 | rgba(79, 209, 197, var(--text-opacity, 1)) |
-| teal-5 | rgba(56, 178, 172, var(--text-opacity, 1)) |
-| teal-6 | rgba(49, 151, 149, var(--text-opacity, 1)) |
-| teal-7 | rgba(44, 122, 123, var(--text-opacity, 1)) |
-| teal-8 | rgba(40, 94, 97, var(--text-opacity, 1)) |
-| teal-9 | rgba(35, 78, 82, var(--text-opacity, 1)) |
-| blue | rgba(49, 130, 206, var(--text-opacity, 1)) |
-| blue-1 | rgba(235, 248, 255, var(--text-opacity, 1)) |
-| blue-2 | rgba(190, 227, 248, var(--text-opacity, 1)) |
-| blue-3 | rgba(144, 205, 244, var(--text-opacity, 1)) |
-| blue-4 | rgba(99, 179, 237, var(--text-opacity, 1)) |
-| blue-5 | rgba(66, 153, 225, var(--text-opacity, 1)) |
-| blue-6 | rgba(49, 130, 206, var(--text-opacity, 1)) |
-| blue-7 | rgba(43, 108, 176, var(--text-opacity, 1)) |
-| blue-8 | rgba(44, 82, 130, var(--text-opacity, 1)) |
-| blue-9 | rgba(42, 67, 101, var(--text-opacity, 1)) |
-| indigo | rgba(90, 103, 216, var(--text-opacity, 1)) |
-| indigo-1 | rgba(235, 244, 255, var(--text-opacity, 1)) |
-| indigo-2 | rgba(195, 218, 254, var(--text-opacity, 1)) |
-| indigo-3 | rgba(163, 191, 250, var(--text-opacity, 1)) |
-| indigo-4 | rgba(127, 156, 245, var(--text-opacity, 1)) |
-| indigo-5 | rgba(102, 126, 234, var(--text-opacity, 1)) |
-| indigo-6 | rgba(90, 103, 216, var(--text-opacity, 1)) |
-| indigo-7 | rgba(76, 81, 191, var(--text-opacity, 1)) |
-| indigo-8 | rgba(67, 65, 144, var(--text-opacity, 1)) |
-| indigo-9 | rgba(60, 54, 107, var(--text-opacity, 1)) |
-| purple | rgba(128, 90, 213, var(--text-opacity, 1)) |
-| purple-1 | rgba(250, 245, 255, var(--text-opacity, 1)) |
-| purple-2 | rgba(233, 216, 253, var(--text-opacity, 1)) |
-| purple-3 | rgba(214, 188, 250, var(--text-opacity, 1)) |
-| purple-4 | rgba(183, 148, 244, var(--text-opacity, 1)) |
-| purple-5 | rgba(159, 122, 234, var(--text-opacity, 1)) |
-| purple-6 | rgba(128, 90, 213, var(--text-opacity, 1)) |
-| purple-7 | rgba(107, 70, 193, var(--text-opacity, 1)) |
-| purple-8 | rgba(85, 60, 154, var(--text-opacity, 1)) |
-| purple-9 | rgba(68, 51, 122, var(--text-opacity, 1)) |
-| pink | rgba(213, 63, 140, var(--text-opacity, 1)) |
-| pink-1 | rgba(255, 245, 247, var(--text-opacity, 1)) |
-| pink-2 | rgba(254, 215, 226, var(--text-opacity, 1)) |
-| pink-3 | rgba(251, 182, 206, var(--text-opacity, 1)) |
-| pink-4 | rgba(246, 135, 179, var(--text-opacity, 1)) |
-| pink-5 | rgba(237, 100, 166, var(--text-opacity, 1)) |
-| pink-6 | rgba(213, 63, 140, var(--text-opacity, 1)) |
-| pink-7 | rgba(184, 50, 128, var(--text-opacity, 1)) |
-| pink-8 | rgba(151, 38, 109, var(--text-opacity, 1)) |
-| pink-9 | rgba(112, 36, 89, var(--text-opacity, 1)) |
 
 ### `width`
 
@@ -1039,10 +689,8 @@ module is using Tailwind default configuration for it.
 | 19 | 26rem |
 | 20 | 28rem |
 | auto | auto |
-| 001 | 1px |
-| 002 | 2px |
-| 003 | 4px |
-| 004 | 8px |
+| 001 | 0.0625rem |
+| 002 | 0.125rem |
 | 01 | 0.25rem |
 | 02 | 0.5rem |
 | 03 | 0.75rem |
@@ -1089,11 +737,12 @@ Mostly, it enables the `hover_` modifier.
 
 | Type | Variants |
 | --- | ----- |
-| cursor | responsive, hover |
+| display | responsive, hover, focus, conditionals |
 | height | responsive, hover |
 | position | responsive, hover |
 | width | responsive, hover |
 | zIndex | responsive, hover |
+| backgroundColor | responsive, hover, focus, conditionals |
 
 ## Custom classes
 
@@ -1300,3 +949,22 @@ Example markup:
 </div>
 <label id="whatever">Click me to toggle the display of the content</label>
 ```
+
+## Contribution
+
+The `./docs` folder contains a test website that includes all the new classes.
+You can run it with `yarn run docs:serve`.
+
+Once the documentation website is served locally, you can run visual regression
+tests with the `yarn run test:visual` command. It will take screenshots of each
+page and compare them to reference screenshot taken earlier.
+
+If there is any difference, a visual diff will be presented. If the changes are
+expected (ie. you added a new feature or fixed a bug), run `yarn run
+test:visual:approve` to update the reference screenshots.
+
+Note that only the element with the `.screenshot` class will be compared. You
+can add the `.screenshot-click` class on elements if you want to click on them
+before the screenshot. Similarly you can add the `.screenshot-hover` element on
+one element if you want to hover it before taking a screenshot. Note that only
+one element can be hovered, but several elements can be clicked.

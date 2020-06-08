@@ -259,3 +259,22 @@ Example markup:
 </div>
 <label id="whatever">Click me to toggle the display of the content</label>
 ```
+
+## Contribution
+
+The `./docs` folder contains a test website that includes all the new classes.
+You can run it with `yarn run docs:serve`.
+
+Once the documentation website is served locally, you can run visual regression
+tests with the `yarn run test:visual` command. It will take screenshots of each
+page and compare them to reference screenshot taken earlier.
+
+If there is any difference, a visual diff will be presented. If the changes are
+expected (ie. you added a new feature or fixed a bug), run `yarn run
+test:visual:approve` to update the reference screenshots.
+
+Note that only the element with the `.screenshot` class will be compared. You
+can add the `.screenshot-click` class on elements if you want to click on them
+before the screenshot. Similarly you can add the `.screenshot-hover` element on
+one element if you want to hover it before taking a screenshot. Note that only
+one element can be hovered, but several elements can be clicked.

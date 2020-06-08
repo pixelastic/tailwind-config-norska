@@ -3,7 +3,7 @@ const firost = require('firost');
 const _ = require('golgoth/lib/lodash');
 
 (async function() {
-  const config = await firost.require(path.resolve('./lib/index.js'));
+  const config = await firost.require(path.resolve('./lib/main.js'));
 
   const themeLines = [];
   _.each(config.theme, (themeValues, themeName) => {

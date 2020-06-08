@@ -5,9 +5,6 @@ const maxScenarios = pagesToTest.length;
 
 const progress = spinner(maxScenarios);
 module.exports = async (page, scenario, viewport) => {
-  // We don't need cookies
-  // await require('./loadCookies')(page, scenario);
-
   // We display a better progress bar
   const name = scenario.label;
   const dimensions = `[${viewport.width}x${viewport.height}]`;
@@ -18,7 +15,4 @@ module.exports = async (page, scenario, viewport) => {
 
   // Disabling the logs from the windows
   console.log = () => {};
-
-  // Clicking on elements marked with .click
-
 };
