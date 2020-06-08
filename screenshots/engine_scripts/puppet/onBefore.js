@@ -12,11 +12,13 @@ module.exports = async (page, scenario, viewport) => {
   const name = scenario.label;
   const dimensions = `[${viewport.width}x${viewport.height}]`;
   progress.tick(`${dimensions} ${name}`);
-
   if (scenario.sIndex + 1 === maxScenarios) {
     progress.success('All pages tested');
   }
 
   // Disabling the logs from the windows
   console.log = () => {};
+
+  // Clicking on elements marked with .click
+
 };
