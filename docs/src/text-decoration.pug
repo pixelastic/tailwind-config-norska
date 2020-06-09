@@ -3,12 +3,18 @@ extends /_includes/_layouts/core
 block config
   - pageTitle = "Text Decoration"
   - pageClasses = data.tailwind.getClasses('textDecoration', 'text');
+  - underlineClasses = data.tailwind.getClasses('colors', 'underline');
 
 block content
   .flcw.screenshot.border-t-001.border-gray.mt-1
     each className in pageClasses
       - const simplerClassName = _.replace(className, 'text-', '');
       .fln.flrnw.flrcv.border-b-001.border-gray.py-01
-        code.w-12.fln.code=`.${simplerClassName}`
+        code.w-16.fln.code=`.${simplerClassName}`
         .fla(class=simplerClassName)=testString
+
+    each className in underlineClasses
+      .fln.flrnw.flrcv.border-b-001.border-gray.py-01
+        code.w-16.fln.code=`.underline.${className}`
+        .fla.underline(class=className)=testString
 
