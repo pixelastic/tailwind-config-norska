@@ -18,8 +18,8 @@
   "files": [
     "lib/*.js",
     "lib/helpers/*.js",
-    "lib/plugins/*.js",
-    "lib/themes/*.js"
+    "lib/plugins/**/*.js",
+    "lib/themes/**/*.js"
   ],
   "license": "MIT",
   "main": "lib/main.js",

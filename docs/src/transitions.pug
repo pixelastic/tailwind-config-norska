@@ -20,8 +20,6 @@ block config
       '.transition-transform.transform.hover_-skew-x-12',
       '.transition-all.transform.hover_scale-90p.w-80p.hover_w-100p.black.hover_white.bg-white.hover_bg-black.hover_rotate-45',
     ]
-//- default delay, speed and function
-//- can be overriden
 
 block content
   .screenshot.bg-gray-3.flrw.p-1
@@ -29,8 +27,3 @@ block content
       - const classesAsArray = classNames.split('.')
       .fln.w-50p.flrnw.flc.p-1
         .bg-white.border-gray.shadow.rounded.p-1.cursor-default.flrnw.flc(class=classesAsArray)=classNames
-
-    //-     .fln.flrnw.py-1.border-b-001.border-gray
-    //-       code.fln.w-20.fln.code=`.${displayClassName}`
-    //-       .fla.flrnw.flrcv
-    //-         .relative.h-9.w-9.border-001.border-gray(class=classNames)
