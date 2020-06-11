@@ -36,6 +36,7 @@
     "lint:fix": "./scripts/lint-fix",
     "release": "./scripts/release",
     "test": "./scripts/test",
+    "test:build": "./scripts/test-build",
     "test:watch": "./scripts/test-watch",
     "test:visual": "./scripts/test-visual",
     "test:visual:approve": "./scripts/test-visual-approve"

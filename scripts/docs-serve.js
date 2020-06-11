@@ -4,7 +4,7 @@ const path = require('path');
 const norska = require('norska');
 
 (async function() {
-  const libraryFiles = ['lib/main.js', 'lib/*/*.js'];
+  const libraryFiles = ['lib/main.js', 'lib/**/*.js'];
   const tailwindConfig = path.resolve('docs/tailwind.config.js');
   const cssFile = path.resolve('docs/dist/style.css');
   const tailwindData = path.resolve('docs/src/_data/tailwind.js');

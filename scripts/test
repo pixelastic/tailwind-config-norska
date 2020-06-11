@@ -2,3 +2,4 @@
 set -e
 
 aberlaas test "$@"
+yarn run test:build
