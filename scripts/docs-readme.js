@@ -6,12 +6,21 @@ const _ = require('golgoth/lib/lodash');
   const config = await firost.require(path.resolve('./lib/main.js'));
 
   const themeLines = [];
-  _.each(config.theme, (themeValues, themeName) => {
+  const themeKeys = _.chain(config.theme)
+    .keys()
+    .sort()
+    .value();
+  _.each(themeKeys, themeName => {
+    const themeValues = config.theme[themeName];
+    if (_.isFunction(themeValues) || _.isEmpty(themeValues)) {
+      return;
+    }
     themeLines.push(`### \`${themeName}\``);
     themeLines.push('');
     themeLines.push('| Key | Value |');
     themeLines.push('| --- | ----- |');
-    _.each(themeValues, (value, key) => {
+    _.each(themeValues, (rawValue, key) => {
+      const value = _.isObject(rawValue) ? JSON.stringify(rawValue) : rawValue;
       themeLines.push(`| ${key} | ${value} |`);
     });
     themeLines.push('');

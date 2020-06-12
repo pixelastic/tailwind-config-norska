@@ -29,9 +29,12 @@ the same scale would give more flexibility in how I could place things.
 
 ### Simpler classes
 
-The `line-height` classes are available through `.lh-XXX` in addition to the
-default `.leading-XXX`. The `.bold` and `.strike` classes are also available,
-and `.pointer` is equivalent to `.cursor-pointer`.
+Some classes have been simplified. The `line-height` classes are available
+through `.lh-XXX` instead of `.leading-XXX`. The `.bold`, `.no-bold`, `.strike`
+and `.pointer` have been added.
+
+Text color and font family can be applied without prefixes: `.red.arial` will
+work.
 
 ### PurgeCSS
 
@@ -42,15 +45,14 @@ classes.
 ## Theming
 
 The default values of many parts have been updated. The following tables expose
-all the updates values. If a specific table is not referenced, it means that the
-module is using Tailwind default configuration for it.
+all the theme values. In includes both Tailwind default value, custom values,
+and new theming option added by custom plugins.
 
 {{themes}}
 
 ## Variants
 
 The following variants are updated compared to the default Tailwind config.
-Mostly, it enables the `hover_` modifier.
 
 {{variants}}
 
@@ -129,11 +131,6 @@ should be applied on a parent or children.
 | `.fla`   | Flex auto                       | Element takes all available space                        | Children |
 | `.fln`   | Flex none                       | Element only takes as much place as needed               | Children |
 
-### Fonts
-
-Short aliases for the most common font stacks are available: `.arial`,
-`.verdana`, `.helvetica`.
-
 ### Grayscale
 
 The `.grayscale` class force and element to be displayed only in shades of black
@@ -144,26 +141,11 @@ A `.grayscale-0` utility is also provided in case you need to overwrite it.
 It internally uses a `filter` so might no work if other classes also define
 a `filter` on it.
 
-### Opacity
-
-Instead of generating variants of each background color classes with a specific
-opacity added, a new `.bg-opacity-X` set of classes is added instead. So, you
-would write `.bg-red.bg-opacity-50p` to have a 50% transparent red background.
-
-This works because each background color is expressed as an `rgba` value and the
-alpha part is actually a CSS variable (default to `1`) that gets overwritten in
-the `.bg-opacity-X` classes.
-
-I chose to do it that way because it drastically cut on the number of classes to
-generate, and had a direct impact on the time required to compile the final CSS.
-
-Same logic is also applied to text and border colors.
-
 ### Text Shadows
 
 Shadows can be added to text using the `.text-shadow` class. Shadow color and
 opacity can be modified with any color and opacity defined (for example,
-`.text-shadow-blue .text-shadow-50p` will set the shadow to blue with an opacity
+`.text-shadow-blue.text-shadow-opacity-50p` will set the shadow to blue with an opacity
 of 50%).
 
 ### Box Shadows
@@ -173,91 +155,37 @@ a size, ranging from 1 to 5. Sizes `.shadow-01` and `.shadow-001` are also
 availale for very subtle shadows and `.shadow-0` to remove all shadow
 altogether.
 
-Shadow color can be updated using `.shadow-Y` classes, where `Y` is any color
-defined earlier.
+Shadow color can be updated using `.shadow-{color}` classes, where `{color}` is
+any color defined earlier.
 
 ### Transitions
 
-`width`, `height` and `opacity` can be animated through simple transitions.
-
-Start by adding a `.transition` on the element.
-
-`.transition-height`, `.transition-width` and `.transition-opacity` allow you to
-define which property to animate (only one can be animated that way).
-
-Adding `.transition-linear` will define a linear transition of the specified
-value. Check the `timingFunctions` entry on the table at the top of this
-document to see the other available functions.
-
-Both delay and duration of the transition can be expressed through
-`.transition-1` (for duration) and `.transition-delay-1` (for delay). Check the
-`timingScale` entry in the tables at the top of the document for more details on
-the available values.
+Elements with a transition defined also have a default duration, delay and
+easing function defined. Those can still be overwritten with the relevant
+Tailwind classes.
 
 ### Animations
 
-For custom animations more complex than simple transitions, various parameters
-can be updated through the `.animation-XXX` classes.
+Custom animations can be defined in the `animationName` theme. They are then
+available through the `.animation-{name}` classe. Delay, duration, easing,
+looping and state (running/paused) can be configured with classes.
 
-Start by adding a `.animation` on the element. You're also expected to change
-the `--animation-name` custom property to match the name of your animation.
+### Conditionals
 
-Similar to transitions above, you can change the timing function, duration and
-delay using for example `.animation-ease-in`, `animation-2`,
-`.animation-delay-1`.
+The `.if` class and the `.then_` modifier can be used to toggle property based
+on a page state. The `.if` should be applied to a checkbox or radio button, and
+whenever it is checked, the `.then_` class will be applied to another element.
 
-`.animate-loop` and `.animate-once` allow you to change the number of time the
-animation should run. `.animate-forward` and `.animate-backward` allow you to
-change the direction of the animation.
-
-`.animate-paused` and `.animate-running` are also available with the `.hover_`
-prefix, allowing you to stop an animation when hovering it.
-
-### Scaling
-
-In addition to the classical dimension helpers, a set of `.scale-XXX` classes
-are also added to scaling up or down some elements. `.scale-50p` will display
-and element at half its size while `.scale-200p` will double its dimensions.
-
-The scale goes from `10p` to `200p` with increments of 10.
-
-### Rotating
-
-You can rotate an element by any angle form 0° to 360° by increments of 5°.
-
-So `.rotate-45` will rotate the element by 45°.
-
-### Translating
-
-You can move elements along the X and Y axis using the `.translate-x-*` and
-`.translate-y-*` classes. They both use the spacing scale defined earlier.
-
-You can also use `.translate-*` to move them along both axes.
-
-
-### Switches
-
-The `.switch-X` classes allow using the `label` and `checkbox` trick to
-show/hide elements on the page with Tailwind. This works by changing the display
-property of an element based on the value (checked or not) of a checkbox placed
-right before this element. The checkbox itself have a unique `id`, that is
-referenced in the `for` attribute of a `label` you can place wherever you want
-on the page. Combining all those techniques, you can effectively have a `label`
-wherever you want on the page that will contextually change a property on
-another element when clicked.
-
-By default, the `.switch-X` can only change the `display` property. Three
-variants (`.switch-1`, `.switch-2` and `.switch-3`) are provided in case you
-need more than one switch.
+Combined with the default input/label relationship through `id` and `for`
+attributes, it is possible to use a label element to toggle a state using an
+invisible checkbox.
 
 Example markup:
 
-```html
-<input type="checkbox" class="switch-1" id="whatever" />
-<div class="hidden switch-1_block">
-  Hello!
-</div>
-<label id="whatever">Click me to toggle the display of the content</label>
+```pug
+input.if#whatever(type="checkbox")
+.hidden.then_block Hello!
+label(for="whatever") Click me to toggle the content display
 ```
 
 ## Contribution
