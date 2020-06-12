@@ -3,6 +3,5 @@ set -e
 
 
 NODE_ENV=production norska build \
-  --from=./docs/src \
-  --to=./docs/dist \
+  --root=./docs \
   "$@"
