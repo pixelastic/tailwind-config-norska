@@ -1,4 +1,8 @@
 #!/usr/bin/env sh
 set -e
 
-NODE_ENV=production norska build --from=./docs/src --to=./docs/dist "$@"
+
+NODE_ENV=production norska build \
+  --from=./docs/src \
+  --to=./docs/dist \
+  "$@"

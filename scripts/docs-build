@@ -1,4 +1,7 @@
 #!/usr/bin/env sh
 set -e
 
-norska build --from=./docs/src --to=./docs/dist "$@"
+norska build \
+  --from=./docs/src \
+  --to=./docs/dist \
+  "$@"
