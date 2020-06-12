@@ -10,8 +10,9 @@ I love Tailwind, but the default config wasn't enough for my needs, so I decided
 to tweak it until I was comfortable with it. This config suits my way of working
 really well, but it might not suits yours.
 
-In any case, this page will document the config so you can have a look at it,
-maybe borrow some ideas, and will serve a great reference for myself.
+You can check [https://projects.pixelastic.com/tailwind-config-norska/]() to see
+all classes in action. This acts as both a documentation and a test suite for
+visual regression testing.
 
 ## Generic changes
 
