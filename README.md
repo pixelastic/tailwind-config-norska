@@ -1,4 +1,4 @@
-# `tailwind-config-norska`
+# tailwind-config-norska
 
 This is the custom Tailwind config used by norska (my personal static website
 generator). I chose to expose the full config as its own npm module so I could
@@ -893,6 +893,8 @@ and new theming option added by custom plugins.
 | 0001 | 0.5rem |
 | 001 | 0.75rem |
 | 01 | 0.875rem |
+| smaller | 0.75em |
+| larger | 1.25em |
 
 ### `fontWeight`
 

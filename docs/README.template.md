@@ -1,4 +1,4 @@
-# `tailwind-config-norska`
+# tailwind-config-norska
 
 This is the custom Tailwind config used by norska (my personal static website
 generator). I chose to expose the full config as its own npm module so I could

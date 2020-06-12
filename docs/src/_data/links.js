@@ -70,6 +70,7 @@ module.exports = [
       { url: 'text-color', name: 'Text color' },
       { url: 'text-decoration', name: 'Text decoration' },
       { url: 'text-opacity', name: 'Text opacity' },
+      { url: 'text-shadow', name: 'Text shadow' },
     ],
   },
 ];

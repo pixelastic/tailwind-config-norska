@@ -1,0 +1,64 @@
+.markdown {
+  @apply text-3 gray-9 lh-normal;
+  & > * + *,
+  & li + li,
+  & li > p + p {
+    @apply mt-3;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply lh-tight bold black mb-2 mt-4;
+  }
+  h1 {
+    @apply text-6 mt-0;
+  }
+  h2 {
+    @apply text-5;
+  }
+  h3 {
+    @apply text-4;
+  }
+  & strong {
+    @apply bold;
+  }
+  & a {
+    @apply blue transition-colors underline-blue-6;
+  }
+  & a:hover {
+    @apply underline blue-6;
+  }
+  & code {
+    @apply mono bg-gray-3 px-02 py-01 red-7;
+  }
+  & table {
+    @apply text-3 border-gray-6;
+  }
+  & thead th {
+    @apply bg-gray-3;
+  }
+  & th {
+    @apply border-001 py-02 px-1;
+  }
+  & td {
+    @apply border-001 py-02 px-1;
+  }
+  /* & strong a { */
+  /*   @apply font-bold; */
+  /* } */
+  /* & h3 { */
+  /*   @apply leading-tight text-lg font-bold text-black mt-8 -mb-2; */
+  /* } */
+  /* & pre code { */
+  /*   @apply block bg-black p-4 rounded; */
+  /* } */
+  /* & blockquote { */
+  /*   @apply border-l-4 border-grey-light pl-4 italic; */
+  /* } */
+  /* & ul, & ol { */
+  /*   @apply pl-5; */
+  /*   @screen sm { */
+  /*     @apply pl-10; */
+  /*   } */
+  /* } */
+}
