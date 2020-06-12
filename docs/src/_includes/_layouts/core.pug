@@ -25,64 +25,17 @@ html(lang='en')
     meta(property='og:description', content=pageDescription)
     meta(property='og:image', content!=pageImage)
     script!=tweaks.ensureUrlTrailingSlashSource
-    link(rel="shortcut icon", href=`./favicon.png`)
+    link(rel="shortcut icon", href=`${url.pathToRoot}favicon.png`)
     link(type="text/css", rel="stylesheet", href=revv(`${url.pathToRoot}style.css`))
     body.arial
       include /_includes/header
       .pt-8.min-h-100vh.h-100p.flrnw
-        .fln.w-14.border-r-001.bg-gray-3.border-gray-8.p-2
+        .fln.w-14.border-r-001.bg-gray-3.border-gray-8.px-2.pb-1
           .flcnw
-            h2.text-3.bold Animations
-            a.fln.blue.hover_underline(href="/animations") Animations
-            a.fln.blue.hover_underline(href="/transitions") Transitions
-
-            h2.text-3.bold.mt-1 Backgrounds
-            a.fln.blue.hover_underline(href="/background-colors") Background colors
-            a.fln.blue.hover_underline(href="/background-opacity") Background opacity
-            a.fln.blue.hover_underline(href="/background-gradients") Background gradients
-
-            h2.text-3.bold.mt-1 Borders
-            a.fln.blue.hover_underline(href="/border-colors") Borders colors
-            a.fln.blue.hover_underline(href="/border-radius") Borders radius
-            a.fln.blue.hover_underline(href="/border-width") Borders width
-
-            h2.text-3.bold.mt-1 Dimensions
-            a.fln.blue.hover_underline(href="/dimensions-width") Width
-            a.fln.blue.hover_underline(href="/dimensions-height") Height
-            a.fln.blue.hover_underline(href="/dimensions-hover") Hover
-            a.fln.blue.hover_underline(href="/dimensions-min-max") Min/Max
-            a.fln.blue.hover_underline(href="/dimensions-crop") Crop
-
-            h2.text-3.bold.mt-1 Effects
-            a.fln.blue.hover_underline(href="/box-shadow") Box shadows
-            a.fln.blue.hover_underline(href="/opacity") Opacity
-            a.fln.blue.hover_underline(href="/rotate") Rotate
-            a.fln.blue.hover_underline(href="/scale") Scale
-
-            h2.text-3.bold.mt-1 Helpers
-            a.fln.blue.hover_underline(href="/bullets") Bullets
-            a.fln.blue.hover_underline(href="/conditionals") Conditionals
-            a.fln.blue.hover_underline(href="/debug") Debug
-            a.fln.blue.hover_underline(href="/flexbox") Flexbox
-            a.fln.blue.hover_underline(href="/misc") Misc
-
-
-            h2.text-3.bold.mt-1 Positioning
-            a.fln.blue.hover_underline(href="/absolute") Absolute
-            a.fln.blue.hover_underline(href="/position-hover") Hover
-            a.fln.blue.hover_underline(href="/z-index") Z-index
-            a.fln.blue.hover_underline(href="/z-index-hover") Z-index hover
-
-            h2.text-3.bold.mt-1 Text
-            a.fln.blue.hover_underline(href="/font-families") Font families
-            a.fln.blue.hover_underline(href="/font-sizes") Font size
-            a.fln.blue.hover_underline(href="/font-weight") Font weight
-            a.fln.blue.hover_underline(href="/line-height") Line height
-            a.fln.blue.hover_underline(href="/text-color") Text color
-            a.fln.blue.hover_underline(href="/text-decoration") Text decoration
-            a.fln.blue.hover_underline(href="/text-opacity") Text opacity
-
-
+            each group in data.links
+              h2.text-3.bold.mt-1=group.groupName
+              each link in group.items
+                a.fln.blue.hover_underline(href=`${url.pathToRoot}${link.url}/`)=link.name
         .fla.p-3
           block content
       each jsFile in runtime.jsFiles
