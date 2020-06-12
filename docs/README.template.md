@@ -42,20 +42,6 @@ This config will generate **a lot** of classes. It is expected that `purgeCSS`
 will be applied on the resulting HTML+CSS files to remove all unused CSS
 classes.
 
-## Theming
-
-The default values of many parts have been updated. The following tables expose
-all the theme values. In includes both Tailwind default value, custom values,
-and new theming option added by custom plugins.
-
-{{themes}}
-
-## Variants
-
-The following variants are updated compared to the default Tailwind config.
-
-{{variants}}
-
 ## Custom classes
 
 ### Gradients
@@ -187,6 +173,20 @@ input.if#whatever(type="checkbox")
 .hidden.then_block Hello!
 label(for="whatever") Click me to toggle the content display
 ```
+
+## Theming
+
+The default values of many parts have been updated. The following tables expose
+all the theme values. In includes both Tailwind default value, custom values,
+and new theming option added by custom plugins.
+
+{{themes}}
+
+## Variants
+
+The following variants are updated compared to the default Tailwind config.
+
+{{variants}}
 
 ## Contribution
 
