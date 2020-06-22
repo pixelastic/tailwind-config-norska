@@ -6,7 +6,7 @@
   },
   "description": "Custom Tailwind configuration used by norska",
   "devDependencies": {
-    "aberlaas": "1.7.0",
+    "aberlaas": "1.7.1",
     "backstopjs": "5.0.1",
     "cheerio": "1.0.0-rc.3",
     "firost": "1.7.0",
