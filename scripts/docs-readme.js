@@ -2,15 +2,12 @@ const path = require('path');
 const firost = require('firost');
 const _ = require('golgoth/lib/lodash');
 
-(async function() {
+(async function () {
   const config = await firost.require(path.resolve('./lib/main.js'));
 
   const themeLines = [];
-  const themeKeys = _.chain(config.theme)
-    .keys()
-    .sort()
-    .value();
-  _.each(themeKeys, themeName => {
+  const themeKeys = _.chain(config.theme).keys().sort().value();
+  _.each(themeKeys, (themeName) => {
     const themeValues = config.theme[themeName];
     if (_.isFunction(themeValues) || _.isEmpty(themeValues)) {
       return;

@@ -13,6 +13,6 @@ module.exports = {
   },
   getClasses(themeKey, prefix) {
     const keys = this.getThemeKeys(themeKey);
-    return _.map(keys, key => `${prefix}-${key}`);
+    return _.map(keys, (key) => `${prefix}-${key}`);
   },
 };

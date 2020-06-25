@@ -3,7 +3,7 @@ const run = require('firost/lib/run');
 const path = require('path');
 const norska = require('norska');
 
-(async function() {
+(async function () {
   const libraryFiles = ['lib/main.js', 'lib/**/*.js'];
   const tailwindConfig = path.resolve('docs/tailwind.config.js');
   const cssFile = path.resolve('docs/dist/style.css');
