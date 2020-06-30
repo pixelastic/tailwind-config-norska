@@ -1,45 +1,40 @@
 {
   "author": "Pixelastic <tim@pixelastic.com>",
-  "dependencies": {
-    "golgoth": "1.3.0",
-    "hex-rgb": "4.1.0"
-  },
-  "description": "Custom Tailwind configuration used by norska",
+  "dependencies": {},
+  "description": "tailwind-config-norska master workspace",
   "devDependencies": {
     "aberlaas": "1.10.1",
     "backstopjs": "5.0.1",
     "cheerio": "1.0.0-rc.3",
     "firost": "1.8.3",
-    "norska": "0.13.4"
+    "golgoth": "1.3.0",
+    "lerna": "3.22.1"
   },
   "peerDependencies": {
     "tailwindcss": "1.4"
   },
-  "files": [
-    "lib/*.js",
-    "lib/helpers/*.js",
-    "lib/plugins/**/*.js",
-    "lib/themes/**/*.js"
-  ],
+  "files": [],
   "license": "MIT",
-  "main": "lib/main.js",
-  "name": "tailwind-config-norska",
+  "name": "tailwind-config-norska-monorepo",
+  "private": true,
   "repository": "git@github.com:pixelastic/tailwind-config-norska.git",
   "scripts": {
+    "lint": "./scripts/meta/lint",
+    "lint:fix": "./scripts/meta/lint-fix",
+    "test": "./scripts/meta/test",
+    "test:watch": "./scripts/meta/test-watch",
+    "docs:build": "./scripts/meta/docs-build",
+    "docs:build:prod": "./scripts/meta/docs-build-prod",
+    "docs:serve": "./scripts/meta/docs-serve",
+    "husky:precommit": "./scripts/meta/husky-precommit",
     "ci": "./scripts/ci",
     "docs:readme": "node ./scripts/docs-readme.js",
-    "docs:build": "./scripts/docs-build",
-    "docs:build:prod": "./scripts/docs-build-prod",
-    "docs:serve": "node ./scripts/docs-serve.js",
-    "husky:precommit": "./scripts/husky-precommit",
-    "lint": "./scripts/lint",
-    "lint:fix": "./scripts/lint-fix",
     "release": "./scripts/release",
-    "test": "./scripts/test",
-    "test:build": "./scripts/test-build",
-    "test:watch": "./scripts/test-watch",
     "test:visual": "./scripts/test-visual",
     "test:visual:approve": "./scripts/test-visual-approve"
   },
-  "version": "0.2.1"
+  "version": "0.2.1",
+  "workspaces": [
+    "modules/*"
+  ]
 }

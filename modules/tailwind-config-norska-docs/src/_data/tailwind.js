@@ -1,7 +1,7 @@
-const config = require('../../../lib/main.js');
+const config = require('tailwind-config-norska');
 const _ = require('golgoth/lib/lodash');
 const uuid = require('firost/lib/uuid');
-const sortKeys = require('../../../lib/helpers/sortKeys.js');
+const sortKeys = require('../../lib/sortKeys.js');
 
 module.exports = {
   uuid() {

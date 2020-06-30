@@ -4,6 +4,3 @@
 
 # node_modules in subfolders are not ignored by default
 node_modules
-
-# backstopjs files shouldn't be linted
-screenshots

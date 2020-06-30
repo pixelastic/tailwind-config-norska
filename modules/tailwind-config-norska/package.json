@@ -1,0 +1,29 @@
+{
+  "author": "Pixelastic <tim@pixelastic.com>",
+  "dependencies": {
+    "golgoth": "1.3.0",
+    "hex-rgb": "4.1.0"
+  },
+  "description": "Custom Tailwind configuration used by norska",
+  "devDependencies": {},
+  "peerDependencies": {
+    "tailwindcss": "1.4"
+  },
+  "files": [
+    "lib/*.js",
+    "lib/helpers/*.js",
+    "lib/plugins/**/*.js",
+    "lib/themes/**/*.js"
+  ],
+  "license": "MIT",
+  "main": "lib/main.js",
+  "name": "tailwind-config-norska",
+  "repository": "git@github.com:pixelastic/tailwind-config-norska.git",
+  "scripts": {
+    "lint": "../../scripts/local/lint",
+    "lint:fix": "../../scripts/local/lint-fix",
+    "test": "../../scripts/local/test",
+    "test:watch": "../../scripts/local/test-watch"
+  },
+  "version": "0.2.1"
+}

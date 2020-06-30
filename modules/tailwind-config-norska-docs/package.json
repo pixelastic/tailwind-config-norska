@@ -1,0 +1,28 @@
+{
+  "author": "Pixelastic <tim@pixelastic.com>",
+  "dependencies": {
+    "norska": "0.10.3",
+    "tailwind-config-norska": "^0.2.1"
+  },
+  "description": "tailwind-config-norska documentation",
+  "devDependencies": {
+    "firost": "1.8.3",
+    "golgoth": "1.3.0"
+  },
+  "peerDependencies": {},
+  "files": [],
+  "license": "MIT",
+  "private": true,
+  "name": "tailwind-config-norska-docs",
+  "repository": "git@github.com:pixelastic/tailwind-config-norska.git",
+  "scripts": {
+    "build": "./scripts/build",
+    "build:prod": "./scripts/build-prod",
+    "serve": "node ./scripts/serve.js",
+    "lint": "../../scripts/local/lint",
+    "lint:fix": "../../scripts/local/lint-fix",
+    "test": "../../scripts/local/test",
+    "test:watch": "../../scripts/local/test-watch"
+  },
+  "version": "0.2.1"
+}

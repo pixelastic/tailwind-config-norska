@@ -1,10 +1,8 @@
-const path = require('path');
 const firost = require('firost');
 const _ = require('golgoth/lib/lodash');
+const config = require('../../modules/tailwind-config-norska/');
 
 (async function () {
-  const config = await firost.require(path.resolve('./lib/main.js'));
-
   const themeLines = [];
   const themeKeys = _.chain(config.theme).keys().sort().value();
   _.each(themeKeys, (themeName) => {
@@ -30,7 +28,7 @@ const _ = require('golgoth/lib/lodash');
     variantLines.push(`| ${propertyName} | ${variants.join(', ')} |`);
   });
 
-  const template = await firost.read('./docs/README.template.md');
+  const template = await firost.read('./README.template.md');
   const readme = _.chain(template)
     .replace('{{themes}}', themeLines.join('\n'))
     .replace('{{variants}}', variantLines.join('\n'))

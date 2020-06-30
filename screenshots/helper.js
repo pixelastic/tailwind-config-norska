@@ -11,11 +11,11 @@ module.exports = {
     const filesInSrc = fs.readdirSync('docs/src');
     const blocklistPugFiles = ['404', 'index'];
     return _.chain(filesInSrc)
-      .reject(basename => {
+      .reject((basename) => {
         const extname = path.extname(basename);
         return extname !== '.pug';
       })
-      .map(filename => {
+      .map((filename) => {
         return path.basename(filename, '.pug');
       })
       .difference(blocklistPugFiles)
@@ -28,7 +28,7 @@ module.exports = {
    **/
   getScenarios() {
     const pagesToTest = this.getPagesToTest();
-    return _.map(pagesToTest, basename => {
+    return _.map(pagesToTest, (basename) => {
       const url = `http://127.0.0.1:8083/${basename}/`;
       const label = _.startCase(basename);
       return {

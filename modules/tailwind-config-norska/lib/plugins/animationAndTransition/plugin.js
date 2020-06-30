@@ -3,9 +3,9 @@ const generateClasses = require('../../helpers/generateClasses.js');
 
 /**
  * Returns the classes relative to the animations
- * @param {object} Object of plugin methods
- * @param Object.theme
- * @param Object.addBase
+ * @param {object} Object of plugin methods (see https://tailwindcss.com/docs/plugins/#app for details)
+ * @param {Function} Object.theme for looking up values in the user's theme configuration
+ * @param {Function} Object.addBase for registering new base styles
  * @returns {object} Object of classes
  */
 function generateAnimationClasses({ theme, addBase }) {
@@ -68,8 +68,8 @@ function generateAnimationClasses({ theme, addBase }) {
 }
 /**
  * Returns the classes relative to the transitions
- * @param {object} Object of plugin methods
- * @param Object.theme
+ * @param {object} Object of plugin methods (see https://tailwindcss.com/docs/plugins/#app for details)
+ * @param {Function} Object.theme for looking up values in the user's theme configuration
  * @returns {object} Object of classes
  */
 function generateTransitionClasses({ theme }) {
@@ -101,8 +101,8 @@ function generateTransitionClasses({ theme }) {
 }
 /**
  * Returns the classes shared between animation and transitions
- * @param {object} Object of plugin methods
- * @param Object.theme
+ * @param {object} Object of plugin methods (see https://tailwindcss.com/docs/plugins/#app for details)
+ * @param {Function} Object.theme for looking up values in the user's theme configuration
  * @returns {object} Object of classes
  */
 function generateSharedClasses({ theme }) {
