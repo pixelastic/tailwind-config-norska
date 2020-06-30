@@ -1,4 +1,4 @@
 #!/usr/bin/env sh
 set -e
 
-yarn run backstop approve --config=./backstop.js
+yarn run backstop approve

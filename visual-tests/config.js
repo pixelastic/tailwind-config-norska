@@ -1,6 +1,4 @@
-const helper = require('./screenshots/helper.js');
-
-const defaultConfig = {
+module.exports = {
   id: 'tailwind-config-norska',
   viewports: [
     {
@@ -12,11 +10,11 @@ const defaultConfig = {
   onBeforeScript: 'puppet/onBefore.js',
   onReadyScript: 'puppet/onReady.js',
   paths: {
-    bitmaps_reference: 'screenshots/bitmaps_reference',
-    bitmaps_test: 'screenshots/bitmaps_test',
-    engine_scripts: 'screenshots/engine_scripts',
-    html_report: 'screenshots/html_report',
-    ci_report: 'screenshots/ci_report',
+    bitmaps_reference: 'visual-tests/bitmaps_reference',
+    bitmaps_test: 'visual-tests/bitmaps_test',
+    engine_scripts: 'visual-tests/engine_scripts',
+    html_report: 'visual-tests/html_report',
+    ci_report: 'visual-tests/ci_report',
   },
   report: ['browser'],
   engine: 'puppeteer',
@@ -27,11 +25,4 @@ const defaultConfig = {
   asyncCompareLimit: 50,
   debug: false,
   debugWindow: false,
-};
-
-const scenarios = helper.getScenarios();
-
-module.exports = {
-  ...defaultConfig,
-  scenarios,
 };

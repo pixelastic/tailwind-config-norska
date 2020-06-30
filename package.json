@@ -8,6 +8,7 @@
     "cheerio": "1.0.0-rc.3",
     "firost": "1.9.0",
     "golgoth": "1.3.0",
+    "is-port-reachable": "3.0.0",
     "lerna": "3.22.1"
   },
   "peerDependencies": {
@@ -23,7 +24,7 @@
     "lint:fix": "./scripts/meta/lint-fix",
     "test": "./scripts/meta/test",
     "test:watch": "./scripts/meta/test-watch",
-    "test:visual": "./scripts/meta/test-visual",
+    "test:visual": "node ./scripts/meta/test-visual.js",
     "test:visual:approve": "./scripts/meta/test-visual-approve",
     "docs:build": "./scripts/meta/docs-build",
     "docs:build:prod": "./scripts/meta/docs-build-prod",

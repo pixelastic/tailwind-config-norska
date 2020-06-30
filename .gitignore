@@ -8,8 +8,8 @@ build/
 dist/
 node_modules/
 tmp/
-screenshots/bitmaps_test
-screenshots/html_report
+visual-tests/bitmaps_test
+visual-tests/html_report
 # Files
 Thumbs.db
 npm-debug.log

@@ -1,0 +1,195 @@
+{
+  "asyncCaptureLimit": 10,
+  "asyncCompareLimit": 50,
+  "debug": false,
+  "debugWindow": false,
+  "engine": "puppeteer",
+  "engineOptions": {
+    "args": ["--no-sandbox"]
+  },
+  "id": "tailwind-config-norska",
+  "onBeforeScript": "puppet/onBefore.js",
+  "onReadyScript": "puppet/onReady.js",
+  "paths": {
+    "bitmaps_reference": "visual-tests/bitmaps_reference",
+    "bitmaps_test": "visual-tests/bitmaps_test",
+    "ci_report": "visual-tests/ci_report",
+    "engine_scripts": "visual-tests/engine_scripts",
+    "html_report": "visual-tests/html_report"
+  },
+  "report": ["browser"],
+  "scenarios": [
+    {
+      "label": "Absolute",
+      "selectors": [".screenshot"],
+      "url": "http://127.0.0.1:8087/absolute/"
+    },
+    {
+      "label": "Background Colors",
+      "selectors": [".screenshot"],
+      "url": "http://127.0.0.1:8087/background-colors/"
+    },
+    {
+      "label": "Background Gradients",
+      "selectors": [".screenshot"],
+      "url": "http://127.0.0.1:8087/background-gradients/"
+    },
+    {
+      "label": "Background Opacity",
+      "selectors": [".screenshot"],
+      "url": "http://127.0.0.1:8087/background-opacity/"
+    },
+    {
+      "label": "Border Colors",
+      "selectors": [".screenshot"],
+      "url": "http://127.0.0.1:8087/border-colors/"
+    },
+    {
+      "label": "Border Radius",
+      "selectors": [".screenshot"],
+      "url": "http://127.0.0.1:8087/border-radius/"
+    },
+    {
+      "label": "Border Width",
+      "selectors": [".screenshot"],
+      "url": "http://127.0.0.1:8087/border-width/"
+    },
+    {
+      "label": "Box Shadow",
+      "selectors": [".screenshot"],
+      "url": "http://127.0.0.1:8087/box-shadow/"
+    },
+    {
+      "label": "Bullets",
+      "selectors": [".screenshot"],
+      "url": "http://127.0.0.1:8087/bullets/"
+    },
+    {
+      "label": "Conditionals",
+      "selectors": [".screenshot"],
+      "url": "http://127.0.0.1:8087/conditionals/"
+    },
+    {
+      "label": "Debug",
+      "selectors": [".screenshot"],
+      "url": "http://127.0.0.1:8087/debug/"
+    },
+    {
+      "label": "Dimensions Crop",
+      "selectors": [".screenshot"],
+      "url": "http://127.0.0.1:8087/dimensions-crop/"
+    },
+    {
+      "label": "Dimensions Height",
+      "selectors": [".screenshot"],
+      "url": "http://127.0.0.1:8087/dimensions-height/"
+    },
+    {
+      "label": "Dimensions Hover",
+      "selectors": [".screenshot"],
+      "url": "http://127.0.0.1:8087/dimensions-hover/"
+    },
+    {
+      "label": "Dimensions Min Max",
+      "selectors": [".screenshot"],
+      "url": "http://127.0.0.1:8087/dimensions-min-max/"
+    },
+    {
+      "label": "Dimensions Width",
+      "selectors": [".screenshot"],
+      "url": "http://127.0.0.1:8087/dimensions-width/"
+    },
+    {
+      "label": "Flexbox",
+      "selectors": [".screenshot"],
+      "url": "http://127.0.0.1:8087/flexbox/"
+    },
+    {
+      "label": "Font Families",
+      "selectors": [".screenshot"],
+      "url": "http://127.0.0.1:8087/font-families/"
+    },
+    {
+      "label": "Font Sizes",
+      "selectors": [".screenshot"],
+      "url": "http://127.0.0.1:8087/font-sizes/"
+    },
+    {
+      "label": "Font Weight",
+      "selectors": [".screenshot"],
+      "url": "http://127.0.0.1:8087/font-weight/"
+    },
+    {
+      "label": "Line Height",
+      "selectors": [".screenshot"],
+      "url": "http://127.0.0.1:8087/line-height/"
+    },
+    {
+      "label": "Misc",
+      "selectors": [".screenshot"],
+      "url": "http://127.0.0.1:8087/misc/"
+    },
+    {
+      "label": "Opacity",
+      "selectors": [".screenshot"],
+      "url": "http://127.0.0.1:8087/opacity/"
+    },
+    {
+      "label": "Position Hover",
+      "selectors": [".screenshot"],
+      "url": "http://127.0.0.1:8087/position-hover/"
+    },
+    {
+      "label": "Rotate",
+      "selectors": [".screenshot"],
+      "url": "http://127.0.0.1:8087/rotate/"
+    },
+    {
+      "label": "Scale",
+      "selectors": [".screenshot"],
+      "url": "http://127.0.0.1:8087/scale/"
+    },
+    {
+      "label": "Text Color",
+      "selectors": [".screenshot"],
+      "url": "http://127.0.0.1:8087/text-color/"
+    },
+    {
+      "label": "Text Decoration",
+      "selectors": [".screenshot"],
+      "url": "http://127.0.0.1:8087/text-decoration/"
+    },
+    {
+      "label": "Text Opacity",
+      "selectors": [".screenshot"],
+      "url": "http://127.0.0.1:8087/text-opacity/"
+    },
+    {
+      "label": "Text Shadow",
+      "selectors": [".screenshot"],
+      "url": "http://127.0.0.1:8087/text-shadow/"
+    },
+    {
+      "label": "Transitions",
+      "selectors": [".screenshot"],
+      "url": "http://127.0.0.1:8087/transitions/"
+    },
+    {
+      "label": "Z Index Hover",
+      "selectors": [".screenshot"],
+      "url": "http://127.0.0.1:8087/z-index-hover/"
+    },
+    {
+      "label": "Z Index",
+      "selectors": [".screenshot"],
+      "url": "http://127.0.0.1:8087/z-index/"
+    }
+  ],
+  "viewports": [
+    {
+      "height": 900,
+      "label": "desktop",
+      "width": 1600
+    }
+  ]
+}
