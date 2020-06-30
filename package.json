@@ -10,7 +10,7 @@
     "backstopjs": "5.0.1",
     "cheerio": "1.0.0-rc.3",
     "firost": "1.8.2",
-    "norska": "0.13.0"
+    "norska": "0.13.3"
   },
   "peerDependencies": {
     "tailwindcss": "1.4"
