@@ -23,15 +23,15 @@
     "lint:fix": "./scripts/meta/lint-fix",
     "test": "./scripts/meta/test",
     "test:watch": "./scripts/meta/test-watch",
+    "test:visual": "./scripts/meta/test-visual",
+    "test:visual:approve": "./scripts/meta/test-visual-approve",
     "docs:build": "./scripts/meta/docs-build",
     "docs:build:prod": "./scripts/meta/docs-build-prod",
     "docs:serve": "./scripts/meta/docs-serve",
     "husky:precommit": "./scripts/meta/husky-precommit",
-    "ci": "./scripts/ci",
-    "docs:readme": "node ./scripts/docs-readme.js",
-    "release": "./scripts/release",
-    "test:visual": "./scripts/test-visual",
-    "test:visual:approve": "./scripts/test-visual-approve"
+    "docs:readme": "node ./scripts/meta/docs-readme.js",
+    "ci": "./scripts/meta/ci",
+    "release": "./scripts/meta/release"
   },
   "version": "0.2.1",
   "workspaces": [

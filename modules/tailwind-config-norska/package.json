@@ -23,7 +23,8 @@
     "lint": "../../scripts/local/lint",
     "lint:fix": "../../scripts/local/lint-fix",
     "test": "../../scripts/local/test",
-    "test:watch": "../../scripts/local/test-watch"
+    "test:watch": "../../scripts/local/test-watch",
+    "release": "../../scripts/local/release"
   },
   "version": "0.2.1"
 }

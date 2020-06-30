@@ -8,7 +8,9 @@ module.exports = {
    * @returns {Array} List of url folders
    */
   getPagesToTest() {
-    const filesInSrc = fs.readdirSync('docs/src');
+    const filesInSrc = fs.readdirSync(
+      'modules/tailwind-config-norska-docs/src'
+    );
     const blocklistPugFiles = ['404', 'index'];
     return _.chain(filesInSrc)
       .reject((basename) => {
