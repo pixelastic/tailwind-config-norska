@@ -1,5 +1,0 @@
-#!/usr/bin/env sh
-set -e
-
-aberlaas test "$@"
-yarn run test:build

@@ -5,9 +5,6 @@
     "hex-rgb": "4.1.0"
   },
   "description": "Custom Tailwind configuration used by norska",
-  "peerDependencies": {
-    "tailwindcss": "1.4"
-  },
   "files": [
     "lib/*.js",
     "lib/helpers/*.js",
@@ -17,13 +14,16 @@
   "license": "MIT",
   "main": "lib/main.js",
   "name": "tailwind-config-norska",
+  "peerDependencies": {
+    "tailwindcss": "1.4"
+  },
   "repository": "git@github.com:pixelastic/tailwind-config-norska.git",
   "scripts": {
     "lint": "../../scripts/local/lint",
     "lint:fix": "../../scripts/local/lint-fix",
+    "release": "../../scripts/local/release",
     "test": "../../scripts/local/test",
-    "test:watch": "../../scripts/local/test-watch",
-    "release": "../../scripts/local/release"
+    "test:watch": "../../scripts/local/test-watch"
   },
   "version": "0.2.2"
 }
