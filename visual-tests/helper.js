@@ -5,6 +5,7 @@ const defaultConfig = require('./config.js');
 const isPortReachable = require('is-port-reachable');
 const read = require('firost/lib/read');
 const glob = require('firost/lib/glob');
+const writeJson = require('firost/lib/writeJson');
 const pMap = require('golgoth/lib/pMap');
 const cheerio = require('cheerio');
 const exec = require('child_process').exec;
@@ -36,7 +37,8 @@ module.exports = {
   async startServer() {
     await run('yarn run docs:build');
     exec('yarn run docs:serve &');
-    await this.isServerRunning(10000);
+    const isServerRunning = await this.isServerRunning(10000);
+    console.info(isServerRunning);
   },
   /**
    * Check if a given html page as a .screenshot selector
@@ -70,9 +72,8 @@ module.exports = {
       .compact()
       .map((pageSlug) => {
         const url = `${baseUrl}/${pageSlug}/`;
-        const label = _.startCase(pageSlug);
         return {
-          label,
+          label: pageSlug,
           url,
           selectors: [this.screenshotSelector],
         };
@@ -93,20 +94,37 @@ module.exports = {
   },
   /**
    * Write the config and run the tests
-   **/
-  async runTests() {
+   * @param {object} options Optional options to pass to the backstopjs call
+   */
+  async runTests(options) {
+    // Write config so "yarn run test:visual:approve" works
     const config = await this.getConfig();
+    const configPath = path.resolve('./backstop.json');
+    await writeJson(config, configPath);
 
-    pulse.on('tick', (label) => {
-      if (!this.__progress) {
-        this.__progress = spinner();
+    // Override the default console.log to grab the number of scenarios
+    let progress = { tick() {}, success() {} };
+    console.log = (input) => {
+      const regexp = /(.*) Selected (?<currentMax>[0-9]*) of (?<totalMax>[0-9]*) scenarios./;
+      const matches = input.match(regexp);
+      if (!matches) {
+        return;
       }
-      this.__progress.tick(label);
+      progress = spinner(_.toInteger(matches.groups.currentMax));
+    };
+
+    // Update progress on each onBefore call
+    pulse.on('tick', (input) => {
+      progress.tick(input);
     });
-    await backstopjs('test', config);
-    // TODO: This hangs forever in case of errors. Should find another way to
-    // stop
-    // Could check the max number of scenarios, but won't work if we filter
-    this.__progress.success('finished');
+
+    // Run the tests
+    process.setMaxListeners(Infinity);
+    await backstopjs('test', {
+      config,
+      ...options,
+    });
+
+    progress.success('Done');
   },
 };

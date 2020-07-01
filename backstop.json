@@ -20,167 +20,167 @@
   "report": ["browser"],
   "scenarios": [
     {
-      "label": "Absolute",
+      "label": "absolute",
       "selectors": [".screenshot"],
       "url": "http://127.0.0.1:8087/absolute/"
     },
     {
-      "label": "Background Colors",
+      "label": "background-colors",
       "selectors": [".screenshot"],
       "url": "http://127.0.0.1:8087/background-colors/"
     },
     {
-      "label": "Background Gradients",
+      "label": "background-gradients",
       "selectors": [".screenshot"],
       "url": "http://127.0.0.1:8087/background-gradients/"
     },
     {
-      "label": "Background Opacity",
+      "label": "background-opacity",
       "selectors": [".screenshot"],
       "url": "http://127.0.0.1:8087/background-opacity/"
     },
     {
-      "label": "Border Colors",
+      "label": "border-colors",
       "selectors": [".screenshot"],
       "url": "http://127.0.0.1:8087/border-colors/"
     },
     {
-      "label": "Border Radius",
+      "label": "border-radius",
       "selectors": [".screenshot"],
       "url": "http://127.0.0.1:8087/border-radius/"
     },
     {
-      "label": "Border Width",
+      "label": "border-width",
       "selectors": [".screenshot"],
       "url": "http://127.0.0.1:8087/border-width/"
     },
     {
-      "label": "Box Shadow",
+      "label": "box-shadow",
       "selectors": [".screenshot"],
       "url": "http://127.0.0.1:8087/box-shadow/"
     },
     {
-      "label": "Bullets",
+      "label": "bullets",
       "selectors": [".screenshot"],
       "url": "http://127.0.0.1:8087/bullets/"
     },
     {
-      "label": "Conditionals",
+      "label": "conditionals",
       "selectors": [".screenshot"],
       "url": "http://127.0.0.1:8087/conditionals/"
     },
     {
-      "label": "Debug",
+      "label": "debug",
       "selectors": [".screenshot"],
       "url": "http://127.0.0.1:8087/debug/"
     },
     {
-      "label": "Dimensions Crop",
+      "label": "dimensions-crop",
       "selectors": [".screenshot"],
       "url": "http://127.0.0.1:8087/dimensions-crop/"
     },
     {
-      "label": "Dimensions Height",
+      "label": "dimensions-height",
       "selectors": [".screenshot"],
       "url": "http://127.0.0.1:8087/dimensions-height/"
     },
     {
-      "label": "Dimensions Hover",
+      "label": "dimensions-hover",
       "selectors": [".screenshot"],
       "url": "http://127.0.0.1:8087/dimensions-hover/"
     },
     {
-      "label": "Dimensions Min Max",
+      "label": "dimensions-min-max",
       "selectors": [".screenshot"],
       "url": "http://127.0.0.1:8087/dimensions-min-max/"
     },
     {
-      "label": "Dimensions Width",
+      "label": "dimensions-width",
       "selectors": [".screenshot"],
       "url": "http://127.0.0.1:8087/dimensions-width/"
     },
     {
-      "label": "Flexbox",
+      "label": "flexbox",
       "selectors": [".screenshot"],
       "url": "http://127.0.0.1:8087/flexbox/"
     },
     {
-      "label": "Font Families",
+      "label": "font-families",
       "selectors": [".screenshot"],
       "url": "http://127.0.0.1:8087/font-families/"
     },
     {
-      "label": "Font Sizes",
+      "label": "font-sizes",
       "selectors": [".screenshot"],
       "url": "http://127.0.0.1:8087/font-sizes/"
     },
     {
-      "label": "Font Weight",
+      "label": "font-weight",
       "selectors": [".screenshot"],
       "url": "http://127.0.0.1:8087/font-weight/"
     },
     {
-      "label": "Line Height",
+      "label": "line-height",
       "selectors": [".screenshot"],
       "url": "http://127.0.0.1:8087/line-height/"
     },
     {
-      "label": "Misc",
+      "label": "misc",
       "selectors": [".screenshot"],
       "url": "http://127.0.0.1:8087/misc/"
     },
     {
-      "label": "Opacity",
+      "label": "opacity",
       "selectors": [".screenshot"],
       "url": "http://127.0.0.1:8087/opacity/"
     },
     {
-      "label": "Position Hover",
+      "label": "position-hover",
       "selectors": [".screenshot"],
       "url": "http://127.0.0.1:8087/position-hover/"
     },
     {
-      "label": "Rotate",
+      "label": "rotate",
       "selectors": [".screenshot"],
       "url": "http://127.0.0.1:8087/rotate/"
     },
     {
-      "label": "Scale",
+      "label": "scale",
       "selectors": [".screenshot"],
       "url": "http://127.0.0.1:8087/scale/"
     },
     {
-      "label": "Text Color",
+      "label": "text-color",
       "selectors": [".screenshot"],
       "url": "http://127.0.0.1:8087/text-color/"
     },
     {
-      "label": "Text Decoration",
+      "label": "text-decoration",
       "selectors": [".screenshot"],
       "url": "http://127.0.0.1:8087/text-decoration/"
     },
     {
-      "label": "Text Opacity",
+      "label": "text-opacity",
       "selectors": [".screenshot"],
       "url": "http://127.0.0.1:8087/text-opacity/"
     },
     {
-      "label": "Text Shadow",
+      "label": "text-shadow",
       "selectors": [".screenshot"],
       "url": "http://127.0.0.1:8087/text-shadow/"
     },
     {
-      "label": "Transitions",
+      "label": "transitions",
       "selectors": [".screenshot"],
       "url": "http://127.0.0.1:8087/transitions/"
     },
     {
-      "label": "Z Index Hover",
+      "label": "z-index-hover",
       "selectors": [".screenshot"],
       "url": "http://127.0.0.1:8087/z-index-hover/"
     },
     {
-      "label": "Z Index",
+      "label": "z-index",
       "selectors": [".screenshot"],
       "url": "http://127.0.0.1:8087/z-index/"
     }
