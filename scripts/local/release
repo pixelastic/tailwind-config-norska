@@ -3,4 +3,4 @@ set -e
 
 cd ../../
 
-yarn run release
+yarn run release "$@"
