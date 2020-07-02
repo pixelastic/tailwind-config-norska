@@ -21,15 +21,22 @@ module.exports = function (variants) {
       };
     });
 
-    const colorClasses = generateClasses(
+    const opacityClasses = generateClasses(
       textOpacity,
       '.text-opacity-',
       '--text-opacity'
     );
 
+    const rawClasses = {
+      '.transparent': {
+        color: 'transparent',
+      },
+    };
+
     const allClasses = {
       ...baseClasses,
-      ...colorClasses,
+      ...opacityClasses,
+      ...rawClasses,
     };
     addUtilities(allClasses, variants);
   };

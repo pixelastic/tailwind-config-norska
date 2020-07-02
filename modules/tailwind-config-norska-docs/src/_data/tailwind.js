@@ -1,4 +1,4 @@
-const config = require('tailwind-config-norska');
+const config = require('../../tailwind.config.js');
 const _ = require('golgoth/lib/lodash');
 const uuid = require('firost/lib/uuid');
 const sortKeys = require('../../lib/sortKeys.js');

@@ -1,10 +1,16 @@
 const _ = require('golgoth/lib/lodash');
 const helper = require('../../visual-tests/helper.js');
+const exit = require('firost/lib/exit');
+const consoleError = require('firost/lib/consoleError');
 (async function () {
+  // Stop if server not running
   // Run doc server if not running
   const isServerRunning = await helper.isServerRunning();
   if (!isServerRunning) {
-    await helper.startServer();
+    consoleError(
+      'Server is not running, please run yarn run server in another shell and try again'
+    );
+    exit(1);
   }
 
   // Parse arguments as filter for the tests

@@ -3,8 +3,7 @@
   "dependencies": {
     "firost": "1.10.1",
     "golgoth": "1.3.0",
-    "norska": "0.13.5",
-    "tailwind-config-norska": "^0.2.2"
+    "norska": "0.13.5"
   },
   "description": "tailwind-config-norska documentation",
   "devDependencies": {},
@@ -21,8 +20,10 @@
     "lint:fix": "../../scripts/local/lint-fix",
     "release": "../../scripts/local/release",
     "serve": "node ./scripts/serve.js",
-    "test": "../../scripts/local/test",
-    "test:watch": "../../scripts/local/test-watch"
+    "test:manual": "../../scripts/local/test-manual",
+    "test:watch": "../../scripts/local/test-watch",
+    "test:visual": "../../scripts/local/test-visual",
+    "test:visual:approve": "../../scripts/local/test-visual-approve"
   },
   "version": "0.2.2"
 }

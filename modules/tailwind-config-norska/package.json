@@ -19,11 +19,17 @@
   },
   "repository": "git@github.com:pixelastic/tailwind-config-norska.git",
   "scripts": {
+    "build": "../../scripts/local/build",
+    "build:prod": "../../scripts/local/build-prod",
     "lint": "../../scripts/local/lint",
     "lint:fix": "../../scripts/local/lint-fix",
     "release": "../../scripts/local/release",
     "test": "../../scripts/local/test",
-    "test:watch": "../../scripts/local/test-watch"
+    "test:manual": "../../scripts/local/test-manual",
+    "test:watch": "../../scripts/local/test-watch",
+    "test:visual": "../../scripts/local/test-visual",
+    "test:visual:approve": "../../scripts/local/test-visual-approve",
+    "serve": "../../scripts/local/serve"
   },
   "version": "0.2.2"
 }

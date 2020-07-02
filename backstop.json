@@ -1,5 +1,5 @@
 {
-  "asyncCaptureLimit": 10,
+  "asyncCaptureLimit": 5,
   "asyncCompareLimit": 50,
   "debug": false,
   "debugWindow": false,
@@ -8,6 +8,7 @@
     "args": ["--no-sandbox"]
   },
   "id": "tailwind-config-norska",
+  "misMatchThreshold": "0.05",
   "onBeforeScript": "puppet/onBefore.js",
   "onReadyScript": "puppet/onReady.js",
   "paths": {

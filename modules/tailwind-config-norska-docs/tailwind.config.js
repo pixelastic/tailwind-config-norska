@@ -1,1 +1,1 @@
-module.exports = require('tailwind-config-norska');
+module.exports = require('../tailwind-config-norska');

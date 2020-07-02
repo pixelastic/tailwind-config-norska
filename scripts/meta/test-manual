@@ -3,7 +3,7 @@
 testPath="./tmp/test-manual";
 inputPath="$testPath/input.css"
 outputPath="$testPath/output.css"
-configPath="lib/main.js"
+configPath="modules/tailwind-config-norska/lib/main.js"
 
 mkdir -p $testPath
 rm -f $testPath/style.css

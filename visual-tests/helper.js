@@ -8,11 +8,10 @@ const glob = require('firost/lib/glob');
 const writeJson = require('firost/lib/writeJson');
 const pMap = require('golgoth/lib/pMap');
 const cheerio = require('cheerio');
-const exec = require('child_process').exec;
-const run = require('firost/lib/run');
 const pulse = require('firost/lib/pulse');
 const spinner = require('firost/lib/spinner');
 const backstopjs = require('backstopjs');
+const exit = require('firost/lib/exit');
 
 module.exports = {
   screenshotSelector: '.screenshot',
@@ -30,15 +29,6 @@ module.exports = {
    **/
   async isServerRunning(timeout = 1000) {
     return await isPortReachable(this.serverPort(), { timeout });
-  },
-  /**
-   * Build the website, start the server and wait for it to be available
-   **/
-  async startServer() {
-    await run('yarn run docs:build');
-    exec('yarn run docs:serve &');
-    const isServerRunning = await this.isServerRunning(10000);
-    console.info(isServerRunning);
   },
   /**
    * Check if a given html page as a .screenshot selector
@@ -120,11 +110,15 @@ module.exports = {
 
     // Run the tests
     process.setMaxListeners(Infinity);
-    await backstopjs('test', {
-      config,
-      ...options,
-    });
-
-    progress.success('Done');
+    try {
+      await backstopjs('test', {
+        config,
+        ...options,
+      });
+    } catch (err) {
+      progress.failure('Some tests are failing');
+      exit(1);
+    }
+    progress.success('All tests are passing');
   },
 };
