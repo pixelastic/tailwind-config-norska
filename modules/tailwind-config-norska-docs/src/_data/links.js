@@ -4,6 +4,9 @@ module.exports = [
     items: [
       { url: 'animations', name: 'Animations' },
       { url: 'transitions', name: 'Transitions' },
+      { url: 'delays', name: 'Delays' },
+      { url: 'durations', name: 'Durations' },
+      { url: 'ease', name: 'Timing functions' },
     ],
   },
   {
