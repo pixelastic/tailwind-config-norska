@@ -31,5 +31,5 @@
     "test:visual:approve": "../../scripts/local/test-visual-approve",
     "serve": "../../scripts/local/serve"
   },
-  "version": "0.2.3"
+  "version": "0.2.4"
 }
