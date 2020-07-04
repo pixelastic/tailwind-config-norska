@@ -1,5 +1,5 @@
 /**
  * https://tailwindcss.com/docs/max-width/
  **/
-const spacing = require('./shared/spacing.js');
+const spacing = require('./width.js');
 module.exports = spacing;
