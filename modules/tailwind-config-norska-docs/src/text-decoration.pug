@@ -1,7 +1,7 @@
 extends /_includes/_layouts/core
 
-block config
-  - pageTitle = "Text Decoration"
+block meta
+  - meta.title = "Text Decoration"
   - pageClasses = data.tailwind.getClasses('textDecoration', 'text');
   - underlineClasses = data.tailwind.getClasses('colors', 'underline');
 

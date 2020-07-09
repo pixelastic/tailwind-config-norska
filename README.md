@@ -1191,6 +1191,47 @@ and new theming option added by custom plugins.
 | 13 | 13 |
 | auto | auto |
 
+### `gridColumnWidth`
+
+| Key | Value |
+| --- | ----- |
+| 0 | repeat(auto-fill, minmax(0, 1fr)) |
+| 1 | repeat(auto-fill, minmax(1rem, 1fr)) |
+| 2 | repeat(auto-fill, minmax(1.25rem, 1fr)) |
+| 3 | repeat(auto-fill, minmax(1.5rem, 1fr)) |
+| 4 | repeat(auto-fill, minmax(2rem, 1fr)) |
+| 5 | repeat(auto-fill, minmax(2.5rem, 1fr)) |
+| 6 | repeat(auto-fill, minmax(3rem, 1fr)) |
+| 7 | repeat(auto-fill, minmax(4rem, 1fr)) |
+| 8 | repeat(auto-fill, minmax(5rem, 1fr)) |
+| 9 | repeat(auto-fill, minmax(6rem, 1fr)) |
+| 10 | repeat(auto-fill, minmax(8rem, 1fr)) |
+| 11 | repeat(auto-fill, minmax(10rem, 1fr)) |
+| 12 | repeat(auto-fill, minmax(12rem, 1fr)) |
+| 13 | repeat(auto-fill, minmax(14rem, 1fr)) |
+| 14 | repeat(auto-fill, minmax(16rem, 1fr)) |
+| 15 | repeat(auto-fill, minmax(18rem, 1fr)) |
+| 16 | repeat(auto-fill, minmax(20rem, 1fr)) |
+| 17 | repeat(auto-fill, minmax(22rem, 1fr)) |
+| 18 | repeat(auto-fill, minmax(24rem, 1fr)) |
+| 19 | repeat(auto-fill, minmax(26rem, 1fr)) |
+| 20 | repeat(auto-fill, minmax(28rem, 1fr)) |
+| auto | repeat(auto-fill, minmax(auto, 1fr)) |
+| 001 | repeat(auto-fill, minmax(0.0625rem, 1fr)) |
+| 002 | repeat(auto-fill, minmax(0.125rem, 1fr)) |
+| 01 | repeat(auto-fill, minmax(0.25rem, 1fr)) |
+| 02 | repeat(auto-fill, minmax(0.5rem, 1fr)) |
+| 03 | repeat(auto-fill, minmax(0.75rem, 1fr)) |
+| 04 | repeat(auto-fill, minmax(0.875rem, 1fr)) |
+| 50vw | repeat(auto-fill, minmax(50vw, 1fr)) |
+| 50vh | repeat(auto-fill, minmax(50vh, 1fr)) |
+| 100vw | repeat(auto-fill, minmax(100vw, 1fr)) |
+| 100vh | repeat(auto-fill, minmax(100vh, 1fr)) |
+| 25ch | repeat(auto-fill, minmax(25ch, 1fr)) |
+| 50ch | repeat(auto-fill, minmax(50ch, 1fr)) |
+| 75ch | repeat(auto-fill, minmax(75ch, 1fr)) |
+| 100ch | repeat(auto-fill, minmax(100ch, 1fr)) |
+
 ### `gridRow`
 
 | Key | Value |

@@ -1,6 +1,8 @@
 {
   "author": "Pixelastic <tim@pixelastic.com>",
-  "dependencies": {},
+  "dependencies": {
+    "norska": "0.14.2"
+  },
   "description": "tailwind-config-norska master workspace",
   "devDependencies": {
     "aberlaas": "1.11.0",

@@ -5,6 +5,7 @@ const bullets = require('./bullets');
 const conditionals = require('./conditionals');
 const debug = require('./debug');
 const dimensionCrop = require('./dimensionCrop');
+const gridColumnWidth = require('./gridColumnWidth');
 const flexbox = require('./flexbox');
 const fontFamily = require('./fontFamily');
 const fontWeight = require('./fontWeight');
@@ -28,6 +29,7 @@ const pluginList = [
   fontWeight,
   gradient,
   grayscale,
+  gridColumnWidth,
   lineHeight,
   misc,
   textColor,

@@ -55,6 +55,10 @@ module.exports = [
     ],
   },
   {
+    groupName: 'Grid',
+    items: [{ url: 'grid-column-width', name: 'Column Width' }],
+  },
+  {
     groupName: 'Positioning',
     items: [
       { url: 'absolute', name: 'Absolute' },

@@ -1,7 +1,7 @@
 extends /_includes/_layouts/core
 
-block config
-  - pageTitle = "Index"
+block meta
+  - meta.title = "Index"
 
 block content
   .markdown!=markdown(data.readme)

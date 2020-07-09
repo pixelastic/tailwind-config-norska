@@ -1,7 +1,7 @@
 extends /_includes/_layouts/core
 
-block config
-  - pageTitle = "Box shadows"
+block meta
+  - meta.title = "Box shadows"
   - pageClasses = data.tailwind.getClasses('boxShadow', 'shadow');
   - colorClasses = data.tailwind.getClasses('colors', 'shadow');
 
