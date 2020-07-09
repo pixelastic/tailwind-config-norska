@@ -7,6 +7,7 @@ const read = require('firost/lib/read');
 const glob = require('firost/lib/glob');
 const writeJson = require('firost/lib/writeJson');
 const pMap = require('golgoth/lib/pMap');
+const exist = require('firost/lib/exist');
 const cheerio = require('cheerio');
 const pulse = require('firost/lib/pulse');
 const spinner = require('firost/lib/spinner');
@@ -36,6 +37,9 @@ module.exports = {
    * @returns {boolean} True if such a selector
    **/
   async hasScreenshot(filepath) {
+    if (!(await exist(filepath))) {
+      return false;
+    }
     const content = await read(filepath);
     const $ = cheerio.load(content);
     return !!$(this.screenshotSelector).length;
@@ -45,15 +49,17 @@ module.exports = {
    * @returns {Array} List of scenarios to test
    **/
   async getScenarios() {
-    const files = await glob(
-      'modules/tailwind-config-norska-docs/dist/**/*.html'
-    );
-    const filteredList = await pMap(files, async (filepath) => {
-      const hasScreenshot = await this.hasScreenshot(filepath);
+    const files = await glob('modules/tailwind-config-norska-docs/src/*.pug');
+    const filteredList = await pMap(files, async (srcPath) => {
+      const basename = path.basename(srcPath, '.pug');
+      const sharedPath = path.dirname(path.dirname(srcPath));
+      const distPath = path.resolve(sharedPath, 'dist', basename, 'index.html');
+
+      const hasScreenshot = await this.hasScreenshot(distPath);
       if (!hasScreenshot) {
         return false;
       }
-      return path.basename(path.dirname(filepath));
+      return path.basename(path.dirname(distPath));
     });
 
     const serverPort = this.serverPort();

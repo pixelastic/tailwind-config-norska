@@ -121,6 +121,11 @@
       "url": "http://127.0.0.1:8087/font-weight/"
     },
     {
+      "label": "grid-column-width",
+      "selectors": [".screenshot"],
+      "url": "http://127.0.0.1:8087/grid-column-width/"
+    },
+    {
       "label": "line-height",
       "selectors": [".screenshot"],
       "url": "http://127.0.0.1:8087/line-height/"
