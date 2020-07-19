@@ -2370,7 +2370,8 @@ The following variants are updated compared to the default Tailwind config.
 
 | Type | Variants |
 | --- | ----- |
-| backgroundColor | responsive, hover, focus, conditionals |
+| backgroundColor | responsive, hover, focus, focus-within, conditionals |
+| backgroundOpacity | responsive, hover, focus, focus-within |
 | display | responsive, hover, focus, conditionals |
 | height | responsive, hover |
 | position | responsive, hover |
@@ -2379,10 +2380,10 @@ The following variants are updated compared to the default Tailwind config.
 | animationAndTransition | hover, focus |
 | boxShadow | responsive, hover, focus |
 | flexbox | responsive |
-| grayscale | hover |
+| grayscale | hover, focus, focus-within |
 | lineHeight | responsive |
 | misc | responsive, hover, focus |
-| textColor | responsive, hover, focus |
+| textColor | responsive, hover, focus, focus-within |
 | textDecoration | responsive, hover, focus |
 
 ## Contribution
