@@ -12,9 +12,11 @@ configPath="$modulePath/lib/main.js"
 
 mkdir -p "$testPath"
 rm -f "$testPath/style.css"
-echo "@tailwind base;" > "$inputPath"
-echo "@tailwind components;" > "$inputPath"
-echo "@tailwind utilities;" > "$inputPath"
+{
+  echo "@tailwind base;"
+  echo "@tailwind components;"
+  echo "@tailwind utilities;"
+} > "$inputPath"
 
 $binPath build \
   "$inputPath" \

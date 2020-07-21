@@ -16,6 +16,7 @@ const misc = require('./misc');
 const textColor = require('./textColor');
 const textDecoration = require('./textDecoration');
 const textShadow = require('./textShadow');
+const typography = require('./typography');
 
 const pluginList = [
   animationAndTransition,
@@ -35,6 +36,7 @@ const pluginList = [
   textColor,
   textDecoration,
   textShadow,
+  typography,
 ];
 
 // Merge all plugin configuration together

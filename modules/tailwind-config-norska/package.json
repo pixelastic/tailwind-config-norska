@@ -30,7 +30,7 @@
     "serve": "../../scripts/local/serve"
   },
   "version": "0.3.1",
-  "devDependencies": {
+  "peerDependencies": {
     "tailwindcss": "1.5.1"
   }
 }
