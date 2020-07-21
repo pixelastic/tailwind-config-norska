@@ -56,4 +56,6 @@ _.each(rawPlugins, (plugin) => {
   fullConfig.plugins.push(method(pluginVariants));
 });
 
+fullConfig.plugins.push(require('@tailwindcss/typography'));
+
 module.exports = fullConfig;

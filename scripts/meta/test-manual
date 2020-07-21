@@ -1,5 +1,6 @@
 #!/usr/bin/env sh
 
+
 testPath="./tmp/test-manual";
 inputPath="$testPath/input.css"
 outputPath="$testPath/output.css"
