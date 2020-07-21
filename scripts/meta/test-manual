@@ -1,18 +1,22 @@
 #!/usr/bin/env sh
+set -e
 
-
-testPath="./tmp/test-manual";
+rootPath=$PWD;
+testPath="$rootPath/tmp/test-manual";
 inputPath="$testPath/input.css"
 outputPath="$testPath/output.css"
-configPath="modules/tailwind-config-norska/lib/main.js"
 
-mkdir -p $testPath
-rm -f $testPath/style.css
-echo "@tailwind base;" > $inputPath
-echo "@tailwind components;" > $inputPath
-echo "@tailwind utilities;" > $inputPath
+modulePath="$rootPath/modules/tailwind-config-norska"
+binPath="$modulePath/node_modules/.bin/tailwindcss"
+configPath="$modulePath/lib/main.js"
 
-yarn run tailwindcss build \
+mkdir -p "$testPath"
+rm -f "$testPath/style.css"
+echo "@tailwind base;" > "$inputPath"
+echo "@tailwind components;" > "$inputPath"
+echo "@tailwind utilities;" > "$inputPath"
+
+$binPath build \
   "$inputPath" \
   --config "$configPath" \
   --output "$outputPath"

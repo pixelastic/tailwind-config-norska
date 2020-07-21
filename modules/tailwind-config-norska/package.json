@@ -15,9 +15,6 @@
   "license": "MIT",
   "main": "lib/main.js",
   "name": "tailwind-config-norska",
-  "peerDependencies": {
-    "tailwindcss": "1.4"
-  },
   "repository": "git@github.com:pixelastic/tailwind-config-norska.git",
   "scripts": {
     "build": "../../scripts/local/build",
@@ -32,5 +29,8 @@
     "test:visual:approve": "../../scripts/local/test-visual-approve",
     "serve": "../../scripts/local/serve"
   },
-  "version": "0.3.1"
+  "version": "0.3.1",
+  "devDependencies": {
+    "tailwindcss": "1.5.1"
+  }
 }
