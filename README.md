@@ -1229,8 +1229,10 @@ and new theming option added by custom plugins.
 | 100vh | repeat(auto-fill, minmax(100vh, 1fr)) |
 | 25ch | repeat(auto-fill, minmax(25ch, 1fr)) |
 | 50ch | repeat(auto-fill, minmax(50ch, 1fr)) |
+| 65ch | repeat(auto-fill, minmax(65ch, 1fr)) |
 | 75ch | repeat(auto-fill, minmax(75ch, 1fr)) |
 | 100ch | repeat(auto-fill, minmax(100ch, 1fr)) |
+| prose | repeat(auto-fill, minmax(65ch, 1fr)) |
 
 ### `gridRow`
 
@@ -1585,8 +1587,10 @@ and new theming option added by custom plugins.
 | 100vh | 100vh |
 | 25ch | 25ch |
 | 50ch | 50ch |
+| 65ch | 65ch |
 | 75ch | 75ch |
 | 100ch | 100ch |
+| prose | 65ch |
 
 ### `minHeight`
 
@@ -2345,8 +2349,10 @@ and new theming option added by custom plugins.
 | 100vh | 100vh |
 | 25ch | 25ch |
 | 50ch | 50ch |
+| 65ch | 65ch |
 | 75ch | 75ch |
 | 100ch | 100ch |
+| prose | 65ch |
 
 ### `zIndex`
 
