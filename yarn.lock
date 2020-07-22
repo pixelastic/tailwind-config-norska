@@ -1801,6 +1801,32 @@
     util.promisify "^1.0.1"
     yargs "^15.3.1"
 
+"@netlify/zip-it-and-ship-it@^1.3.3":
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/@netlify/zip-it-and-ship-it/-/zip-it-and-ship-it-1.3.3.tgz#cf33bcbc313dd06f0a7ba1e4ee69de59344ca0a8"
+  integrity sha512-MCsTgFa6SKj233Uv3+6DO6wZxQ7931W5PcrYDkGRxwdiksMyMJfeP5ZcREFkPxxUjIZ+66eEUoXffkhoDwy3WQ==
+  dependencies:
+    archiver "^4.0.0"
+    common-path-prefix "^2.0.0"
+    cp-file "^7.0.0"
+    elf-tools "^1.1.1"
+    end-of-stream "^1.4.4"
+    find-up "^4.1.0"
+    glob "^7.1.6"
+    junk "^3.1.0"
+    locate-path "^5.0.0"
+    make-dir "^3.1.0"
+    p-map "^3.0.0"
+    path-exists "^4.0.0"
+    pkg-dir "^4.2.0"
+    precinct "^6.3.1"
+    require-package-name "^2.0.1"
+    resolve "^2.0.0-next.1"
+    semver "^7.3.2"
+    unixify "^1.0.0"
+    util.promisify "^1.0.1"
+    yargs "^15.4.1"
+
 "@nodelib/fs.scandir@2.1.3":
   version "2.1.3"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.scandir/-/fs.scandir-2.1.3.tgz#3a582bdb53804c6ba6d146579c46e52130cf4a3b"
@@ -2639,10 +2665,10 @@ abbrev@1:
   resolved "https://registry.npmjs.org/abbrev/-/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"
   integrity sha512-nne9/IiQ/hzIhY6pdDnbBtz7DjPTKrY00P/zvPSm5pOFkl6xuGrGnXn/VtTNNfNtAfZ9/1RtehkszU9qcTii0Q==
 
-aberlaas@1.12.0:
-  version "1.12.0"
-  resolved "https://registry.yarnpkg.com/aberlaas/-/aberlaas-1.12.0.tgz#bde7338e66c244d8151bc5174fafbd4a8517c215"
-  integrity sha512-7kmQQA5cM5a4YXvCnsj+oECzCzHHy2nDvwOPR5JMbuxqlWrW757b966az/AQ8cqyyxGSP+K/xY5GWnBQ+ciz3w==
+aberlaas@1.12.1:
+  version "1.12.1"
+  resolved "https://registry.yarnpkg.com/aberlaas/-/aberlaas-1.12.1.tgz#3cff35d62b7a95f8a67f31fbf1e94b2e720d1431"
+  integrity sha512-VD+e1jSVdnt/RST/kuKxN++UEnj0TdfaY4nylEt2NiL1qndhxJ9qBWt5A4PWYePpJ1ES0AdXzFrcsm5VwolaSw==
   dependencies:
     "@octokit/rest" "18.0.1"
     ci-info "2.0.0"
@@ -3021,6 +3047,19 @@ archiver@^3.0.0:
     tar-stream "^2.1.0"
     zip-stream "^2.1.2"
 
+archiver@^4.0.0:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/archiver/-/archiver-4.0.2.tgz#43c72865eadb4ddaaa2fb74852527b6a450d927c"
+  integrity sha512-B9IZjlGwaxF33UN4oPbfBkyA4V1SxNLeIhR1qY8sRXSsbdUkEHrrOvwlYFPx+8uQeCe9M+FG6KgO+imDmQ79CQ==
+  dependencies:
+    archiver-utils "^2.1.0"
+    async "^3.2.0"
+    buffer-crc32 "^0.2.1"
+    glob "^7.1.6"
+    readable-stream "^3.6.0"
+    tar-stream "^2.1.2"
+    zip-stream "^3.0.1"
+
 are-we-there-yet@~1.1.2:
   version "1.1.5"
   resolved "https://registry.npmjs.org/are-we-there-yet/-/are-we-there-yet-1.1.5.tgz#4b35c2944f062a8bfcda66410760350fe9ddfc21"
@@ -3204,7 +3243,7 @@ async@^2.6.2, async@^2.6.3:
   dependencies:
     lodash "^4.17.14"
 
-async@^3.1.0:
+async@^3.1.0, async@^3.2.0:
   version "3.2.0"
   resolved "https://registry.npmjs.org/async/-/async-3.2.0.tgz#b3a2685c5ebb641d3de02d161002c60fc9f85720"
   integrity sha512-TR2mEZFVOj2pLStYxLht7TyfuRzaydfpxr3k9RpHIzMgw7A64dzsdqCxH1WJyQdoe8T10nDXd9wnEigmiuHIZw==
@@ -4578,6 +4617,16 @@ compress-commons@^2.1.1:
     crc32-stream "^3.0.1"
     normalize-path "^3.0.0"
     readable-stream "^2.3.6"
+
+compress-commons@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/compress-commons/-/compress-commons-3.0.0.tgz#833944d84596e537224dd91cf92f5246823d4f1d"
+  integrity sha512-FyDqr8TKX5/X0qo+aVfaZ+PVmNJHJeckFBlq8jZGSJOgnynhfifoyl24qaqdUdDIBe0EVTHByN6NAkqYvE/2Xg==
+  dependencies:
+    buffer-crc32 "^0.2.13"
+    crc32-stream "^3.0.1"
+    normalize-path "^3.0.0"
+    readable-stream "^2.3.7"
 
 concat-map@0.0.1:
   version "0.0.1"
@@ -7622,6 +7671,14 @@ hasha@^3.0.0:
   dependencies:
     is-stream "^1.0.1"
 
+hasha@^5.0.0:
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/hasha/-/hasha-5.2.0.tgz#33094d1f69c40a4a6ac7be53d5fe3ff95a269e0c"
+  integrity sha512-2W+jKdQbAdSIrggA8Q35Br8qKadTrqCTC8+XZvBWepKDK6m9XkX6Iz1a2yh2KP01kzAR/dpuMeUnocoLYDcskw==
+  dependencies:
+    is-stream "^2.0.0"
+    type-fest "^0.8.0"
+
 hex-rgb@4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/hex-rgb/-/hex-rgb-4.1.0.tgz#2d5d3a2943bd40e7dc9b0d5b98903d7d17035967"
@@ -10148,7 +10205,7 @@ make-dir@^3.0.0:
   dependencies:
     semver "^6.0.0"
 
-make-dir@^3.0.2:
+make-dir@^3.0.2, make-dir@^3.1.0:
   version "3.1.0"
   resolved "https://registry.npmjs.org/make-dir/-/make-dir-3.1.0.tgz#415e967046b3a7f1d185277d84aa58203726a13f"
   integrity sha512-g3FeP20LNwhALb/6Cz6Dd4F2ngze0jz7tbzrD2wAV+o9FeNHe4rL+yK2md0J/fiSf1sa1ADhXqi5+oVwOM/eGw==
@@ -10976,20 +11033,20 @@ netlify-redirector@^0.2.0:
   resolved "https://registry.npmjs.org/netlify-redirector/-/netlify-redirector-0.2.0.tgz#2037bf92520459277c9ae17f46e4df56104cd787"
   integrity sha512-5SSUu++MXvE/tik90Hx7lzISBHCl5k4TqpVeTuBEoHp5K7uWitY7c3MjPNiY3kB83GSZiTNLbuIY7bo6mpyU3Q==
 
-netlify@4.3.5, netlify@^4.3.5:
-  version "4.3.5"
-  resolved "https://registry.yarnpkg.com/netlify/-/netlify-4.3.5.tgz#a386d0c5a23765362765057a8138cd2441a06c42"
-  integrity sha512-Weq2swCfaB3pvQjVrnZmYoTwB8MdkKg/hGRRmHQWWtdh9llBKXf7UsWiIjkmDOD78xMXN9Xym6Vgi2shN+3SzQ==
+netlify@4.3.6:
+  version "4.3.6"
+  resolved "https://registry.yarnpkg.com/netlify/-/netlify-4.3.6.tgz#db9ca34da0f9574b2de51d2b991446fdcf4c37e4"
+  integrity sha512-HPuIzS6eR5X704GJWz8vUV/pmG9S08F8GH1T47VF7tznNX0FytbQ+dM/1rAFMzGmObRo2+64FAJObcr3MSjv9Q==
   dependencies:
     "@netlify/open-api" "^0.15.0"
-    "@netlify/zip-it-and-ship-it" "^1.3.2"
+    "@netlify/zip-it-and-ship-it" "^1.3.3"
     backoff "^2.5.0"
     clean-deep "^3.3.0"
     filter-obj "^2.0.1"
     flush-write-stream "^2.0.0"
     folder-walker "^3.2.0"
     from2-array "0.0.4"
-    hasha "^3.0.0"
+    hasha "^5.0.0"
     lodash.camelcase "^4.3.0"
     lodash.flatten "^4.4.0"
     lodash.get "^4.4.2"
@@ -11013,6 +11070,36 @@ netlify@^4.1.7:
   dependencies:
     "@netlify/open-api" "^0.15.0"
     "@netlify/zip-it-and-ship-it" "^1.3.1"
+    backoff "^2.5.0"
+    clean-deep "^3.3.0"
+    filter-obj "^2.0.1"
+    flush-write-stream "^2.0.0"
+    folder-walker "^3.2.0"
+    from2-array "0.0.4"
+    hasha "^3.0.0"
+    lodash.camelcase "^4.3.0"
+    lodash.flatten "^4.4.0"
+    lodash.get "^4.4.2"
+    lodash.set "^4.3.2"
+    micro-api-client "^3.3.0"
+    node-fetch "^2.2.0"
+    p-map "^3.0.0"
+    p-wait-for "^3.1.0"
+    parallel-transform "^1.1.0"
+    pump "^3.0.0"
+    qs "^6.9.3"
+    rimraf "^3.0.2"
+    tempy "^0.3.0"
+    through2-filter "^3.0.0"
+    through2-map "^3.0.0"
+
+netlify@^4.3.5:
+  version "4.3.5"
+  resolved "https://registry.yarnpkg.com/netlify/-/netlify-4.3.5.tgz#a386d0c5a23765362765057a8138cd2441a06c42"
+  integrity sha512-Weq2swCfaB3pvQjVrnZmYoTwB8MdkKg/hGRRmHQWWtdh9llBKXf7UsWiIjkmDOD78xMXN9Xym6Vgi2shN+3SzQ==
+  dependencies:
+    "@netlify/open-api" "^0.15.0"
+    "@netlify/zip-it-and-ship-it" "^1.3.2"
     backoff "^2.5.0"
     clean-deep "^3.3.0"
     filter-obj "^2.0.1"
@@ -11271,10 +11358,10 @@ norska-cloudinary@^0.14.3:
     norska-config "^0.14.3"
     norska-helper "^0.14.3"
 
-norska-cms@^0.14.6:
-  version "0.14.6"
-  resolved "https://registry.yarnpkg.com/norska-cms/-/norska-cms-0.14.6.tgz#f9dbb6d123e127f0f829e9f506cf46ffa47f3987"
-  integrity sha512-CJVWLqNSDFsZGTSdIO59G3ttBUMWiyibo4UwJAv6uwtn0frbyFxskvhsUR4zhqbuhuVBO6tAArrB9+YAs9mkHQ==
+norska-cms@^0.14.7:
+  version "0.14.7"
+  resolved "https://registry.yarnpkg.com/norska-cms/-/norska-cms-0.14.7.tgz#27c3fc2b3130ca3f29a41dcf88e1406c6fc8b7b4"
+  integrity sha512-KN6bh2UtYRXPaTiYAqWJlxf7wPT31RARYaw26bcvIMud1P/l6mNxxsUn5TqhdxlJQAxV28FesxsZi7ppP5wzUg==
   dependencies:
     connect-livereload "0.6.1"
     express "4.17.1"
@@ -11284,7 +11371,7 @@ norska-cms@^0.14.6:
     multer "1.4.2"
     nodemon "2.0.4"
     norska-config "^0.14.3"
-    norska-css "^0.14.6"
+    norska-css "^0.14.7"
     norska-helper "^0.14.3"
     open "7.1.0"
 
@@ -11297,10 +11384,10 @@ norska-config@^0.14.3:
     golgoth "1.3.0"
     norska-helper "^0.14.3"
 
-norska-css@^0.14.6:
-  version "0.14.6"
-  resolved "https://registry.yarnpkg.com/norska-css/-/norska-css-0.14.6.tgz#64d8af607c0d743a217917b96534ee5ab36af394"
-  integrity sha512-Fwoci/sV6mGRTwukU8Vujcr3mw9+mkOVsjq7i91Nt56q7fwbYfVpSc/TUcKMoxU+N8qxaP1Ip3i2beDZKI36Gg==
+norska-css@^0.14.7:
+  version "0.14.7"
+  resolved "https://registry.yarnpkg.com/norska-css/-/norska-css-0.14.7.tgz#cf0129986982087f900465d723a725f2df5a112f"
+  integrity sha512-cJHSjUV40EiZfWWXjsZ5jjegGkTxHozM0PxQpq9k/YOWqZWsSijleO+LIIjP7c83V2J+Ydl65VKeHo2Hnet+Tw==
   dependencies:
     "@fullhuman/postcss-purgecss" "1.3.0"
     autoprefixer "9.8.5"
@@ -11313,7 +11400,7 @@ norska-css@^0.14.6:
     postcss-import "12.0.1"
     postcss-nested "4.2.3"
     purge-from-html "1.0.3"
-    tailwind-config-norska "0.4.0"
+    tailwind-config-norska "0.4.1"
     tailwindcss "1.5.1"
 
 norska-data@^0.14.3:
@@ -11363,15 +11450,15 @@ norska-html@^0.14.6:
     norska-revv "^0.14.3"
     pug "3.0.0"
 
-norska-init@^0.14.5:
-  version "0.14.5"
-  resolved "https://registry.yarnpkg.com/norska-init/-/norska-init-0.14.5.tgz#8ba443b356f39ec39ae88bf2e115a7a104fc7051"
-  integrity sha512-5zZqIUvJ3S8jreK0yQWlbRDWJMPUS0nokSU4y5j+4Norp+7oqjjB4UtuDa6uwKWg6r9L4Gak6C5Ky4giE0JMaA==
+norska-init@^0.14.7:
+  version "0.14.7"
+  resolved "https://registry.yarnpkg.com/norska-init/-/norska-init-0.14.7.tgz#01ccddd4f050d3f87a1a4bc4ed4cbc438a3770ca"
+  integrity sha512-X7Jv0cn/Iu+Ew03HEcGmDE/ET/wo1NHFRGi29KPm5H1BMYSo/kKft9nugMXskZwruaYCwhPbv3q+li34vR+kOg==
   dependencies:
     firost "1.11.1"
     golgoth "1.3.0"
     norska-config "^0.14.3"
-    norska-netlify "^0.14.3"
+    norska-netlify "^0.14.7"
 
 norska-js@^0.14.3:
   version "0.14.3"
@@ -11385,15 +11472,15 @@ norska-js@^0.14.3:
     pug-loader "^2.4.0"
     webpack "4.43.0"
 
-norska-netlify@^0.14.3:
-  version "0.14.3"
-  resolved "https://registry.yarnpkg.com/norska-netlify/-/norska-netlify-0.14.3.tgz#6ca71849df4e313965fc3efb694f1d835a1f5dff"
-  integrity sha512-Ie3ExHmVi29Oar03V1086I0/ZYIqObYcfCUogBMIBG0BN/HHdv+mtaN9WvZgaKYKZwJzp/ZW0MFS/C38ubjnFA==
+norska-netlify@^0.14.7:
+  version "0.14.7"
+  resolved "https://registry.yarnpkg.com/norska-netlify/-/norska-netlify-0.14.7.tgz#0f8a2999efef1c1f4174d331912f275f444dc04b"
+  integrity sha512-XN+b7vov8zIdkVvYypJLz9yTiAhEwzRlsAguAgJ83UBmfQSQmT3v37j93RrzTCbBO8zHJvi9s9tafETXdKMxYw==
   dependencies:
     firost "1.11.1"
     golgoth "1.3.0"
     multimatch "4.0.0"
-    netlify "4.3.5"
+    netlify "4.3.6"
     netlify-cli "2.58.0"
     norska-config "^0.14.3"
     norska-helper "^0.14.3"
@@ -11409,10 +11496,10 @@ norska-revv@^0.14.3:
     norska-helper "^0.14.3"
     rev-hash "^3.0.0"
 
-norska@0.14.6:
-  version "0.14.6"
-  resolved "https://registry.yarnpkg.com/norska/-/norska-0.14.6.tgz#4e4b2182f0809510b606a8770de49ce8ab0475fb"
-  integrity sha512-SNGNB6thB9teyQ2C1b6AEQ6TuJoVVg8okJAbWE3KFCFSGNdsKI60FjmwDfWDpLSDlWagxGNMm5LOZCNMIW2jng==
+norska@0.14.7:
+  version "0.14.7"
+  resolved "https://registry.yarnpkg.com/norska/-/norska-0.14.7.tgz#74e49ac945b1967c83e2d278767bd92387d4172d"
+  integrity sha512-4E4qEPrnfPz2PRnhy51q1FWWfkDcYH1plXp7q3KnOHJSQ9n7OUJ1tLqXtxsEdJiTcpWJg0SFPRSuoFEGiprzbA==
   dependencies:
     firost "1.11.1"
     golgoth "1.3.0"
@@ -11420,15 +11507,15 @@ norska@0.14.6:
     minimist "1.2.5"
     norska-assets "^0.14.6"
     norska-cloudinary "^0.14.3"
-    norska-cms "^0.14.6"
+    norska-cms "^0.14.7"
     norska-config "^0.14.3"
-    norska-css "^0.14.6"
+    norska-css "^0.14.7"
     norska-frontend "^0.14.6"
     norska-helper "^0.14.3"
     norska-html "^0.14.6"
-    norska-init "^0.14.5"
+    norska-init "^0.14.7"
     norska-js "^0.14.3"
-    norska-netlify "^0.14.3"
+    norska-netlify "^0.14.7"
     norska-revv "^0.14.3"
 
 np@pixelastic/np#feat/no-2fa:
@@ -12692,7 +12779,7 @@ preact@^10.0.0:
   resolved "https://registry.npmjs.org/preact/-/preact-10.4.4.tgz#0bd6d759ec2f8684aaf8c63c7f076191e46528cf"
   integrity sha512-EaTJrerceyAPatQ+vfnadoopsMBZAOY7ak9ogVdUi5xbpR8SoHgtLryXnW+4mQOwt21icqoVR1brkU2dq7pEBA==
 
-precinct@^6.1.2, precinct@^6.2.0:
+precinct@^6.1.2, precinct@^6.2.0, precinct@^6.3.1:
   version "6.3.1"
   resolved "https://registry.npmjs.org/precinct/-/precinct-6.3.1.tgz#8ad735a8afdfc48b56ed39c9ad3bf999b6b928dc"
   integrity sha512-JAwyLCgTylWminoD7V0VJwMElWmwrVSR6r9HaPWCoswkB4iFzX7aNtO7VBfAVPy+NhmjKb8IF8UmlWJXzUkOIQ==
@@ -15031,6 +15118,17 @@ tar-stream@^2.1.0:
     inherits "^2.0.3"
     readable-stream "^3.1.1"
 
+tar-stream@^2.1.2:
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/tar-stream/-/tar-stream-2.1.3.tgz#1e2022559221b7866161660f118255e20fa79e41"
+  integrity sha512-Z9yri56Dih8IaK8gncVPx4Wqt86NDmQTSh49XLZgjWpGZL9GK9HKParS2scqHCC4w6X9Gh2jwaU45V47XTKwVA==
+  dependencies:
+    bl "^4.0.1"
+    end-of-stream "^1.4.1"
+    fs-constants "^1.0.0"
+    inherits "^2.0.3"
+    readable-stream "^3.1.1"
+
 tar@^4.4.10, tar@^4.4.12, tar@^4.4.8:
   version "4.4.13"
   resolved "https://registry.npmjs.org/tar/-/tar-4.4.13.tgz#43b364bc52888d555298637b10d60790254ab525"
@@ -15512,7 +15610,7 @@ type-fest@^0.6.0:
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.6.0.tgz#8d2a2370d3df886eb5c90ada1c5bf6188acf838b"
   integrity sha512-q+MB8nYR1KDLrgr4G5yemftpMC7/QLqVndBmEEdqzmNj5dcFOO4Oo8qlwZE3ULT3+Zim1F8Kq4cBnikNhlCMlg==
 
-type-fest@^0.8.1:
+type-fest@^0.8.0, type-fest@^0.8.1:
   version "0.8.1"
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.8.1.tgz#09e249ebde851d3b1e48d27c105444667f17b83d"
   integrity sha512-4dbzIzqvjtgiM5rw1k5rEHtBANKmdudhGyBEajN01fEyhaAIhsoKNy6y7+IN93IfpFtwY9iqi7kD+xwKhQsNJA==
@@ -16526,9 +16624,9 @@ yargs-parser@^18.1.1:
     camelcase "^5.0.0"
     decamelize "^1.2.0"
 
-yargs-parser@^18.1.3:
+yargs-parser@^18.1.2, yargs-parser@^18.1.3:
   version "18.1.3"
-  resolved "https://registry.npmjs.org/yargs-parser/-/yargs-parser-18.1.3.tgz#be68c4975c6b2abf469236b0c870362fab09a7b0"
+  resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-18.1.3.tgz#be68c4975c6b2abf469236b0c870362fab09a7b0"
   integrity sha512-o50j0JeToy/4K6OZcaQmW6lyXXKhq7csREXcDwk2omFPJEwUNOVtJKvmDr9EI1fAJZUyZcRF7kxGBWmRXudrCQ==
   dependencies:
     camelcase "^5.0.0"
@@ -16568,6 +16666,23 @@ yargs@^15.3.0, yargs@^15.3.1:
     y18n "^4.0.0"
     yargs-parser "^18.1.1"
 
+yargs@^15.4.1:
+  version "15.4.1"
+  resolved "https://registry.yarnpkg.com/yargs/-/yargs-15.4.1.tgz#0d87a16de01aee9d8bec2bfbf74f67851730f4f8"
+  integrity sha512-aePbxDmcYW++PaqBsJ+HYUFwCdv4LVvdnhBy78E57PIor8/OVvhMrADFFEDh8DHDFRv/O9i3lPhsENjO7QX0+A==
+  dependencies:
+    cliui "^6.0.0"
+    decamelize "^1.2.0"
+    find-up "^4.1.0"
+    get-caller-file "^2.0.1"
+    require-directory "^2.1.1"
+    require-main-filename "^2.0.0"
+    set-blocking "^2.0.0"
+    string-width "^4.2.0"
+    which-module "^2.0.0"
+    y18n "^4.0.0"
+    yargs-parser "^18.1.2"
+
 yargs@^3.19.0:
   version "3.32.0"
   resolved "https://registry.yarnpkg.com/yargs/-/yargs-3.32.0.tgz#03088e9ebf9e756b69751611d2a5ef591482c995"
@@ -16602,3 +16717,12 @@ zip-stream@^2.1.2:
     archiver-utils "^2.1.0"
     compress-commons "^2.1.1"
     readable-stream "^3.4.0"
+
+zip-stream@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/zip-stream/-/zip-stream-3.0.1.tgz#cb8db9d324a76c09f9b76b31a12a48638b0b9708"
+  integrity sha512-r+JdDipt93ttDjsOVPU5zaq5bAyY+3H19bDrThkvuVxC0xMQzU1PJcS6D+KrP3u96gH9XLomcHPb+2skoDjulQ==
+  dependencies:
+    archiver-utils "^2.1.0"
+    compress-commons "^3.0.0"
+    readable-stream "^3.6.0"

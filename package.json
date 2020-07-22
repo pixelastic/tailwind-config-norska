@@ -1,11 +1,11 @@
 {
   "author": "Pixelastic <tim@pixelastic.com>",
   "dependencies": {
-    "norska": "0.14.6"
+    "norska": "0.14.7"
   },
   "description": "tailwind-config-norska master workspace",
   "devDependencies": {
-    "aberlaas": "1.12.0",
+    "aberlaas": "1.12.1",
     "backstopjs": "5.0.1",
     "cheerio": "1.0.0-rc.3",
     "firost": "1.11.1",
