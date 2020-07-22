@@ -1534,6 +1534,7 @@ and new theming option added by custom plugins.
 | 50vh | 50vh |
 | 100vw | 100vw |
 | 100vh | 100vh |
+| none | none |
 
 ### `maxWidth`
 
@@ -1591,6 +1592,7 @@ and new theming option added by custom plugins.
 | 75ch | 75ch |
 | 100ch | 100ch |
 | prose | 65ch |
+| none | none |
 
 ### `minHeight`
 
