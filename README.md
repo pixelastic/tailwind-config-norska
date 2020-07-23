@@ -2387,11 +2387,12 @@ The following variants are updated compared to the default Tailwind config.
 | zIndex | responsive, hover |
 | animationAndTransition | hover, focus |
 | boxShadow | responsive, hover, focus |
+| opacity | responsive, hover, focus, focus-within, conditionals |
 | flexbox | responsive |
 | grayscale | hover, focus, focus-within |
 | lineHeight | responsive |
 | misc | responsive, hover, focus |
-| textColor | responsive, hover, focus, focus-within |
+| textColor | responsive, hover, focus, focus-within, conditionals |
 | textDecoration | responsive, hover, focus |
 
 ## Contribution

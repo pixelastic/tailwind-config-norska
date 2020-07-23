@@ -5,17 +5,6 @@ module.exports = {
     theme: {
       flexbox: theme,
     },
-    corePlugins: {
-      // flexDirection: false,
-      // flexWrap: false,
-      // alignItems: false,
-      // alignContent: false,
-      // alignSelf: false,
-      // justifyContent: false,
-      // flex: false,
-      // flexGrow: false,
-      // flexShrink: false,
-    },
   },
   plugin: {
     name: 'flexbox',
