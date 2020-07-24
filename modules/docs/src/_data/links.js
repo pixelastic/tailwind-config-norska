@@ -76,6 +76,7 @@ module.exports = [
       { url: 'line-height', name: 'Line height' },
       { url: 'text-color', name: 'Text color' },
       { url: 'text-decoration', name: 'Text decoration' },
+      { url: 'text-decoration-hover', name: 'Text decoration Hover' },
       { url: 'text-opacity', name: 'Text opacity' },
       { url: 'text-shadow', name: 'Text shadow' },
     ],
