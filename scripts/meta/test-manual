@@ -6,7 +6,7 @@ testPath="$rootPath/tmp/test-manual";
 inputPath="$testPath/input.css"
 outputPath="$testPath/output.css"
 
-modulePath="$rootPath/modules/tailwind-config-norska"
+modulePath="$rootPath/modules/lib"
 binPath="$modulePath/node_modules/.bin/tailwindcss"
 configPath="$modulePath/lib/main.js"
 

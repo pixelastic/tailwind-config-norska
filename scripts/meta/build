@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
 set -e
 
-cd ./modules/tailwind-config-norska-docs
+cd ./modules/docs
 yarn run build

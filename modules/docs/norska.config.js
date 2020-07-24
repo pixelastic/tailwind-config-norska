@@ -1,5 +1,5 @@
-const libPath = 'modules/tailwind-config-norska';
-const docsPath = 'modules/tailwind-config-norska-docs';
+const libPath = 'modules/lib';
+const docsPath = 'modules/docs';
 module.exports = {
   port: 8087,
   cloudinary: {

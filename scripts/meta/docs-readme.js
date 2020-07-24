@@ -1,6 +1,6 @@
 const firost = require('firost');
 const _ = require('golgoth/lib/lodash');
-const config = require('../../modules/tailwind-config-norska/');
+const config = require('../../modules/lib/');
 
 (async function () {
   const themeLines = [];
