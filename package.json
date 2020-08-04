@@ -5,7 +5,7 @@
   },
   "description": "tailwind-config-norska master workspace",
   "devDependencies": {
-    "aberlaas": "1.12.1",
+    "aberlaas": "1.12.2",
     "backstopjs": "5.0.1",
     "cheerio": "1.0.0-rc.3",
     "firost": "1.11.1",
