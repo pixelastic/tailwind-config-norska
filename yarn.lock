@@ -3422,10 +3422,10 @@ backoff@^2.5.0:
   dependencies:
     precond "0.2"
 
-backstopjs@5.0.1:
-  version "5.0.1"
-  resolved "https://registry.npmjs.org/backstopjs/-/backstopjs-5.0.1.tgz#80b2c093fe09da807863e23b72cffffbb3ec8061"
-  integrity sha512-qTo8W/D3XPRMbzntbg/gey8e01PDYssSQx9SS8fSUarW+fCx0Z8H7OoOMI81xPWoQKiBuJHcFpbzplFrWoi7DA==
+backstopjs@5.0.4:
+  version "5.0.4"
+  resolved "https://registry.yarnpkg.com/backstopjs/-/backstopjs-5.0.4.tgz#e926f3f27ecdea09423c91529ea3d35bdcc2a41d"
+  integrity sha512-w5PMOCuWPODgGETrh6ZW0uEkhmCGod2fSm++A2MEG2owtcsJqpaABSm98I/82yNRIF+rTStRFtgkzcn7/kVncw==
   dependencies:
     chalk "^1.1.3"
     diverged "^0.1.3"
