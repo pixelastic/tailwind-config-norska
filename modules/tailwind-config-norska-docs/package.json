@@ -2,7 +2,7 @@
   "author": "Pixelastic <tim@pixelastic.com>",
   "dependencies": {
     "firost": "1.11.2",
-    "golgoth": "1.3.2",
+    "golgoth": "1.4.0",
     "norska": "0.15.1"
   },
   "description": "tailwind-config-norska documentation",
