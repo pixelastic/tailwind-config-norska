@@ -1,6 +1,6 @@
 # Build website
 [build]
-  command = "yarn run docs:build:prod"
+  command = "yarn run build:prod"
   publish = "./modules/docs/dist/"
 
 # Terry Pratchett homage
