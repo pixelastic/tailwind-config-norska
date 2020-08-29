@@ -1,5 +1,5 @@
-const watch = require('firost/lib/watch');
-const run = require('firost/lib/run');
+const watch = require('firost/watch');
+const run = require('firost/run');
 const path = require('path');
 const norska = require('norska');
 

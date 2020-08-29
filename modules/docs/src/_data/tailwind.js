@@ -1,6 +1,6 @@
 const config = require('../../tailwind.config.js');
 const _ = require('golgoth/lib/lodash');
-const uuid = require('firost/lib/uuid');
+const uuid = require('firost/uuid');
 const sortKeys = require('../../lib/sortKeys.js');
 
 module.exports = {
