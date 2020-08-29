@@ -3,16 +3,16 @@ const path = require('path');
 const norskaConfig = require('../modules/docs/norska.config.js');
 const defaultConfig = require('./config.js');
 const isPortReachable = require('is-port-reachable');
-const read = require('firost/lib/read');
-const glob = require('firost/lib/glob');
-const writeJson = require('firost/lib/writeJson');
+const read = require('firost/read');
+const glob = require('firost/glob');
+const writeJson = require('firost/writeJson');
 const pMap = require('golgoth/lib/pMap');
-const exist = require('firost/lib/exist');
+const exist = require('firost/exist');
 const cheerio = require('cheerio');
-const pulse = require('firost/lib/pulse');
-const spinner = require('firost/lib/spinner');
+const pulse = require('firost/pulse');
+const spinner = require('firost/spinner');
 const backstopjs = require('backstopjs');
-const exit = require('firost/lib/exit');
+const exit = require('firost/exit');
 
 module.exports = {
   screenshotSelector: '.screenshot',

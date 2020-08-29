@@ -1,2 +1,2 @@
-const spinner = require('firost/lib/spinner');
+const spinner = require('firost/spinner');
 module.exports = spinner();

@@ -1,7 +1,7 @@
 const _ = require('golgoth/lib/lodash');
 const helper = require('../../visual-tests/helper.js');
-const exit = require('firost/lib/exit');
-const consoleError = require('firost/lib/consoleError');
+const exit = require('firost/exit');
+const consoleError = require('firost/consoleError');
 (async function () {
   // Stop if server not running
   // Run doc server if not running

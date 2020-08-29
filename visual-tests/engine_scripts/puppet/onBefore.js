@@ -1,4 +1,4 @@
-const pulse = require('firost/lib/pulse');
+const pulse = require('firost/pulse');
 module.exports = async (_page, scenario, _viewport) => {
   pulse.emit('tick', scenario.label);
 

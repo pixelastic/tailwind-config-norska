@@ -1,10 +1,10 @@
 // const firost = require('firost');
 const pMap = require('golgoth/lib/pMap');
 const _ = require('golgoth/lib/lodash');
-const run = require('firost/lib/run');
-const glob = require('firost/lib/glob');
-const writeJson = require('firost/lib/writeJson');
-const readJson = require('firost/lib/readJson');
+const run = require('firost/run');
+const glob = require('firost/glob');
+const writeJson = require('firost/writeJson');
+const readJson = require('firost/readJson');
 
 // const pMap = require('golgoth/lib/pMap');
 
