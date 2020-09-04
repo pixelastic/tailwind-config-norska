@@ -22,13 +22,9 @@
     "release": "../scripts/release",
     "test": "../scripts/lib/test",
     "test:watch": "../scripts/lib/test-watch",
-    "__build": "../../scripts/local/build",
-    "__build:prod": "../../scripts/local/build-prod",
-    "__test:manual": "../../scripts/local/test-manual",
-    "__test:watch": "../../scripts/local/test-watch",
-    "__test:visual": "../../scripts/local/test-visual",
-    "__test:visual:approve": "../../scripts/local/test-visual-approve",
-    "__serve": "../../scripts/local/serve"
+    "test:visual": "../scripts/test-visual",
+    "test:visual:approve": "../scripts/test-visual-approve",
+    "serve": "../scripts/docs/serve"
   },
   "version": "0.5.0",
   "peerDependencies": {

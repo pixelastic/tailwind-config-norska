@@ -34,7 +34,7 @@
     "ci": "./scripts/ci",
     "release": "./scripts/release",
     "test:manual": "./scripts/test-manual",
-    "test:visual": "node ./scripts/test-visual.js",
+    "test:visual": "./scripts/test-visual",
     "test:visual:approve": "./scripts/test-visual-approve"
   },
   "version": "0.2.1",
