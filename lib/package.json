@@ -27,7 +27,7 @@
     "test:visual:approve": "../scripts/test-visual-approve",
     "serve": "../scripts/docs/serve"
   },
-  "version": "0.5.0",
+  "version": "0.5.1",
   "peerDependencies": {
     "tailwindcss": "1.5.1"
   }
