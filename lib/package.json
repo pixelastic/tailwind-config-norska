@@ -22,6 +22,7 @@
     "release": "../scripts/release",
     "test": "../scripts/lib/test",
     "test:watch": "../scripts/lib/test-watch",
+    "test:manual": "../scripts/test-manual",
     "test:visual": "../scripts/test-visual",
     "test:visual:approve": "../scripts/test-visual-approve",
     "serve": "../scripts/docs/serve"

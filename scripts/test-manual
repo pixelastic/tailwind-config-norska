@@ -1,5 +1,6 @@
 #!/usr/bin/env sh
 set -e
+cd "$(dirname "$0")/.."
 
 rootPath=$PWD;
 testPath="$rootPath/tmp/test-manual";
@@ -8,7 +9,7 @@ outputPath="$testPath/output.css"
 
 libPath="$rootPath/lib"
 binPath="$(yarn bin tailwindcss)"
-configPath="$libPath/lib/main.js"
+configPath="$libPath/main.js"
 
 mkdir -p "$testPath"
 rm -f "$testPath/style.css"
