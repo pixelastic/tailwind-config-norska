@@ -30,7 +30,7 @@
     "__test:visual:approve": "../../scripts/local/test-visual-approve",
     "__serve": "../../scripts/local/serve"
   },
-  "version": "0.4.2",
+  "version": "0.5.0",
   "peerDependencies": {
     "tailwindcss": "1.5.1"
   }

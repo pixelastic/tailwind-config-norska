@@ -30,5 +30,5 @@
     "__test:visual": "../../scripts/local/test-visual",
     "__test:visual:approve": "../../scripts/local/test-visual-approve"
   },
-  "version": "0.4.2"
+  "version": "0.5.0"
 }
