@@ -33,6 +33,7 @@ module.exports = [
       { url: 'dimensions-hover', name: 'Hover' },
       { url: 'dimensions-min-max', name: 'Min/Max' },
       { url: 'dimensions-crop', name: 'Crop' },
+      { url: 'scroll-margin', name: 'Scroll Margin' },
     ],
   },
   {

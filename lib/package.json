@@ -7,13 +7,13 @@
   },
   "description": "Custom Tailwind configuration used by norska",
   "files": [
-    "lib/*.js",
-    "lib/helpers/*.js",
-    "lib/plugins/**/*.js",
-    "lib/themes/**/*.js"
+    "*.js",
+    "helpers/*.js",
+    "plugins/**/*.js",
+    "themes/**/*.js"
   ],
   "license": "MIT",
-  "main": "lib/main.js",
+  "main": "main.js",
   "name": "tailwind-config-norska",
   "repository": "git@github.com:pixelastic/tailwind-config-norska.git",
   "scripts": {
