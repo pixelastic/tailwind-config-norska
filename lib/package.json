@@ -1,0 +1,37 @@
+{
+  "author": "Pixelastic <tim@pixelastic.com>",
+  "dependencies": {
+    "@tailwindcss/typography": "0.2.0",
+    "golgoth": "1.4.0",
+    "hex-rgb": "4.1.0"
+  },
+  "description": "Custom Tailwind configuration used by norska",
+  "files": [
+    "lib/*.js",
+    "lib/helpers/*.js",
+    "lib/plugins/**/*.js",
+    "lib/themes/**/*.js"
+  ],
+  "license": "MIT",
+  "main": "lib/main.js",
+  "name": "tailwind-config-norska",
+  "repository": "git@github.com:pixelastic/tailwind-config-norska.git",
+  "scripts": {
+    "lint": "../scripts/lib/lint",
+    "lint:fix": "../scripts/lib/lint-fix",
+    "release": "../scripts/release",
+    "test": "../scripts/lib/test",
+    "test:watch": "../scripts/lib/test-watch",
+    "__build": "../../scripts/local/build",
+    "__build:prod": "../../scripts/local/build-prod",
+    "__test:manual": "../../scripts/local/test-manual",
+    "__test:watch": "../../scripts/local/test-watch",
+    "__test:visual": "../../scripts/local/test-visual",
+    "__test:visual:approve": "../../scripts/local/test-visual-approve",
+    "__serve": "../../scripts/local/serve"
+  },
+  "version": "0.4.2",
+  "peerDependencies": {
+    "tailwindcss": "1.5.1"
+  }
+}

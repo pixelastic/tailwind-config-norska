@@ -1,5 +1,0 @@
-#!/usr/bin/env sh
-set -e
-
-cd ./modules/docs
-yarn run build

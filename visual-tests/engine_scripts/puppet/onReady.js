@@ -7,6 +7,7 @@ module.exports = async (page, _scenario, _viewport) => {
   });
 
   // Hover the element with the .hover class
+  // Note that screenshot of hovering is unreliable and produces flaky tests
   const elementToHover = await page.$('.screenshot-hover');
   if (elementToHover) {
     await elementToHover.hover();

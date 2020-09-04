@@ -86,11 +86,6 @@
       "url": "http://127.0.0.1:8087/dimensions-height/"
     },
     {
-      "label": "dimensions-hover",
-      "selectors": [".screenshot"],
-      "url": "http://127.0.0.1:8087/dimensions-hover/"
-    },
-    {
       "label": "dimensions-min-max",
       "selectors": [".screenshot"],
       "url": "http://127.0.0.1:8087/dimensions-min-max/"
@@ -141,11 +136,6 @@
       "url": "http://127.0.0.1:8087/opacity/"
     },
     {
-      "label": "position-hover",
-      "selectors": [".screenshot"],
-      "url": "http://127.0.0.1:8087/position-hover/"
-    },
-    {
       "label": "rotate",
       "selectors": [".screenshot"],
       "url": "http://127.0.0.1:8087/rotate/"
@@ -179,11 +169,6 @@
       "label": "transitions",
       "selectors": [".screenshot"],
       "url": "http://127.0.0.1:8087/transitions/"
-    },
-    {
-      "label": "z-index-hover",
-      "selectors": [".screenshot"],
-      "url": "http://127.0.0.1:8087/z-index-hover/"
     },
     {
       "label": "z-index",

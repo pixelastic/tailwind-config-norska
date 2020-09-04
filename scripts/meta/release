@@ -1,6 +1,0 @@
-#!/usr/bin/env sh
-set -e
-
-yarn run test
-yarn run test:visual 
-lerna publish --yes "$@"

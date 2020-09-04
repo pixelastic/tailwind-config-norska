@@ -22,24 +22,24 @@
   "private": true,
   "repository": "git@github.com:pixelastic/tailwind-config-norska.git",
   "scripts": {
-    "lint": "./scripts/meta/lint",
-    "lint:fix": "./scripts/meta/lint-fix",
-    "test": "./scripts/meta/test",
-    "test:manual": "./scripts/meta/test-manual",
-    "test:watch": "./scripts/meta/test-watch",
-    "test:visual": "node ./scripts/meta/test-visual.js",
-    "test:visual:approve": "./scripts/meta/test-visual-approve",
-    "build": "./scripts/meta/build",
-    "build:prod": "./scripts/meta/build-prod",
-    "serve": "./scripts/meta/serve",
-    "husky:precommit": "./scripts/meta/husky-precommit",
-    "docs:readme": "node ./scripts/meta/docs-readme.js",
-    "ci": "./scripts/meta/ci",
-    "release": "./scripts/meta/release",
-    "update-dependencies": "node ./scripts/meta/update-dependencies"
+    "lint": "./scripts/lint",
+    "lint:fix": "./scripts/lint-fix",
+    "test": "./scripts/lib/test",
+    "test:watch": "./scripts/lib/test-watch",
+    "build": "./scripts/docs/build",
+    "build:prod": "./scripts/docs/build-prod",
+    "serve": "./scripts/docs/serve",
+    "docs:readme": "node ./scripts/docs/readme.js",
+    "husky:precommit": "./scripts/husky-precommit",
+    "ci": "./scripts/ci",
+    "release": "./scripts/release",
+    "test:manual": "./scripts/test-manual",
+    "test:visual": "node ./scripts/test-visual.js",
+    "test:visual:approve": "./scripts/test-visual-approve"
   },
   "version": "0.2.1",
   "workspaces": [
-    "modules/*"
+    "lib",
+    "docs"
   ]
 }

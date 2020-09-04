@@ -1,0 +1,34 @@
+{
+  "author": "Pixelastic <tim@pixelastic.com>",
+  "dependencies": {
+    "firost": "2.0.5",
+    "golgoth": "1.4.0",
+    "norska": "0.16.0"
+  },
+  "description": "tailwind-config-norska documentation",
+  "files": [],
+  "license": "MIT",
+  "name": "tailwind-config-norska-docs",
+  "private": true,
+  "repository": "git@github.com:pixelastic/tailwind-config-norska.git",
+  "scripts": {
+    "lint": "../scripts/docs/lint",
+    "lint:fix": "../scripts/docs/lint-fix",
+    "build": "../scripts/docs/build",
+    "build:prod": "../scripts/docs/build-prod",
+    "cms": "../scripts/docs/cms",
+    "serve": "../scripts/docs/serve",
+    "__build": "./scripts/build",
+    "__build:prod": "./scripts/build-prod",
+    "__cms": "./scripts/cms",
+    "__lint": "../../scripts/local/lint",
+    "__lint:fix": "../../scripts/local/lint-fix",
+    "__release": "../../scripts/local/release",
+    "__serve": "node ./scripts/serve.js",
+    "__test:manual": "../../scripts/local/test-manual",
+    "__test:watch": "../../scripts/local/test-watch",
+    "__test:visual": "../../scripts/local/test-visual",
+    "__test:visual:approve": "../../scripts/local/test-visual-approve"
+  },
+  "version": "0.4.2"
+}

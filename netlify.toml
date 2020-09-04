@@ -1,1 +1,10 @@
-./modules/docs/netlify.toml
+# Build website
+[build]
+  command = "yarn run build:prod"
+  publish = "./docs/dist/"
+
+# Terry Pratchett homage
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Clacks-Overhead = "GNU Terry Pratchett"

@@ -1,7 +1,0 @@
-#!/usr/bin/env sh
-set -e
-
-INITIAL_PWD="$PWD"
-cd ../../
-
-aberlaas lint "$INITIAL_PWD" "$@"

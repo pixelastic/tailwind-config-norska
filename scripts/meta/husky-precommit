@@ -1,6 +1,0 @@
-#!/usr/bin/env sh
-set -e
-
-yarn run docs:readme
-git add ./README.md
-aberlaas precommit "$@"

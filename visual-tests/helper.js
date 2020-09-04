@@ -1,6 +1,6 @@
 const _ = require('golgoth/lib/lodash');
 const path = require('path');
-const norskaConfig = require('../modules/docs/norska.config.js');
+const norskaConfig = require('../docs/norska.config.js');
 const defaultConfig = require('./config.js');
 const isPortReachable = require('is-port-reachable');
 const read = require('firost/read');
@@ -49,7 +49,7 @@ module.exports = {
    * @returns {Array} List of scenarios to test
    **/
   async getScenarios() {
-    const files = await glob('modules/docs/src/*.pug');
+    const files = await glob('docs/src/*.pug');
     const filteredList = await pMap(files, async (srcPath) => {
       const basename = path.basename(srcPath, '.pug');
       const sharedPath = path.dirname(path.dirname(srcPath));
