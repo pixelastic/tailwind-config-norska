@@ -1,7 +1,7 @@
 {
   "author": "Pixelastic <tim@pixelastic.com>",
   "dependencies": {
-    "norska": "0.16.0"
+    "norska": "1.4.0"
   },
   "description": "tailwind-config-norska master workspace",
   "devDependencies": {
