@@ -3,7 +3,7 @@
   "dependencies": {
     "firost": "2.0.5",
     "golgoth": "1.4.0",
-    "norska": "0.16.0"
+    "norska": "1.4.0"
   },
   "description": "tailwind-config-norska documentation",
   "files": [],
